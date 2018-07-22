@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <style>
+    #777777
+        .container-fluid{
+            background-color:#D1D1D1;
+            height:100%
+        }
+        .info{
+            background-color:#BABABA;
+            width:50%;
+            height:100%;
+            margin-left:-11%;
+        }
+        .metainfo{
+            background-color:#777777;
+            width:62%;
+            height:100%;
+            margin-left:39%;
+            margin-top:-7.2%;
+        }
+        .metainfo2{
+            margin-top:-1.3%;
+            background-color:#777777;
+        }
+        .navbar-nav {
+            display:table;
+            width:100%;
+            margin: 0;
+        }
+        .navbar-nav > li {
+            float:none;
+            display:table-cell;
+            text-align:center;
+        }
+        img{
+            width:100%
+        }
+        nav{
+            height:100%
+        }
+        #container{
+            position:relative;
+        }
+        #contact_form{
+            position:absolute;
+            top: 25%;
+            left: 22%;
+
+            padding: 5px;
+            background-color: #fff;
+            background-color: rgba(255,255,255,0.5);
+
+        }
+        .row{
+            width:119%;
+        }
+        .facts{
+            color:whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+      <h4>Logo goes here</h4>
+    </div>
+    <div>
+        <nav class="navbar navbar-default">
+              <div class="container-fluid">
+
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">About AWH </a></li>
+                        <li><a href="#">Rights of Light</a></li>
+                        <li><a href="#">Daylight and Sunlighting</a></li>
+                        <li><a href="#">Party Wall</a></li>
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+              </div>
+        </nav>
+    </div>
+    <div id="container">
+             <div id="contact_form">
+                    <!--Section: Contact v.2-->
+                <section class="section">
+
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-5">Enquire Today!</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">
+                    Contact us with any questions you have</p>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Your name</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Your email</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-check col-md-6">
+                                        <input type="checkbox" class="form-check-input" name="developer" id="developer" value="1">
+                                        <label for="developer" class="">Developer</label>
+
+                                    </div>
+                                    <div class="form-check col-md-6">
+                                        <input type="checkbox" class="form-check-input" name="Architecture" id="Architecture" value="1">
+                                        <label for="Architecture" class="">Architecture</label>
+                                    </div>
+                                    <div class="form-check col-md-6">
+                                        <input type="checkbox" class="form-check-input" name="Neighbour" id="Neighbour" value="1">
+                                        <label for="Neighbour" class="">Neighbour</label>
+                                    </div>
+                                    <div class="form-check col-md-6">
+                                        <input type="checkbox" class="form-check-input" name="Other" id="Other" value="1">
+                                        <label for="Other" class="">Other</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <button type="button" class="btn btn-outline-primary">Send</button>
+
+                        </div>
+                        <div class="status"></div>
+                    </div>
+                    <!--Grid column-->
+
+
+
+                </div>
+
+            </section>
+                    <!--Section: Contact v.2-->
+             </div>
+        <img src="https://placeimg.com/1240/480/nature">
+    </div>
+    <!--<div class="info">-->
+        <!--<h4 class="facts">Over £10m+ of compensation</h4>-->
+        <!--<h4 class="facts">Negotiated, Negated</h4>-->
+        <!--<h4 class="facts">Agreed</h4>-->
+
+    <!--</div>-->
+    <!--<div class="metainfo">-->
+            <!--<h4 class="facts">We have 25+ years' expertise</h4>-->
+            <!--<h4 class="facts">Expertise</h4>-->
+            <!--<h4 class="facts">Expertise</h4>-->
+
+
+    <!--</div>-->
+    <div class="container">
+        <div class="row">
+            <div id="div1" class="col-md-6 info" >
+                <h4 class="facts">Over £10m+ of compensation</h4>
+                <h4 class="facts">Negotiated, Negated</h4>
+                <h4 class="facts">Agreed</h4>
+            </div>
+
+            <div id="div3" class="col-md-6 metainfo" >
+                <h4 class="facts">We have 25+ years' expertise</h4>
+                <h4 class="facts">Expertise</h4>
+                <h4 class="facts">Expertise</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="metainfo2" >
+        <h2 class="facts">What we do</h2>
+        <h4 class="facts">We have extensive experience working for both Developer and Neighbours in providing strategic advice from acquisition to completion. We are always ready to discuss your queries.</h4>
+
+    </div>
+
+
+
+
+</body>
+</html>
