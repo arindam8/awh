@@ -1,0 +1,60 @@
+#banner_container {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    /*backdrop filter?*/
+}
+
+#enquire_jumo {
+    background-color: rgba(197, 193, 192, 0.7);
+    margin: auto;
+    width: 764px;
+    padding: 15px;
+    z-index: 100;
+}
+
+.contact-form {
+    padding-bottom: 10px;
+}
+
+.enquire_radio {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.enquire_radio_circle {
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.enquire_button {
+    margin-left: 10px;
+}
+
+#home_page_banner_img{
+    height: 500px;
+    width: 100%
+}
+
+.facts{
+    color: whitesmoke;
+}
+
+.case_img {
+    width: 100%;
+}
+
+.case_box {
+    padding: 0px;
+}
+
+.gray1 {
+    background-color: #C5C1C0;
+}
+
+.gray2 {
+    background-color: #1A2920;
+}
