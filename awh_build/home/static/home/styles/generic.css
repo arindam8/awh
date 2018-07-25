@@ -1,15 +1,16 @@
 /*Colour Scheme
-#B4B4B4 light gray
-#707070 med gray
+#F4F4F4 light gray
+#373737 med gray
 #000000 black
 #FFFFFF white
 #B50A37 reddish brand awh branding
 */
 
 :root {
-    --light-gray: #B4B4B4;
-    --med-gray: #707070;
+    --light-gray: #F4F4F4;
+    --med-gray: #373737;
     --brand-col: #B50A37;
+    --font-fam: "halyard-display",sans-serif;
 }
 
 /*restyle nav bar*/
@@ -19,6 +20,7 @@
 
     .navbar-dark .navbar-nav .nav-link {
         color: var(--light-gray);
+        font-family: var(--font-fam);
     }
 
     .navbar-dark .navbar-nav .nav-link:hover {
@@ -33,12 +35,14 @@
 
 .footer_col_h {
     font-size: 14px;
+    font-family: var(--font-fam);
     margin-bottom: 0px;
 }
 
 .footer-link {
     color: var(--light-gray);
     font-size: 12px;
+    font-family: var(--font-fam);
     text-decoration: underline;
 }
 
