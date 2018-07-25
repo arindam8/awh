@@ -35,6 +35,7 @@
 
 #descript_field {
     max-height: 290px;
+    min-height: 38px;
 }
 
 .contact-form {

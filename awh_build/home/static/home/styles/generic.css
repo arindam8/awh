@@ -21,10 +21,15 @@
     .navbar-dark .navbar-nav .nav-link {
         color: var(--light-gray);
         font-family: var(--font-fam);
+        margin-right: 25px;
     }
 
     .navbar-dark .navbar-nav .nav-link:hover {
         color: white;
+    }
+
+    .navbar {
+        height: 80px;
     }
 
 .footer {
