@@ -22,6 +22,10 @@
     --snow: #FFF9FB;
 }
 
+body {
+    background-color: var(--snow);
+}
+
 #nav_logo_img {
     height: 50px;
 }
