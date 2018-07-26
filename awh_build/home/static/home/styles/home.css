@@ -98,6 +98,7 @@
 
 .case_box:hover .case_img {
     transform: scale(1.2); /*for zoom*/
+    filter: blur(3px);
 }
 
 .case_img {
