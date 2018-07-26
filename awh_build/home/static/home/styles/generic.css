@@ -10,7 +10,11 @@
     --light-gray: #F4F4F4;
     --med-gray: #373737;
     --brand-col: #B50A37;
-    --font-fam: "halyard-display",sans-serif;
+    --font-fam: "quatro",sans-serif;
+}
+
+#nav_logo_img {
+    height: 50px;
 }
 
 /*restyle nav bar*/
