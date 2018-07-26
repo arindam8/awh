@@ -6,11 +6,20 @@
 #B50A37 reddish brand awh branding
 */
 
+/*Colour Scheme 2
+#D3D4D9 light gray
+#38393A med gray
+#14080E black
+#FFF9FB snow
+#B50A37 reddish brand awh branding
+*/
+
 :root {
-    --light-gray: #F4F4F4;
-    --med-gray: #373737;
+    --light-gray: #D3D4D9;
+    --med-gray: #38393A;
     --brand-col: #B50A37;
-    --font-fam: "quatro",sans-serif;
+    --font-fam: "museo-sans",sans-serif;
+    --snow: #FFF9FB;
 }
 
 #nav_logo_img {
@@ -29,7 +38,7 @@
     }
 
     .navbar-dark .navbar-nav .nav-link:hover {
-        color: white;
+        color: var(--snow);
     }
 
     .navbar {
