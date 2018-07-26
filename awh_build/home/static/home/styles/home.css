@@ -58,7 +58,7 @@
 
 #home_page_banner_img{
     height: 500px;
-    width: 100%
+    width: 100%;
 }
 
 #expert {
@@ -121,10 +121,6 @@
 }
 
 .colour1 {
-    background-color: var(--light-gray);
-}
-
-.colour2 {
     background-color: var(--light-gray);
 }
 
