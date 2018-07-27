@@ -9,6 +9,7 @@
 :root {
     --light-gray: #D3D4D9;
     --med-gray: #38393A;
+    --black: #14080E;
     --brand-col: #B50A37;
     --font-fam: "proxima-nova",sans-serif;
     --snow: #FFF9FB;
@@ -64,7 +65,7 @@
 
 #expert {
     text-align: center;
-    color: var(--med-gray);
+    color: var(--black);
     font-family: var(--font-fam);
     font-weight: bold;
     font-size: 70px;
