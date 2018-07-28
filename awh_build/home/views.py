@@ -10,3 +10,6 @@ from django.shortcuts import render_to_response
 def base_view(request):
     return render_to_response('home/base.html')
 
+
+def rol_view(request):
+    return render_to_response('home/template_category.html')
