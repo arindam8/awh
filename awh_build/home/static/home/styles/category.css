@@ -42,6 +42,10 @@
     animation-iteration-count: infinite;
 }
 
+.playstate {
+  animation-play-state: paused  !important;
+}
+
 #popup_jumbo {
     background-color: var(--light-gray);
     padding: 15px;
