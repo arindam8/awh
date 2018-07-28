@@ -64,6 +64,13 @@
     transition: 1s;
 }
 
+/*add @media thing
+account for jumbo hight increas makeing it go on screen
+account for narrower margins so size and width
+make enquire small on mob with the ole swich up of invisible ting
+z index or above footer? could use js to change display setting
+*/
+
 .popup_jumbo_translate {
     bottom: 100px !important;
     transition: 1s;
