@@ -23,7 +23,7 @@ function fadeOut() {
         } else {
             clearInterval(fadeEffect);
         }
-    }, 50);
+    }, 100);
 }
 
 

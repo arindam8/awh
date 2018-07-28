@@ -55,11 +55,12 @@
     bottom: -250px; /*goes to 100*/
     right: 100px;
     visibility: hidden;
+    transition: 1s;
 }
 
 .popup_jumbo_translate {
     bottom: 100px !important;
-    transition: 2s;
+    transition: 1s;
 }
 
 #enquire_widget_jumo {
