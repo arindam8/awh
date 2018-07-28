@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'home/styles/generic.css' %}" />
+
+    <!--other css-->
+    <link rel="stylesheet" href="https://use.typekit.net/ekb4avl.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+    <title>AWH - Rights of Light</title>
+</head>
+<body>
+    <!--Responsive Navbar-->
+    <nav class="navbar navbar-expand-md sticky-top navbar-dark bg-dark">
+        <!--Collapse Button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img id="nav_logo_img" src="{% static 'home/images/logo.png' %}" ></a>
+        <!--Links-->
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About AWH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Rights of Light</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Daylight and Sunlighting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Party Wall</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <!--col-->
+                <div class="col-md-3">
+                    <p class="footer_col_h" >Links</p>
+                    <a class="footer-link" href="#">Linked In</a><br />
+                    <a class="footer-link" href="#">Blog</a><br />
+                    <a class="footer-link" href="#">Q2 Update</a>
+                </div>
+
+                <!--col-->
+                <div class="col-md-3">
+                    <p class="footer_col_h" >Residential</p>
+                    <a class="footer-link" href="#">Site Link 1</a><br />
+                    <a class="footer-link" href="#">Site Link 2</a><br />
+                    <a class="footer-link" href="#">Site Link 3</a>
+                </div>
+
+                <!--col-->
+                <div class="col-md-3">
+                    <p class="footer_col_h" >Commercial</p>
+                    <a class="footer-link" href="#">Site Link 1</a><br />
+                    <a class="footer-link" href="#">Site Link 2</a><br />
+                    <a class="footer-link" href="#">Site Link 3</a>
+                </div>
+
+                <!--col-->
+                <div class="col-md-3">
+                    <p class="footer_col_h" >Development</p>
+                    <a class="footer-link" href="#">Site Link 1</a><br />
+                    <a class="footer-link" href="#">Site Link 2</a><br />
+                    <a class="footer-link" href="#">Site Link 3</a>
+                </div>
+            </div>
+            <!--row-->
+            <div class="row">
+                <p class="footer_copy" >Copyright © 1995 - 2018 Anderson Wilde & Harris. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Scripts for Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Other Scripts-->
+
+</body>
+</html>
