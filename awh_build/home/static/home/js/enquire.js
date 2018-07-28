@@ -1,12 +1,14 @@
 var pop_up = document.getElementById("popup_jumbo");
-var pop_up_slide = document.getElementsByClassName("pop_up_transition")[0];
 var fadeTarget = document.getElementById("enquire_widget");
+var toggle = 1;
 
 function toggle_form() {
-    if (pop_up.style.visibility == "hidden") {
+    if (toggle == 1) {
+        toggle = 0;
         fadeOut()
         slideIn()
     } else {
+        toggle = 1;
         slideOut()
         fadein()
     }
@@ -14,30 +16,19 @@ function toggle_form() {
 
 function fadeOut() {
     fadeTarget.classList.add('playstate');
-    var fadeEffect = setInterval(function () {
-        if (!fadeTarget.style.opacity) {
-            fadeTarget.style.opacity = 1;
-        }
-        if (fadeTarget.style.opacity > 0) {
-            fadeTarget.style.opacity -= 0.1;
-        } else {
-            clearInterval(fadeEffect);
-        }
-    }, 100);
+    fadeTarget.classList.add('enquire_widget_translate');
 }
 
 
 function slideIn() {
-    pop_up.style.visibility = "visible";
-    pop_up_slide.classList.add("popup_jumbo_translate");
+    pop_up.classList.add("popup_jumbo_translate");
 }
 
 function slideOut() {
-    pop_up_slide.classList.remove("popup_jumbo_translate");
-    pop_up.style.visibility = "hidden";
+    pop_up.classList.remove("popup_jumbo_translate");
 }
 
 function fadein() {
     fadeTarget.classList.remove('playstate');
-    fadeTarget.style.opacity = 1
+    fadeTarget.classList.remove('enquire_widget_translate');
 }

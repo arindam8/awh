@@ -17,6 +17,16 @@
     bottom: 100px;
     right: 100px;
     user-select: none;
+    opacity: 1;
+}
+
+.playstate {
+    animation-play-state: paused  !important;
+}
+
+.enquire_widget_translate {
+    opacity: 0 !important;
+    transition: 0.4s;
 }
 
 #enquire_widget:hover {
@@ -42,19 +52,14 @@
     animation-iteration-count: infinite;
 }
 
-.playstate {
-  animation-play-state: paused  !important;
-}
-
 #popup_jumbo {
     background-color: var(--light-gray);
     padding: 15px;
     z-index: 100;
     font-family: var(--font-fam);
     position: fixed;
-    bottom: -250px; /*goes to 100*/
+    bottom: -250px;
     right: 100px;
-    visibility: hidden;
     transition: 1s;
 }
 
