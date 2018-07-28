@@ -16,6 +16,7 @@
     position: fixed;
     bottom: 100px;
     right: 100px;
+    user-select: none;
 }
 
 #enquire_widget:hover {
@@ -41,6 +42,53 @@
     animation-iteration-count: infinite;
 }
 
-#enquire_widget_jumo {
+#popup_jumbo {
+    background-color: var(--light-gray);
+    padding: 15px;
+    z-index: 100;
     font-family: var(--font-fam);
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    visibility: hidden;
+}
+
+#enquire_widget_jumo {
+    background-color: var(--light-gray);
+    font-family: var(--font-fam);
+}
+
+#form_heading {
+    float: left;
+}
+
+#close_popup {
+    float: right;
+    user-select: none;
+}
+
+#close_popup:hover {
+    cursor: pointer
+}
+
+#descript_field {
+    min-height: 38px;
+}
+
+.contact-form {
+    padding-bottom: 10px;
+}
+
+.enquire_radio {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.enquire_radio_circle {
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.enquire_button {
+    margin-left: 10px;
 }
