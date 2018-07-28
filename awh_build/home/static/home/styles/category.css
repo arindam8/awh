@@ -52,9 +52,14 @@
     z-index: 100;
     font-family: var(--font-fam);
     position: fixed;
-    bottom: 100px;
+    bottom: -250px; /*goes to 100*/
     right: 100px;
     visibility: hidden;
+}
+
+.popup_jumbo_translate {
+    bottom: 100px !important;
+    transition: 2s;
 }
 
 #enquire_widget_jumo {

@@ -1,16 +1,18 @@
+var pop_up = document.getElementById("popup_jumbo");
+var pop_up_slide = document.getElementsByClassName("pop_up_transition")[0];
+var fadeTarget = document.getElementById("enquire_widget");
+
 function toggle_form() {
-    var pop_up = document.getElementById("popup_jumbo");
     if (pop_up.style.visibility == "hidden") {
-        pop_up.style.visibility = "visible";
         fadeOut()
+        slideIn()
     } else {
-        pop_up.style.visibility = "hidden";
+        slideOut()
         fadein()
     }
 }
 
 function fadeOut() {
-    var fadeTarget = document.getElementById("enquire_widget");
     fadeTarget.classList.add('playstate');
     var fadeEffect = setInterval(function () {
         if (!fadeTarget.style.opacity) {
@@ -24,8 +26,18 @@ function fadeOut() {
     }, 50);
 }
 
+
+function slideIn() {
+    pop_up.style.visibility = "visible";
+    pop_up_slide.classList.add("popup_jumbo_translate");
+}
+
+function slideOut() {
+    pop_up_slide.classList.remove("popup_jumbo_translate");
+    pop_up.style.visibility = "hidden";
+}
+
 function fadein() {
-    var fadeTarget = document.getElementById("enquire_widget");
     fadeTarget.classList.remove('playstate');
     fadeTarget.style.opacity = 1
 }
