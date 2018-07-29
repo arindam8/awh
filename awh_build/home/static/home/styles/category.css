@@ -247,7 +247,7 @@ h3 {
     }
 
     .popup_jumbo_translate {
-        bottom: 20px !important;
+        bottom: -12px !important;
         visibility: visible !important;
         transition: 1s;
     }
