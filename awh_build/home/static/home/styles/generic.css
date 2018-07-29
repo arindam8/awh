@@ -16,6 +16,7 @@
 
 body {
     background-color: var(--snow);
+    font-family: var(--font-fam);
 }
 
 #nav_logo_img {
@@ -29,7 +30,6 @@ body {
 
     .navbar-dark .navbar-nav .nav-link {
         color: var(--light-gray);
-        font-family: var(--font-fam);
         margin-right: 25px;
     }
 
@@ -49,14 +49,12 @@ body {
 
 .footer_col_h {
     font-size: 14px;
-    font-family: var(--font-fam);
     margin-bottom: 0px;
 }
 
 .footer-link {
     color: var(--light-gray);
     font-size: 12px;
-    font-family: var(--font-fam);
     text-decoration: underline;
 }
 

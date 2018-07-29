@@ -19,7 +19,6 @@
 .banner_jumbo {
     z-index: 100;
     background-color: rgba(255, 249, 251, 0.6);
-    font-family: var(--font-fam);
     max-width: 500px;
 }
 
@@ -31,17 +30,29 @@
     margin-left: 7.5px;
 }
 
-h2 {
+.jumbo_h {
     font-weight: bold;
 }
 
+h3 {
+    font-weight: bold;
+}
+
+#services_h {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+}
 
 .nav-tabs {
     display: flex;
     justify-content: space-around;
-    font-family: var(--font-fam);
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+.tab-content {
+    padding-bottom: 10px;
 }
 
 .enq_jumbo {
@@ -84,12 +95,10 @@ h2 {
 
 #enquire_widget_jumo {
     background-color: var(--light-gray);
-    font-family: var(--font-fam);
 }
 
 #enquire_widget_jumo_mini {
     background-color: var(--light-gray);
-    font-family: var(--font-fam);
 }
 /*
 .playstate {
@@ -125,7 +134,6 @@ h2 {
     background-color: var(--light-gray);
     padding: 15px;
     z-index: 100;
-    font-family: var(--font-fam);
     position: fixed;
     bottom: -392px;
     right: 100px;

@@ -15,7 +15,6 @@
     padding: 15px;
     z-index: 100;
     max-height: 500px;
-    font-family: var(--font-fam);
 }
 
 #descript_field {
@@ -49,7 +48,6 @@
 #expert {
     text-align: center;
     color: var(--black);
-    font-family: var(--font-fam);
     font-weight: bold;
     font-size: 70px;
 }
@@ -57,21 +55,18 @@
 .mini_txt {
     text-align: center;
     font-size: 20px;
-    font-family: var(--font-fam);
     color: var(--med-gray);
 }
 
 .facts{
     text-align: center;
     font-size: 25px;
-    font-family: var(--font-fam);
     color: var(--med-gray);
 }
 
 .tel_num {
     text-align: center;
     font-size: 22px;
-    font-family: var(--font-fam);
     color: var(--med-gray);
     display: inherit;
 }
@@ -108,7 +103,6 @@
     left: 0;
     width: 100%;
     font-size: 30px;
-    font-family: var(--font-fam);
     color: var(--light-gray);
 }
 
