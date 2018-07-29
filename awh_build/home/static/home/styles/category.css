@@ -7,6 +7,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 #banner_img{
@@ -20,6 +21,9 @@
     z-index: 100;
     background-color: rgba(255, 249, 251, 0.8);
     max-width: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 30px;
 }
 
 #left_jumo {
@@ -191,12 +195,13 @@ h3 {
     margin-left: 10px;
 }
 
+/*
 @media (max-width: 991px) {
     .jumbo_para {
         font-size: 1.7vw;
     }
 }
-
+*/
 @media (max-width: 767px) {
     #popup_jumbo {
         bottom: -472px; /*133px taller*/
