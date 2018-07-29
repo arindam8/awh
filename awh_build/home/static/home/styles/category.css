@@ -95,6 +95,17 @@ h3 {
 #enquire_widget_mini {
     position: fixed;
     bottom: 20px;
+    right: 60px;
+    user-select: none;
+    opacity: 1;
+    display: none;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+#phone_widget_mini {
+    position: fixed;
+    bottom: 20px;
     right: 20px;
     user-select: none;
     opacity: 1;
@@ -107,12 +118,22 @@ h3 {
     cursor: pointer
 }
 
+#phone_widget_mini:hover {
+    cursor: pointer
+}
+
 #enquire_widget_jumo {
     background-color: var(--light-gray);
 }
 
 #enquire_widget_jumo_mini {
     background-color: var(--light-gray);
+    border-radius: 10px 0px 0px 10px;
+}
+
+#phone_widget_jumo_mini {
+    background-color: var(--light-gray);
+    border-radius: 0px 10px 10px 0px;
 }
 /*
 .playstate {
@@ -218,6 +239,10 @@ h3 {
     }
 
     #enquire_widget_mini {
+        display: block;
+    }
+
+    #phone_widget_mini {
         display: block;
     }
 
