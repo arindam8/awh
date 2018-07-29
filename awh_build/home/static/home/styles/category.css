@@ -57,7 +57,7 @@
 .playstate {
     animation-play-state: paused  !important;
 }
-
+/*
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -71,10 +71,16 @@
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+*/
+
+.shake {
+    transition: transform .4s;
+}
 
 .shake:hover, .shake:focus {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
+    /*animation: shake 0.5s;
+    animation-iteration-count: infinite;*/
+    transform: scale(1.05);
 }
 
 #popup_jumbo {
@@ -152,5 +158,9 @@
         bottom: 20px !important;
         visibility: visible !important;
         transition: 1s;
+    }
+
+    .shake:hover, .shake:focus {
+        transform: scale(1.1);
     }
 }
