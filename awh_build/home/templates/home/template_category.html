@@ -6,9 +6,9 @@
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/category.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/category.css' %}" />
 
-<div id="banner_container">
-    <img id="home_page_banner_img" src="https://placeimg.com/1980/500/arch">
-</div>
+<header id="banner_container">
+    <img id="home_page_banner_img" src="https://placeimg.com/1980/500/arch" alt="">
+</header>
 
 <div class="container">
 </div>
@@ -18,6 +18,16 @@
         <h4>Enquire Today</h4>
     </div>
 </div>
+
+
+<div id="enquire_widget_mini" class="shake" onclick="toggle_form()" >
+    <div class="jumbotron" id="enquire_widget_jumo_mini">
+        <h4><i class="far fa-envelope-open"></i></h4>
+    </div>
+</div>
+
+
+
 
 <div class="jumbotron vertical-center" id="popup_jumbo">
     <h4 id="form_heading">Enquire Today</h4>

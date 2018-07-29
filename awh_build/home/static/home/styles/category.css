@@ -18,19 +18,44 @@
     right: 100px;
     user-select: none;
     opacity: 1;
-}
-
-.playstate {
-    animation-play-state: paused  !important;
-}
-
-.enquire_widget_translate {
-    opacity: 0 !important;
-    transition: 0.4s;
+    display: block;
 }
 
 #enquire_widget:hover {
     cursor: pointer
+}
+
+.enquire_widget_translate {
+    opacity: 0 !important;
+    transition: 0.3s;
+}
+
+#enquire_widget_mini {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    user-select: none;
+    opacity: 1;
+    display: none;
+    z-index: 100;
+}
+
+#enquire_widget_mini:hover {
+    cursor: pointer
+}
+
+#enquire_widget_jumo {
+    background-color: var(--light-gray);
+    font-family: var(--font-fam);
+}
+
+#enquire_widget_jumo_mini {
+    background-color: var(--light-gray);
+    font-family: var(--font-fam);
+}
+
+.playstate {
+    animation-play-state: paused  !important;
 }
 
 @keyframes shake {
@@ -62,35 +87,14 @@
     right: 100px;
     margin-left: 100px;
     visibility: hidden;
-    transition: 1s;
+    transition: 0.7s;
+    transition-timing-function: cubic-bezier(0.39, 1.46, 0.91, 1.32);
 }
-
-@media (max-width: 768px) {
-    #popup_jumbo {
-        bottom: -383px; /*133px taller*/
-        right: 20px;
-        margin-left: 20px;
-    }
-
-    #enquire_widget {
-        right: 20px;
-    }
-}
-
-/*
-make enquire small on mob with the ole swich up of invisible ting
-z index or above footer? could use js to change display setting
-*/
 
 .popup_jumbo_translate {
     bottom: 100px !important;
     visibility: visible !important;
     transition: 1s;
-}
-
-#enquire_widget_jumo {
-    background-color: var(--light-gray);
-    font-family: var(--font-fam);
 }
 
 #form_heading {
@@ -126,4 +130,26 @@ z index or above footer? could use js to change display setting
 
 .enquire_button {
     margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    #popup_jumbo {
+        bottom: -383px; /*133px taller*/
+        right: 20px;
+        margin-left: 20px;
+    }
+
+    #enquire_widget {
+        display: none;
+    }
+
+    #enquire_widget_mini {
+        display: block;
+    }
+
+    .popup_jumbo_translate {
+    bottom: 20px !important;
+    visibility: visible !important;
+    transition: 1s;
+}
 }

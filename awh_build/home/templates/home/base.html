@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
 
 <!--Image and Form Container-->
-<div>
+<header>
     <div id="banner_container">
         <div class="jumbotron vertical-center" id="enquire_jumo">
             <h4>Enquire Today</h4>
@@ -74,11 +74,11 @@
                 {% endif %}
         </div>
     </div>
-    <img id="home_page_banner_img" src="https://placeimg.com/1980/500/arch">
-</div>
+    <img id="home_page_banner_img" src="https://placeimg.com/1980/500/arch" alt="">
+</header>
 
 <!--Body-->
-<div class="container">
+<main class="container">
     <div>
 
         <!--heading row-->
@@ -139,6 +139,6 @@
             </div>
         </div>
     </div>
-</div>
+</main>
 
 {% endblock %}
