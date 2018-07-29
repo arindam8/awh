@@ -5,9 +5,37 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.jumbotron {
+#banner_img{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.banner_jumbo {
+    z-index: 100;
+    background-color: rgba(255, 249, 251, 0.6);
+    font-family: var(--font-fam);
+    max-width: 500px;
+}
+
+#left_jumo {
+    margin-right: 7.5px;
+}
+
+#right_jumo {
+    margin-left: 7.5px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.enq_jumbo {
     padding: 6px 8px 1px 8px;
     margin: 0px;
 }
@@ -138,6 +166,12 @@
 
 .enquire_button {
     margin-left: 10px;
+}
+
+@media (max-width: 991px) {
+    .jumbo_para {
+        font-size: 1.7vw;
+    }
 }
 
 @media (max-width: 767px) {

@@ -6,8 +6,21 @@
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/category.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/category.css' %}" />
 
-<header id="banner_container">
-    <img id="home_page_banner_img" src="https://placeimg.com/1980/500/arch" alt="">
+<header id="banner_container" class="container-fluid" >
+    <!--img-->
+    <img id="banner_img" src="https://placeimg.com/1980/500/arch" alt="">
+
+    <!--jumbo 1-->
+    <div class="jumbotron banner_jumbo " id="left_jumo">
+        <h2>Lorem ipsum</h2>
+        <p class="jumbo_para" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum, mauris vel iaculis auctor, velit nisi mattis turpis, eu cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a nunc rutrum, rhoncus diam eget, vulputate leo. Donec vitae elit interdum, maximus orci auctor, dictum mi. Vestibulum rutrum neque non diam aliquet efficitur. Mauris sagittis venenatis placerat.</p>
+    </div>
+
+    <!--jumbo 2-->
+    <div class="jumbotron banner_jumbo " id="right_jumo">
+        <h2>Lorem ipsum</h2>
+        <p class="jumbo_para" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum, mauris vel iaculis auctor, velit nisi mattis turpis, eu cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a nunc rutrum, rhoncus diam eget, vulputate leo. Donec vitae elit interdum, maximus orci auctor, dictum mi. Vestibulum rutrum neque non diam aliquet efficitur. Mauris sagittis venenatis placerat.</p>
+    </div>
 </header>
 
 <!--body of -->
@@ -16,14 +29,14 @@
 </main>
 
 <div id="enquire_widget" class="shake" onclick="toggle_form()" >
-    <div class="jumbotron" id="enquire_widget_jumo">
+    <div class="jumbotron enq_jumbo" id="enquire_widget_jumo">
         <h4>Enquire Today</h4>
     </div>
 </div>
 
 
 <div id="enquire_widget_mini" class="shake" onclick="toggle_form()" >
-    <div class="jumbotron" id="enquire_widget_jumo_mini">
+    <div class="jumbotron enq_jumbo" id="enquire_widget_jumo_mini">
         <h4><i class="far fa-envelope-open"></i></h4>
     </div>
 </div>
