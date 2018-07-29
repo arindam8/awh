@@ -1,6 +1,5 @@
 #banner_container {
-    position: absolute; */
-    min-height: 500px;
+    position: absolute;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
