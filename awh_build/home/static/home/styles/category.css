@@ -1,0 +1,117 @@
+#banner_container {
+    /*position: absolute;*/
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    padding: 6px 8px 1px 8px;
+    margin: 0px;
+}
+
+#enquire_widget {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    user-select: none;
+    opacity: 1;
+}
+
+.playstate {
+    animation-play-state: paused  !important;
+}
+
+.enquire_widget_translate {
+    opacity: 0 !important;
+    transition: 0.4s;
+}
+
+#enquire_widget:hover {
+    cursor: pointer
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake:hover, .shake:focus {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+#popup_jumbo {
+    background-color: var(--light-gray);
+    padding: 15px;
+    z-index: 100;
+    font-family: var(--font-fam);
+    position: fixed;
+    bottom: -250px;
+    right: 100px;
+    margin-left: 100px;
+    transition: 1s;
+}
+
+/*add @media thing
+account for jumbo hight increas makeing it go on screen
+account for narrower margins so size and width
+make enquire small on mob with the ole swich up of invisible ting
+z index or above footer? could use js to change display setting
+*/
+
+.popup_jumbo_translate {
+    bottom: 100px !important;
+    transition: 1s;
+}
+
+#enquire_widget_jumo {
+    background-color: var(--light-gray);
+    font-family: var(--font-fam);
+}
+
+#form_heading {
+    float: left;
+}
+
+#close_popup {
+    float: right;
+    user-select: none;
+}
+
+#close_popup:hover {
+    cursor: pointer
+}
+
+#descript_field {
+    min-height: 38px;
+}
+
+.contact-form {
+    padding-bottom: 10px;
+}
+
+.enquire_radio {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.enquire_radio_circle {
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.enquire_button {
+    margin-left: 10px;
+}
