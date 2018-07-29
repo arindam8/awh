@@ -83,7 +83,7 @@
     z-index: 100;
     font-family: var(--font-fam);
     position: fixed;
-    bottom: -250px;
+    bottom: -392px;
     right: 100px;
     margin-left: 100px;
     visibility: hidden;
@@ -135,7 +135,7 @@
 
 @media (max-width: 768px) {
     #popup_jumbo {
-        bottom: -383px; /*133px taller*/
+        bottom: -472px; /*133px taller*/
         right: 20px;
         margin-left: 20px;
     }
