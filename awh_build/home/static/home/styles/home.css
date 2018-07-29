@@ -41,8 +41,13 @@
 }
 
 #home_page_banner_img{
-    height: 500px;
-    width: 100%;
+    min-height: 500px;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #expert {
