@@ -47,4 +47,4 @@ def base_view(request):
 
 
 def rol_view(request):
-    return render_to_response('home/template_category.html')
+    return render(request, 'home/template_category.html')
