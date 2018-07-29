@@ -10,6 +10,7 @@
     --light-gray: #D3D4D9;
     --med-gray: #38393A;
     --brand-col: #B50A37;
+    --black: #14080E;
     --font-fam: "museo-sans",sans-serif;
     --snow: #FFF9FB;
 }
@@ -48,7 +49,7 @@ body {
 }
 
 .footer_col_h {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 0px;
 }
 

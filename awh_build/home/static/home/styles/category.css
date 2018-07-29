@@ -51,8 +51,13 @@ h3 {
     margin-top: 10px;
 }
 
-.tab-content {
-    padding-bottom: 10px;
+.nav-tabs .nav-link {
+    color: var(--med-gray);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--black);
+    font-weight: bold;
 }
 
 .enq_jumbo {
@@ -62,12 +67,13 @@ h3 {
 
 #enquire_widget {
     position: fixed;
-    bottom: 100px;
-    right: 100px;
+    bottom: 40px;
+    right: 50px;
     user-select: none;
     opacity: 1;
     display: block;
     transition: 0.5s;
+    z-index: 100;
 }
 
 #enquire_widget:hover {
@@ -136,15 +142,15 @@ h3 {
     z-index: 100;
     position: fixed;
     bottom: -392px;
-    right: 100px;
+    right: 50px;
     margin-left: 100px;
     visibility: hidden;
     transition: 0.7s;
-    transition-timing-function: cubic-bezier(0.39, 1.46, 0.91, 1.32);
+    /*transition-timing-function: cubic-bezier(0.39, 1.46, 0.91, 1.32);*/
 }
 
 .popup_jumbo_translate {
-    bottom: 100px !important;
+    bottom: 8px !important;
     visibility: visible !important;
     transition: 1s;
 }
