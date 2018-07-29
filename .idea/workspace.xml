@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="c1840ffc-ff9c-4437-b2a1-afe3437b1a11" name="Added form settings" comment="Added form file and email settings" />
     <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/js/enquire.js" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/js/enquire.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/category.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/category.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/template_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/template_category.html" afterDir="false" />
     </list>
+    <list id="c1840ffc-ff9c-4437-b2a1-afe3437b1a11" name="Added form settings" comment="Added form file and email settings" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +20,7 @@
       <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
+            <state relative-caret-position="555">
               <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
             </state>
           </provider>
@@ -36,8 +38,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+            <state relative-caret-position="-197">
+              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#3;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -57,8 +59,8 @@
       <file leaf-file-name="template_category.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template_category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+            <state relative-caret-position="614">
+              <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -66,8 +68,8 @@
       <file leaf-file-name="category.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/category.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="778">
-              <caret line="162" column="32" lean-forward="true" selection-start-line="162" selection-start-column="32" selection-end-line="162" selection-end-column="32" />
+            <state relative-caret-position="600">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -75,8 +77,8 @@
       <file leaf-file-name="enquire.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/enquire.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="570">
+              <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -103,9 +105,9 @@
         <option value="$PROJECT_DIR$/awh_build/home/views.py" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/template.html" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/base.html" />
-        <option value="$PROJECT_DIR$/awh_build/home/static/home/js/enquire.js" />
-        <option value="$PROJECT_DIR$/awh_build/home/templates/home/template_category.html" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" />
+        <option value="$PROJECT_DIR$/awh_build/home/templates/home/template_category.html" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/js/enquire.js" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/category.css" />
       </list>
     </option>
@@ -472,14 +474,21 @@
       <option name="project" value="LOCAL" />
       <updated>1532878130767</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="change anaimation, more profesional looking">
+      <created>1532883171335</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1532883171336</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1726" height="1139" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24391657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24391657" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5011588" side_tool="true" weight="0.16150235" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32957748" />
@@ -504,7 +513,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="general apperance changes" />
     <MESSAGE value="added map" />
     <MESSAGE value="added logo" />
     <MESSAGE value="minor corrections" />
@@ -529,7 +537,8 @@
     <MESSAGE value="lots of refinement" />
     <MESSAGE value="refinement" />
     <MESSAGE value="refinement done" />
-    <option name="LAST_COMMIT_MESSAGE" value="refinement done" />
+    <MESSAGE value="change anaimation, more profesional looking" />
+    <option name="LAST_COMMIT_MESSAGE" value="change anaimation, more profesional looking" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
@@ -795,23 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="46" lean-forward="true" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#3;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/generic.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2">
@@ -826,24 +818,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/enquire.js">
+    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="555">
+          <caret line="37" column="12" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-197">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#3;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template_category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="53" column="18" lean-forward="true" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+        <state relative-caret-position="614">
+          <caret line="41" column="16" lean-forward="true" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/enquire.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/category.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="162" column="32" lean-forward="true" selection-start-line="162" selection-start-column="32" selection-end-line="162" selection-end-column="32" />
+        <state relative-caret-position="600">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
         </state>
       </provider>
     </entry>

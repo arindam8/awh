@@ -16,9 +16,9 @@ function toggle_form() {
 }
 
 function fadeOut() {
-    fadeTarget.classList.add('playstate');
+    //fadeTarget.classList.add('playstate');
     fadeTarget.classList.add('enquire_widget_translate');
-    fadeTarget2.classList.add('playstate');
+    //fadeTarget2.classList.add('playstate');
     fadeTarget2.classList.add('enquire_widget_translate');
 }
 
@@ -32,8 +32,8 @@ function slideOut() {
 }
 
 function fadein() {
-    fadeTarget.classList.remove('playstate');
+    //fadeTarget.classList.remove('playstate');
     fadeTarget.classList.remove('enquire_widget_translate');
-    fadeTarget2.classList.remove('playstate');
+    //fadeTarget2.classList.remove('playstate');
     fadeTarget2.classList.remove('enquire_widget_translate');
 }
