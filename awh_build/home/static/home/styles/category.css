@@ -27,7 +27,7 @@
 
 .enquire_widget_translate {
     opacity: 0 !important;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 #enquire_widget_mini {
@@ -111,6 +111,7 @@
 }
 
 #descript_field {
+    max-height: 152px;
     min-height: 38px;
 }
 
@@ -148,8 +149,8 @@
     }
 
     .popup_jumbo_translate {
-    bottom: 20px !important;
-    visibility: visible !important;
-    transition: 1s;
-}
+        bottom: 20px !important;
+        visibility: visible !important;
+        transition: 1s;
+    }
 }
