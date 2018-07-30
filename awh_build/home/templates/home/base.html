@@ -3,7 +3,15 @@
 
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
-
+<style>
+    #id_attach{
+    margin-left:-16%;
+    background:bottom;
+    }
+    .enquire_button{
+    background:bottom;
+    }
+</style>
 <!--Image and Form Container-->
 <header>
     <div id="banner_container">
@@ -18,20 +26,20 @@
                 {% csrf_token %}
                     <form id="contact-form" name="contact-form" method="POST" action ="." enctype="multipart/form-data">
                         <div class="contact-form">
-                            <b>{{enquiry_form.description.label_tag}}</b>{{enquiry_form.description}}
+                            {{enquiry_form.description}}
                         </div>
                         <!--row-->
                         <div class="form-row">
                             <!--col-->
                             <div class="col-md-8">
                                 <div class="contact-form">
-                                    <b>{{enquiry_form.name.label_tag}}</b>{{enquiry_form.name}}
+                                    {{enquiry_form.name}}
                                 </div>
                             </div>
                             <!--col-->
                             <div class="col-md-4">
                                 <div class="contact-form">
-                                    <b>{{enquiry_form.postcode.label_tag}}</b>{{enquiry_form.postcode}}
+                                    {{enquiry_form.postcode}}
                                 </div>
                             </div>
                         </div>
@@ -40,13 +48,13 @@
                                 <!--col-->
                                 <div class="col-md-8">
                                     <div class="contact-form">
-                                        <b>{{enquiry_form.email.label_tag}}</b>{{enquiry_form.email}}
+                                        {{enquiry_form.email}}
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="contact-form">
 
-                                        <b>{{enquiry_form.phone.label_tag}}</b>{{enquiry_form.phone}}
+                                        {{enquiry_form.phone}}
                                     </div>
                                 </div>
                         </div>
@@ -54,12 +62,12 @@
                         <!--col-->
                             <div class="col-md-7 d-flex align-content-center">
                                 {% for choice in enquiry_form.category.field.choices %}
-                                      <li>
+                                      <li style="list-style-type:None;">
                                             <input type="radio" name="category" value="{{choice.0}}"
                                               {% ifequal enquiry_form.category.data choice.0 %}
                                                  checked="checked"
                                               {% endifequal %}/>
-                                            <label for="">{{choice.1}}</label>
+                                            <label for=""> {{choice.1}} </label>
                                       </li>
                                 {% endfor %}
 
