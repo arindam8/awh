@@ -62,13 +62,13 @@
                         <!--col-->
                             <div class="col-md-7 d-flex align-content-center">
                                 {% for choice in enquiry_form.category.field.choices %}
-                                      <li style="list-style-type:None;">
+                                      <!--<li style="list-style-type:None;">-->
                                             <input type="radio" name="category" value="{{choice.0}}"
                                               {% ifequal enquiry_form.category.data choice.0 %}
                                                  checked="checked"
                                               {% endifequal %}/>
                                             <label for=""> {{choice.1}} </label>
-                                      </li>
+                                      <!--</li>-->
                                 {% endfor %}
 
 
@@ -102,7 +102,7 @@
         <div class="row home_body_pad">
             <!--col-->
             <div class="col-md-12">
-                <h5 class="mini_txt">We have extensive experience working for both Developer and Neighbours in providing strategic advice from acquisition to completion. We are always ready to discuss your queries.</h5>
+                <h5 class="mini_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet dapibus risus in ultricies. Etiam mollis, ex at commodo auctor, magna enim placerat nisl, nec congue urna elit id nibh. Vestibulum nec arcu diam. Maecenas varius sapien et justo tempor mattis. Aliquam ac ipsum lacus. Donec eu imperdiet nibh. Nulla quis mauris nec metus finibus mattis vitae nec sapien.</h5>
             </div>
         </div>
 
@@ -110,42 +110,60 @@
         <div class="row home_body_pad">
             <!--col-->
             <div class="col-md-4">
-                <h5 class="facts">• Over £10m+ of compensation</h5>
+                <h5 class="facts">Etiam quis porta lectus, ut ullamcorper leo.</h5>
             </div>
             <!--col-->
             <div class="col-md-4">
-                <h5 class="facts">• Over 25+ years' expertise</h5>
+                <h5 class="facts">Curabitur volutpat eu dui quis pretium.</h5>
             </div>
             <!--col-->
             <div class="col-md-4">
-                <h5 class="facts">• Talk to us today    <a class="facts" href="tel:+02070611100"><i class="fas fa-phone"></i></a></h5>
-                <a class="tel_num" href="tel:+02070611100">02070611100</a>
+                <h5 class="facts">Donec consectetur scelerisque purus quis facilisis.</h5>
+            </div>
+        </div>
+
+        <!--map row-->
+        <div class="row home_body_pad">
+            <!--col-->
+            <div class="col-md-7 map_caption">
+                <h5 class="facts">Quisque quis eros scelerisque magna gravida dapibus.</h5><br>
+                <h5 class="facts">Talk to us today    <a class="facts" href="tel:+02070611100"> <a class="tel_num" href="tel:+02070611100">02070611100</a> <i class="fas fa-phone"></i></a></h5>
+
+            </div>
+
+            <div class="col-md-5">
+                <div class="col-md-3 map_container">
+                    <!--requires API key-->
+                    <iframe id="map_frame" width="1000" height="1000" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRzyAIkwbdkgRCHz-tEf3D2Y&key=AIzaSyCiZxvmE2VQes9sbcocDG8jWA5kf3v2fok" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
 
         <!--case study row-->
         <div class="row home_body_pad home_bottom_pad">
             <!--col-->
-            <div class="col-md-3 case_box">
-                <a href="#"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
-                    <p class="center_over_case">Case Study 1</p>
-                </a>
+            <div class="col-md-4">
+                <div class="case_box">
+                    <a href="#"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                        <p class="center_over_case">Case Study 1</p>
+                    </a>
+                </div>
             </div>
             <!--col-->
-            <div class="col-md-3 case_box">
-                <a href="#"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
-                    <p class="center_over_case">Case Study 2</p>
-                </a>
+            <div class="col-md-4">
+                <div class="case_box">
+                    <a href="#"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                        <p class="center_over_case">Case Study 2</p>
+                    </a>
+                </div>
             </div>
             <!--col-->
-            <div class="col-md-3 case_box">
-                <a href="#"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
-                    <p class="center_over_case">Case Study 3</p>
-                </a>
-            </div>
-            <div class="col-md-3 map_container">
-                <!--requires API key-->
-                <iframe id="map_frame" width="1000" height="1000" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRzyAIkwbdkgRCHz-tEf3D2Y&key=AIzaSyCiZxvmE2VQes9sbcocDG8jWA5kf3v2fok" allowfullscreen></iframe>
+            <div class="col-md-4">
+                <div class="case_box">
+                    <a href="#"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                        <p class="center_over_case">Case Study 3</p>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
