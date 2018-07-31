@@ -23,21 +23,21 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#"><img id="nav_logo_img" src="{% static 'home/images/logo.png' %}" alt="Company Logo"></a>
+        <a class="navbar-brand" href="{% url 'base_view' %}"><img id="nav_logo_img" src="{% static 'home/images/logo.png' %}" alt="Company Logo"></a>
         <!--Links-->
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto mt-2 mt-md-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About AWH</a>
+                    <a class="nav-link" href="{% url 'about_view' %}">About AWH</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Rights of Light</a>
+                    <a class="nav-link" href="{% url 'rol_view' %}">Rights of Light</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Daylight and Sunlighting</a>
+                    <a class="nav-link" href="{% url 'rol_view' %}">Daylight and Sunlighting</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Party Wall</a>
+                    <a class="nav-link" href="{% url 'rol_view' %}">Party Wall</a>
                 </li>
             </ul>
         </div>
