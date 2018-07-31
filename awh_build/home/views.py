@@ -48,3 +48,9 @@ def base_view(request):
 
 def rol_view(request):
     return render(request, 'home/template_category.html')
+
+def about_view(request):
+    return render(request, 'home/about.html')
+
+def case_studies_view(request):
+    return render(request, 'home/case_studies.html')
