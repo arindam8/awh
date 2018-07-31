@@ -30,20 +30,26 @@ def base_view(request):
         postcode = form.cleaned_data['postcode']
         phone = form.cleaned_data['phone']
         email = form.cleaned_data['email']
-        attach = request.FILES['attach']
+
+
         name = form.cleaned_data['name']
         category = form.cleaned_data['category']
         body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category
         try:
             mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, [email])
-            mail.attach(attach.name, attach.read(), attach.content_type)
+            if len(request.FILES) != 0:
+                print ("inside")
+                attach = request.FILES['attach']
+                mail.attach(attach.name, attach.read(), attach.content_type)
             mail.send()
-            return render(request,'home/base.html', {'message': 'Sent email to %s' % email})
+            return render(request,'home/base.html', {'message': 'Thanks for the enquiry. We will be in touch shortly'})
         except:
             return render(request,'home/base.html', {'message': 'Either the attachment is too  big or corrupt'})
 
 
         return render(request,'home/base.html', {'message': 'Unable to send email. Please try again later'})
+
+    return render(request, 'home/base.html', {'enquiry_form': form})
 
 
 def rol_view(request):
