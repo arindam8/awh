@@ -40,3 +40,16 @@ h3 {
 .about_bottom {
     text-align: center;
 }
+
+#link_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_links {
+    color: var(--black);
+}
+
+.about_links:hover {
+    color: var(--black);
+}
