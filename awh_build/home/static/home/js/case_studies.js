@@ -7,6 +7,7 @@ function toggle_fade(j) {
     j = j - 1;
     if (j == k) {
         all_off();
+        k = 9;
     } else {
         one_on(j);
         k = j;
