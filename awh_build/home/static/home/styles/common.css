@@ -47,12 +47,12 @@ h3 {
 
 .case_box:hover .case_img {
     transform: scale(1.2); /*for zoom*/
-    filter: blur(3px);
+    filter: blur(0px); /*was 3px*/
 }
 
 .case_img {
     width: 100%;
-    transition: transform .5s, filter .5s; /*for zoom*/
+    transition: transform 0.5s, filter 0s; /*for zoom*/
 }
 
 .center_over_case {
