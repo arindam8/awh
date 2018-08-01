@@ -38,7 +38,6 @@ def base_view(request):
         try:
             mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, [email])
             if len(request.FILES) != 0:
-                print ("inside")
                 attach = request.FILES['attach']
                 mail.attach(attach.name, attach.read(), attach.content_type)
             mail.send()

@@ -2,6 +2,7 @@
 {% block content %}
 
 {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'home/styles/common.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
 <style>
     #id_attach{
@@ -12,11 +13,12 @@
     background:bottom;
     }
 </style>
+
 <!--Image and Form Container-->
 <header>
     <div id="banner_container">
         <!--img-->
-        <img id="home_page_banner_img" src="https://placeimg.com/1980/500/arch" alt="">
+        <img id="banner_img" src="https://placeimg.com/1980/500/arch" alt="">
         <!--form-->
         <div class="jumbotron vertical-center" id="enquire_jumo">
             <h4>Enquire Today</h4>
@@ -73,11 +75,11 @@
                             <div class="col-md-7 d-flex align-content-center">
                                 {% for choice in enquiry_form.category.field.choices %}
                                       <!--<li style="list-style-type:None;">-->
-                                            <input type="radio" name="category" value="{{choice.0}}"
+                                            <input class='enquire_radio_circle' type="radio" name="category" value="{{choice.0}}" id="{{choice.0}}"
                                               {% ifequal enquiry_form.category.data choice.0 %}
                                                  checked="checked"
                                               {% endifequal %}/>
-                                            <label for=""> {{choice.1}} </label>
+                                            <label class='enquire_radio' for="{{choice.0}}"> {{choice.1}} </label>
                                       <!--</li>-->
                                 {% endfor %}
 
@@ -137,7 +139,7 @@
             <!--col-->
             <div class="col-md-7 map_caption">
                 <h5 class="facts">Quisque quis eros scelerisque magna gravida dapibus.</h5><br>
-                <h5 class="facts">Talk to us today    <a class="facts" href="tel:+02070611100"> <a class="tel_num" href="tel:+02070611100">02070611100</a> <i class="fas fa-phone"></i></a></h5>
+                <h5 class="facts">Talk to us today<a class="facts" href="tel:+02070611100"> <a class="tel_num" href="tel:+02070611100">02070 611100</a> <i class="fas fa-phone"></i></a></h5>
 
             </div>
 
@@ -154,7 +156,7 @@
             <!--col-->
             <div class="col-md-4">
                 <div class="case_box">
-                    <a href="#"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                    <a href="{% url 'case_studies_view' %}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
                         <p class="center_over_case">Case Study 1</p>
                     </a>
                 </div>
@@ -162,7 +164,7 @@
             <!--col-->
             <div class="col-md-4">
                 <div class="case_box">
-                    <a href="#"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                    <a href="{% url 'case_studies_view' %}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
                         <p class="center_over_case">Case Study 2</p>
                     </a>
                 </div>
@@ -170,7 +172,7 @@
             <!--col-->
             <div class="col-md-4">
                 <div class="case_box">
-                    <a href="#"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                    <a href="{% url 'case_studies_view' %}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
                         <p class="center_over_case">Case Study 3</p>
                     </a>
                 </div>
@@ -180,3 +182,4 @@
 </main>
 
 {% endblock %}
+{% block enquire_button %}{% endblock %}

@@ -1,0 +1,94 @@
+:root {
+    /**/
+    --drk-snow: #EFF1F7;
+    --line: 1px solid var(--med-gray);
+    --line-col: var(--med-gray); /*rgba(0,0,0,.1);*/
+}
+
+.proj_size {
+    font-size: 23px;
+    text-align: center;
+}
+
+.case-row-btm {
+    padding-bottom: 1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.body_pad {
+    padding-top: 3rem !important;
+}
+
+.container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.coll_content {
+    padding: 1rem;
+}
+
+.case_box{
+    transition: filter .5s;
+}
+
+.case_fade {
+    filter: opacity(0.2);
+}
+
+/*line styles*/
+hr {
+    border-top: var(--line);
+}
+
+.arrow_box {
+	position: relative;
+	background: var(--drk-snow);
+	/*border-top: var(--line)*/;
+}
+
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box_L:after, .arrow_box_L:before {
+	left: 15%;
+}
+
+.arrow_box_C:after, .arrow_box_C:before {
+	left: 50%;
+}
+
+.arrow_box_R:after, .arrow_box_R:before {
+	left: 85%;
+}
+
+@media (max-width: 767px) {
+    .arrow_box_L:after, .arrow_box_L:before {
+        left: 50%;
+    }
+
+    .arrow_box_R:after, .arrow_box_R:before {
+        left: 50%;
+    }
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: var(--drk-snow);
+	border-width: 10px;
+	margin-left: -10px;
+}
+.arrow_box:before {
+	border-color: rgba(0, 0, 0, 0);
+	/*border-bottom-color: var(--line-col);*/
+	border-width: 11px;
+	margin-left: -11px;
+}

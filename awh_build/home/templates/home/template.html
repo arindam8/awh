@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'home/styles/generic.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'home/styles/template.css' %}" />
 
     <!--other css-->
     <link rel="stylesheet" href="https://use.typekit.net/ekb4avl.css">
@@ -45,6 +45,88 @@
 
     {% block content %}
     {% endblock %}
+    {% block enquire_button %}
+
+    <!--enquire widget-->
+    <!--enquire button-->
+    <div id="enquire_widget" class="shake" onclick="toggle_form()">
+        <div class="jumbotron enq_jumbo" id="enquire_widget_jumo">
+            <h4>Enquire</h4>
+        </div>
+    </div>
+
+    <!--mobile buttons-->
+    <div id="enquire_widget_mini" class="shake" onclick="toggle_form()">
+        <div class="jumbotron enq_jumbo" id="enquire_widget_jumo_mini">
+            <h4><i class="far fa-envelope-open"></i></h4>
+        </div>
+    </div>
+    <div id="phone_widget_mini" class="shake">
+        <div class="jumbotron enq_jumbo" id="phone_widget_jumo_mini">
+            <a href="tel:+02070611100"><h4><i class="fas fa-phone"></i></h4></a>
+        </div>
+    </div>
+    {% endblock %}
+    <div class="jumbotron vertical-center" id="popup_jumbo">
+        <h4 id="form_heading">Enquire Today</h4>
+        <h4 id="close_popup" onclick="toggle_form()"><i class="fas fa-times"></i></h4>
+
+        <!--Form-->
+        <form id="contact-form" name="contact-form"  action="mail.php" method="POST">
+            <div class="contact-form">
+                <textarea id="descript_field" class="form-control" rows="1" id="comment" placeholder="Description"></textarea>
+            </div>
+            <!--row-->
+            <div class="form-row">
+                <!--col-->
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                </div>
+                <!--col-->
+                <div class="col-md-4">
+                    <div class="contact-form">
+                        <input type="text" class="form-control" id="postcode" placeholder="Postcode">
+                    </div>
+                </div>
+            </div>
+            <!--row-->
+            <div class="form-row">
+                    <!--col-->
+                    <div class="col-md-8">
+                        <div class="contact-form">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-form">
+                            <input type="tel" class="form-control" id="number" placeholder="Phone number">
+                        </div>
+                    </div>
+            </div>
+            <div class="form-row">
+                <!--col-->
+                <div class="col-md-7 d-flex align-content-center">
+                    <!--Radio Buttons-->
+                    <input id="radio1" type="radio" name="opt_form" class="enquire_radio_circle" checked>
+                    <label for="radio1" class="radio-inline enquire_radio">Developer</label>
+                    <input id="radio2" type="radio" name="opt_form" class="enquire_radio_circle">
+                    <label for="radio2" class="radio-inline enquire_radio">Architect</label>
+                    <input id="radio3" type="radio" name="opt_form" class="enquire_radio_circle">
+                    <label for="radio3" class="radio-inline enquire_radio">Neighbour</label>
+                    <input id="radio4" type="radio" name="opt_form" class="enquire_radio_circle">
+                    <label for="radio4" class="radio-inline enquire_radio">Other</label>
+
+                </div>
+                <!--col-->
+                <div class="col-md-5 d-flex flex-row-reverse">
+                    <button type="submit" class="btn btn-default enquire_button">Submit</button>
+                    <button type="file" class="btn btn-default enquire_button">Attach Document</button>
+                </div>
+            </div>
+        </form>
+    </div>
 
     <!--Footer-->
     <footer class="footer">
@@ -108,6 +190,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--Other Scripts-->
+    <script type="text/javascript" src="{% static 'home/js/enquire.js' %}" ></script>
 
 </body>
 </html>
