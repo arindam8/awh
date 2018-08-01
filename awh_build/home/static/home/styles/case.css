@@ -15,7 +15,6 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-}
 
 .body_pad {
     padding-top: 3rem !important;
@@ -28,6 +27,14 @@
 
 .coll_content {
     padding: 1rem;
+}
+
+.case_box{
+    transition: filter .5s;
+}
+
+.case_fade {
+    filter: opacity(0.2);
 }
 
 /*line styles*/
@@ -61,6 +68,16 @@ hr {
 
 .arrow_box_R:after, .arrow_box_R:before {
 	left: 85%;
+}
+
+@media (max-width: 767px) {
+    .arrow_box_L:after, .arrow_box_L:before {
+        left: 50%;
+    }
+
+    .arrow_box_R:after, .arrow_box_R:before {
+        left: 50%;
+    }
 }
 
 .arrow_box:after {
