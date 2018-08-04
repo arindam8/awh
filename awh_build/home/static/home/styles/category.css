@@ -53,3 +53,15 @@ hr {
     color: var(--black);
     font-weight: bold;
 }
+
+.color {
+    padding-top: 15px;
+}
+
+.color-1 {
+    background-color: #EFF1F7;;
+}
+
+.color-2 {
+    background-color: #DEE0E5;
+}
