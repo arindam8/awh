@@ -36,7 +36,7 @@ def base_view(request):
         category = form.cleaned_data['category']
         body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category
         try:
-            mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, [email])
+            mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, ["felix.carter@awh.co.uk"]) #email here
             if len(request.FILES) != 0:
                 attach = request.FILES['attach']
                 mail.attach(attach.name, attach.read(), attach.content_type)

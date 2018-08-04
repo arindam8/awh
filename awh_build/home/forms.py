@@ -11,7 +11,7 @@ class EnquiryForm(forms.Form):
 
     )
 
-    name=forms.CharField(label="Name",max_length=1000,widget = forms.TextInput(attrs={'placeholder':'Name','id':'name','class': "form-control"}))
+    name=forms.CharField(label="Name",max_length=1000,widget = forms.TextInput(attrs={'placeholder':'Full Name','id':'name','class': "form-control"}))
     email = forms.EmailField(label="Email",required=False,widget = forms.TextInput(attrs={'placeholder':'E-mail','id':'email','class': "form-control"}))
     description = forms.CharField(label="Description",max_length=1000,widget = forms.Textarea(attrs={'placeholder':'Description','id':'comment','rows':'1','class': "form-control"}))
     postcode = forms.CharField(label="Postcode",max_length=100,widget = forms.TextInput(attrs={'placeholder':'Postcode','id':'postcode','class': "form-control"}))

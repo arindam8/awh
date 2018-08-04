@@ -1,3 +1,7 @@
+.stack_em {
+    flex-direction: column;
+}
+
 #enquire_jumo {
     background-color: rgba(255, 249, 251, 0.8);
     margin: auto;
@@ -7,8 +11,8 @@
 }
 
 #comment {
-    max-height: 152px;
-    min-height: 38px;
+    resize: none;
+    height: 76px;
 }
 
 .contact-form {
@@ -35,9 +39,13 @@
 
 #expert {
     text-align: center;
-    color: var(--black);
+    color: var(--snow);
     font-weight: bold;
-    font-size: 70px;
+    font-size: 50px;
+    color: var(--snow);
+    z-index: 100;
+    position: relative;
+    top: -30px;
 }
 
 .mini_txt {
@@ -50,6 +58,10 @@
     text-align: center;
     font-size: 23px;
     color: var(--med-gray);
+}
+
+.facts_bold {
+    font-weight: bold;
 }
 
 .tel_num {
@@ -86,4 +98,43 @@
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+.jumbotron, .form-control {
+    border-radius: 0;
+}
+
+#enquire_jumo {
+    padding: 0px;
+}
+
+#contact-form {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#jumbo_heading {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: var(--brand-col);
+    color: var(--snow);
+}
+
+#submit_btn {
+    background-color: var(--brand-col);
+    color: var(--snow);
+    position: relative;
+    left: 12px;
+}
+
+.padding-new {
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
+    #expert {
+        top: 0px;
+    }
 }

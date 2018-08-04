@@ -131,18 +131,30 @@ body {
 }
 
 #enquire_widget_jumo {
-    background-color: var(--light-gray);
+    background-color: var(--brand-col);
+    color: var(--snow);
 }
 
 #enquire_widget_jumo_mini {
-    background-color: var(--light-gray);
+    background-color: var(--brand-col);
+    color: var(--snow);
     border-radius: 10px 0px 0px 10px;
 }
 
 #phone_widget_jumo_mini {
-    background-color: var(--light-gray);
+    background-color: var(--brand-col);
+    color: var(--snow);
     border-radius: 0px 10px 10px 0px;
 }
+
+.bold_text {
+    font-weight: bold;
+}
+
+.white_text, .white_text:hover {
+    color: var(--snow);
+}
+
 /*
 .playstate {
     animation-play-state: paused  !important;
