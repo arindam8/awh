@@ -37,6 +37,7 @@ body {
     .navbar-dark .navbar-nav .nav-link {
         color: var(--black);
         margin-right: 25px;
+        font-size: 19px;
     }
 
     .navbar-dark .navbar-nav .nav-link:hover {

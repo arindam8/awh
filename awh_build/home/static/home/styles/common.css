@@ -60,11 +60,19 @@ h3 {
     top: 45%;
     left: 0;
     width: 100%;
-    font-size: 30px;
+    font-size: 40px;
     color: var(--light-gray);
 }
 
 .center_over_case:hover {
     color: var(--snow);
+}
 
+.gray_bar_pad {
+    background-color: var(--med-gray);
+    height: 60px;
+}
+
+.padding-new {
+    padding: 5px;
 }
