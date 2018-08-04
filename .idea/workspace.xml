@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/awh_build/home/static/home/js/case_studies_fade.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/awh_build/home/static/home/js/case_studies_mobile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/js/case_studies.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/template_category.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/template_category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/views.py" afterDir="false" />
     </list>
     <list id="c1840ffc-ff9c-4437-b2a1-afe3437b1a11" name="Added form settings" comment="Added form file and email settings" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,26 +20,62 @@
       <file leaf-file-name="template_category.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template_category.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+            <state relative-caret-position="1485">
+              <caret line="99" column="29" lean-forward="true" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1590">
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="65" column="32" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="32" />
+            <state relative-caret-position="400">
+              <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="41" column="76" lean-forward="true" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/awh_build/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="26" column="75" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+            <state relative-caret-position="270">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -88,8 +115,8 @@
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/template_category.html" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/base.html" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" />
-        <option value="$PROJECT_DIR$/awh_build/home/templates/home/template.html" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" />
+        <option value="$PROJECT_DIR$/awh_build/home/templates/home/template.html" />
       </list>
     </option>
   </component>
@@ -229,20 +256,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532460025131</updated>
-    </task>
-    <task id="LOCAL-00010" summary="minor changes">
-      <created>1532594612721</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1532594612721</updated>
-    </task>
-    <task id="LOCAL-00011" summary="case studies refined">
-      <created>1532595136227</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1532595136227</updated>
     </task>
     <task id="LOCAL-00012" summary="case studies transition bug fixed">
       <created>1532595301204</created>
@@ -573,7 +586,21 @@
       <option name="project" value="LOCAL" />
       <updated>1533114176807</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="colour">
+      <created>1533400716481</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1533400716481</updated>
+    </task>
+    <task id="LOCAL-00060" summary="merge">
+      <created>1533401418679</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1533401418679</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -583,11 +610,11 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31207597" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5011588" side_tool="true" weight="0.16150235" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32957748" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32957748" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49884126" visible="true" weight="0.16150235" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49884126" weight="0.16150235" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -658,7 +685,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refinement" />
     <MESSAGE value="refinement done" />
     <MESSAGE value="change anaimation, more profesional looking" />
     <MESSAGE value="bug fix's" />
@@ -674,7 +700,6 @@
     <MESSAGE value="fixed footer layout" />
     <MESSAGE value="home page look updates.&#10;&#10;TO DO:&#10;&#10;add  &quot;id&quot; to radio tags that matches &quot;for&quot; on matching label tags&#10;add &quot;enquire_radio_circle&quot; class to radio circle's.&#10;add &quot;enquire_radio&quot; class to labels" />
     <MESSAGE value="add pages" />
-    <MESSAGE value="merge" />
     <MESSAGE value="about page" />
     <MESSAGE value="css redundency clean up!&#10;&#10;case study page work" />
     <MESSAGE value="comment" />
@@ -683,7 +708,9 @@
     <MESSAGE value="minor fix" />
     <MESSAGE value="Case study UI improvement" />
     <MESSAGE value="bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug" />
+    <MESSAGE value="colour" />
+    <MESSAGE value="merge" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/env/bin/activate" />
@@ -832,13 +859,6 @@
     <entry file="file://$PROJECT_DIR$/awh_build/home/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="76" lean-forward="true" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/awh_build/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -858,13 +878,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/awh_build/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/awh_build/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -901,16 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="119" column="43" selection-start-line="119" selection-start-column="43" selection-end-line="119" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#div#3;n#div#0;n#main#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -918,31 +921,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
+        <state relative-caret-position="104">
+          <caret line="58" column="22" selection-start-line="58" selection-start-column="22" selection-end-line="58" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template_category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        <state relative-caret-position="1485">
+          <caret line="99" column="29" lean-forward="true" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
+    <entry file="file://$PROJECT_DIR$/awh_build/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="65" column="32" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="32" />
+        <state relative-caret-position="186">
+          <caret line="41" column="76" lean-forward="true" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/awh_build/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="75" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="153" column="30" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="42" column="73" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
         </state>
       </provider>
     </entry>

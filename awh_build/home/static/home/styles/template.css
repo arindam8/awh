@@ -35,7 +35,7 @@ body {
     }
 
     .navbar-dark .navbar-nav .nav-link {
-        color: var(--light-gray);
+        color: var(--black);
         margin-right: 25px;
     }
 
@@ -50,7 +50,7 @@ body {
 .footer {
     background-color: var(--med-gray);
     padding: 10px;
-    color: var(--light-gray);
+    color: var(--black);
 }
 
 .footer_col_h {
@@ -59,7 +59,7 @@ body {
 }
 
 .footer-link {
-    color: var(--light-gray);
+    color: var(--black);
     font-size: 12px;
     text-decoration: underline;
 }

@@ -56,13 +56,13 @@
 .mini_txt {
     text-align: center;
     font-size: 20px;
-    color: var(--med-gray);
+    color: var(--black);
 }
 
 .facts{
     text-align: center;
     font-size: 23px;
-    color: var(--med-gray);
+    color: var(--black);
 }
 
 .facts_bold {
