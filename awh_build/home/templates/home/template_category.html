@@ -36,13 +36,13 @@
     <section>
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-menu0-tab" data-toggle="tab" href="#nav-menu0" role="tab" aria-controls="nav-home" aria-selected="true">Menu 0</a>
+                <a class="nav-item nav-link" id="nav-menu0-tab" data-toggle="tab" href="#nav-menu0" role="tab" aria-controls="nav-home" aria-selected="true">Menu 0</a>
                 <a class="nav-item nav-link" id="nav-menu1-tab" data-toggle="tab" href="#nav-menu1" role="tab" aria-controls="nav-profile" aria-selected="false">Menu 1</a>
                 <a class="nav-item nav-link" id="nav-menu2-tab" data-toggle="tab" href="#nav-menu2" role="tab" aria-controls="nav-contact" aria-selected="false">Menu 2</a>
                 <a class="nav-item nav-link" id="nav-menu3-tab" data-toggle="tab" href="#nav-menu3" role="tab" aria-controls="nav-contact" aria-selected="false">Menu 3</a>
                 <a class="nav-item nav-link" id="nav-menu4-tab" data-toggle="tab" href="#nav-menu4" role="tab" aria-controls="nav-contact" aria-selected="false">Menu 4</a>
                 <a class="nav-item nav-link" id="nav-menu5-tab" data-toggle="tab" href="#nav-menu5" role="tab" aria-controls="nav-contact" aria-selected="false">Menu 5</a>
-                <a class="nav-item nav-link" id="nav-menu1-tab" data-toggle="tab" href="#nav-menu6" role="tab" aria-controls="nav-contact" aria-selected="false">Menu 6</a>
+                <a class="nav-item nav-link" id="nav-menu6-tab" data-toggle="tab" href="#nav-menu6" role="tab" aria-controls="nav-contact" aria-selected="false">Menu 6</a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
@@ -80,5 +80,29 @@
 </main>
 
 <!--scripts-->
+<script>
+    window.onload = function () {
+        var index='{{index|escapejs}}';
+        console.log(index);
+        if (index==='-99'){
+            var tab = document.getElementById("nav-menu0-tab");
+            tab.classList.add("active");
+        }
+        else{
+            var elementId = "nav-menu" + index+"-tab";
+            var tab = document.getElementById(elementId);
+            console.log(elementId);
+            tab.classList.add("active");
+        }
 
+
+        for (i = 0; i++; i <= 6) {
+            if (i != index) {
+                var elementId = "nav-menu" + index+"-tab";
+                tab = document.getElementById(elementId);
+                tab.classList.remove("active")
+            }
+        }
+    };
+</script>
 {% endblock %}

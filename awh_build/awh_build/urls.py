@@ -21,7 +21,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     #url(r'^home/', include('home.urls'))
     url(r'^home/', views.base_view, name='base_view'),
-    url(r'^rol/', views.rol_view, name='rol_view'),
+    #url(r'^rol/', views.rol_view, name='rol_view'),
+    url(r'^rol/(?P<index>.)', views.rol_view, name='rol_view'),
     url(r'^about/', views.about_view, name='about_view'),
     url(r'^case_studies/', views.case_studies_view, name='case_studies_view')
 ]

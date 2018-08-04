@@ -36,7 +36,7 @@ def base_view(request):
         category = form.cleaned_data['category']
         body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category
         try:
-            mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, ["felix.carter@awh.co.uk"]) #email here
+            mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, [email])
             if len(request.FILES) != 0:
                 attach = request.FILES['attach']
                 mail.attach(attach.name, attach.read(), attach.content_type)
@@ -51,8 +51,13 @@ def base_view(request):
     return render(request, 'home/base.html', {'enquiry_form': form})
 
 
-def rol_view(request):
-    return render(request, 'home/template_category.html')
+def rol_view(request,index=-99):
+    if index=='0':
+        print (index)
+        return render(request, 'home/template_category.html',{'index':-99})
+    else:
+        print (index)
+        return render(request, 'home/template_category.html',{'index':index})
 
 def about_view(request):
     return render(request, 'home/about.html')

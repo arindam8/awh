@@ -31,13 +31,13 @@
                     <a class="nav-link" href="{% url 'about_view' %}">About AWH</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'rol_view' %}">Rights of Light</a>
+                    <a class="nav-link" href="{% url 'rol_view' index=0%}">Rights of Light</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'rol_view' %}">Daylight and Sunlighting</a>
+                    <a class="nav-link" href="{% url 'rol_view' index=0%}">Daylight and Sunlighting</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'rol_view' %}">Party Wall</a>
+                    <a class="nav-link" href="{% url 'rol_view' index=0%}">Party Wall</a>
                 </li>
             </ul>
         </div>
@@ -168,13 +168,13 @@
                 <!--col-->
                 <div class="col-3">
                     <p class="footer_col_h" >Development</p>
-                    <a class="footer-link" href="#">Site Menu Link 0</a><br />
-                    <a class="footer-link" href="#">Site Menu Link 1</a><br />
-                    <a class="footer-link" href="#">Site Menu Link 2</a><br />
-                    <a class="footer-link" href="#">Site Menu Link 3</a><br />
-                    <a class="footer-link" href="#">Site Menu Link 4</a><br />
-                    <a class="footer-link" href="#">Site Menu Link 5</a><br />
-                    <a class="footer-link" href="#">Site Menu Link 6</a>
+                    <a class="footer-link" href="{% url 'rol_view' 0%}">Site Menu Link 0</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 1%}">Site Menu Link 1</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 2%}">Site Menu Link 2</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 3%}">Site Menu Link 3</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 4%}">Site Menu Link 4</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 5%}">Site Menu Link 5</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 6%}">Site Menu Link 6</a>
                 </div>
             </div>
             <!--row-->
