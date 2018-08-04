@@ -48,6 +48,11 @@
     top: -30px;
 }
 
+.gray_bar_pad {
+    background-color: var(--med-gray);
+    height: 60px;
+}
+
 .mini_txt {
     text-align: center;
     font-size: 20px;
