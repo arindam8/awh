@@ -18,3 +18,25 @@
 .about_links:hover {
     color: var(--black);
 }
+
+.profile_img {
+    border-radius: 100%;
+    width: 150px;
+}
+
+.box_align {
+    display: flex;
+    align-items: center;
+}
+
+.profile_deets {
+    margin-left: 20px;
+}
+
+.profile_name {
+    font-weight: bold;
+}
+
+.profile_email {
+    margin-bottom: 0px;
+}
