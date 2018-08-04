@@ -22,6 +22,13 @@
     margin-right: auto;
 }
 
+.rics_logo {
+    max-width: 100%;
+    max-height: 80%;
+    margin: auto;
+    margin-right: 10px;
+}
+
 /*body css*/
 h3 {
     font-weight: bold;
