@@ -128,11 +128,6 @@
     left: 12px;
 }
 
-.case_correct_padding {
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
 @media (max-width: 767px) {
     #expert {
         top: 0px;

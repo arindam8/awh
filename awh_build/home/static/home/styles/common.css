@@ -75,6 +75,11 @@ h3 {
     color: var(--snow);
 }
 
+.case_correct_padding {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 .gray_bar_pad {
     background-color: var(--med-gray);
     height: 60px;

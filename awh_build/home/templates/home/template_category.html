@@ -32,7 +32,7 @@
 <!--body of -->
 <main class="container-fluid cont_pad">
     <!--gray row-->
-    <div class="row gray_bar_pad">
+    <div class="row gray_bar_pad rol_b4_case_margin">
         <img class="rics_logo float-right" src="{% static 'home/images/rics_logo.png' %}" alt="RICS Logo">
     </div>
 
@@ -81,6 +81,34 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum, mauris vel iaculis auctor, velit nisi mattis turpis, eu cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a nunc rutrum, rhoncus diam eget, vulputate leo. Donec vitae elit interdum, maximus orci auctor, dictum mi. Vestibulum rutrum neque non diam aliquet efficitur. Mauris sagittis venenatis placerat.</p>
         </div>
 
+    </div>
+
+    <!--case study row-->
+    <div class="row home_body_pad home_bottom_pad case_correct_padding rol_b4_case_margin">
+        <!--col-->
+        <div class="col-md-4 padding-new">
+            <div class="case_box">
+                <a href="{% url 'case_studies_view' %}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                    <p class="center_over_case">Case Study 1</p>
+                </a>
+            </div>
+        </div>
+        <!--col-->
+        <div class="col-md-4 padding-new">
+            <div class="case_box">
+                <a href="{% url 'case_studies_view' %}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                    <p class="center_over_case">Case Study 2</p>
+                </a>
+            </div>
+        </div>
+        <!--col-->
+        <div class="col-md-4 padding-new">
+            <div class="case_box">
+                <a href="{% url 'case_studies_view' %}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                    <p class="center_over_case">Case Study 3</p>
+                </a>
+            </div>
+        </div>
     </div>
 </main>
 

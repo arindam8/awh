@@ -48,6 +48,13 @@ body {
         min-height: 80px;
     }
 
+
+#about_logo_img {
+    height: 25px;
+    position: relative;
+    bottom: 4px;
+}
+
 .footer {
     background-color: var(--med-gray);
     padding: 10px;
