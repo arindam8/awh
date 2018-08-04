@@ -14,6 +14,8 @@
     padding-bottom: 1rem;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .body_pad {
@@ -86,6 +88,7 @@ hr {
 	border-width: 10px;
 	margin-left: -10px;
 }
+
 .arrow_box:before {
 	border-color: rgba(0, 0, 0, 0);
 	/*border-bottom-color: var(--line-col);*/
