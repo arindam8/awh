@@ -285,3 +285,11 @@ body {
         transform: scale(1.1);
     }
 }
+.nav-tabs .nav-link {
+    color: var(--snow) ;
+    background-color: var(--brand-col);
+}
+.nav-tabs .nav-item {
+    text-align:center !important;
+    width:14% !important;
+}

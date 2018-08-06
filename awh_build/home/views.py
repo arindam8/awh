@@ -53,14 +53,13 @@ def base_view(request):
 
 def rol_view(request,index=-99):
     if index=='0':
-        print (index)
         return render(request, 'home/template_category.html',{'index':-99})
     else:
-        print (index)
         return render(request, 'home/template_category.html',{'index':index})
 
 def about_view(request):
     return render(request, 'home/about.html')
 
-def case_studies_view(request):
-    return render(request, 'home/case_studies.html')
+def case_studies_view(request,index=-99):
+
+    return render(request, 'home/case_studies.html',{'index':index})
