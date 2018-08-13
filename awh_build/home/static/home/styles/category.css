@@ -1,3 +1,15 @@
+#enquire_widget {
+    visibility: visible;
+}
+
+#enquire_widget_mini {
+    visibility: visible;
+}
+
+#phone_widget_mini {
+    visibility: visible;
+}
+
 .banner_jumbo {
     z-index: 100;
     background-color: rgba(255, 249, 251, 0.8);
@@ -54,14 +66,15 @@ hr {
     font-weight: bold;
 }
 
+.nav-tabs .nav-link {
+    color: var(--snow) ;
+    background-color: var(--brand-col);
+}
+.nav-tabs .nav-item {
+    text-align: center !important;
+    width: 14% !important;
+}
+
 .color {
     padding-top: 15px;
-}
-
-.color-1 {
-    background-color: #EFF1F7;;
-}
-
-.color-2 {
-    background-color: #DEE0E5;
 }

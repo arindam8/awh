@@ -1,3 +1,15 @@
+#enquire_widget {
+    visibility: visible;
+}
+
+#enquire_widget_mini {
+    visibility: visible;
+}
+
+#phone_widget_mini {
+    visibility: visible;
+}
+
 #about_story {
     text-align: center;
 }

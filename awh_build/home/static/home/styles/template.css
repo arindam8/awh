@@ -14,10 +14,12 @@
 :root {
     --light-gray: #D3D4D9;
     --med-gray: #B5B5B5;
+    --dark-gray: #333333;
     --brand-col: #B50A37;
     --black: #14080E;
-    --font-fam: "museo-sans",sans-serif;
+    --font-fam: "soleil",sans-serif;
     --snow: #FFF9FB;
+    --teal: #51999C;
 }
 
 body {
@@ -31,35 +33,28 @@ body {
 
 /*restyle nav bar*/
     .bg-dark {
-        background-color: var(--med-gray) !important;
-    }
-
-    .navbar-dark .navbar-nav .nav-link {
-        color: var(--black);
-        margin-right: 25px;
-        font-size: 19px;
-    }
-
-    .navbar-dark .navbar-nav .nav-link:hover {
-        color: var(--snow);
-        filter: brightness(2);
+        background-color: var(--snow) !important;
     }
 
     .navbar {
-        min-height: 80px;
+        min-height: 70px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-right: 10px;
     }
 
 
 #about_logo_img {
-    height: 25px;
+    height: 18px;
     position: relative;
-    bottom: 4px;
+    bottom: 1px;
+    margin-left: 5px;
 }
 
 .footer {
-    background-color: var(--med-gray);
+    background-color: var(--dark-gray);
     padding: 10px;
-    color: var(--black);
+    color: var(--snow);
 }
 
 .footer_col_h {
@@ -68,14 +63,14 @@ body {
 }
 
 .footer-link {
-    color: var(--black);
+    color: var(--snow);
     font-size: 12px;
     text-decoration: underline;
 }
 
-.footer-link:hover {
+/*.footer-link:hover {
     color: white;
-}
+}*/
 
 .footer_copy {
     font-size: 10px;
@@ -95,10 +90,14 @@ body {
     bottom: 40px;
     right: 50px;
     user-select: none;
-    opacity: 1;
     display: block;
     transition: 0.5s;
     z-index: 100;
+    visibility: hidden;
+}
+
+.enquire_widget_vis {
+    opacity: 0;
 }
 
 #enquire_widget:hover {
@@ -114,10 +113,10 @@ body {
     bottom: 20px;
     right: 60px;
     user-select: none;
-    opacity: 1;
     display: none;
     z-index: 100;
     transition: 0.5s;
+    visibility: hidden;
 }
 
 #phone_widget_mini {
@@ -125,10 +124,10 @@ body {
     bottom: 20px;
     right: 20px;
     user-select: none;
-    opacity: 1;
     display: none;
     z-index: 100;
     transition: 0.5s;
+    visibility: hidden;
 }
 
 #enquire_widget_mini:hover {
@@ -147,13 +146,13 @@ body {
 #enquire_widget_jumo_mini {
     background-color: var(--brand-col);
     color: var(--snow);
-    border-radius: 10px 0px 0px 10px;
+    /*border-radius: 10px 0px 0px 10px;*/
 }
 
 #phone_widget_jumo_mini {
     background-color: var(--brand-col);
     color: var(--snow);
-    border-radius: 0px 10px 10px 0px;
+    /*border-radius: 0px 10px 10px 0px;*/
 }
 
 .bold_text {
@@ -249,14 +248,42 @@ body {
     margin-left: 10px;
 }
 
-/*
-@media (max-width: 991px) {
-    .jumbo_para {
-        font-size: 1.7vw;
+.jumbotron {
+    border-radius: 0px;
+}
+
+
+@media (min-width: 767px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 5px;
+        font-size: 17px;
+        background-color: var(--med-gray);
+        color: var(--snow);
+        height: 60px;
+        display: flex;
+        align-items: center;
+        width: 165px;
+        border-radius: 5px 5px 0px 0px;
+        margin-top: 10px;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        text-decoration: underline;
+        color: var(--snow);
     }
 }
-*/
+
+@media (max-width: 1020px) {
+    .navbar-light .navbar-nav .nav-link {
+        width: 116px;
+     }
+}
+
 @media (max-width: 767px) {
+    .navbar-light .navbar-nav .nav-link {
+        width: 250px;
+     }
+
     #popup_jumbo {
         bottom: -472px; /*133px taller*/
         right: 20px;
@@ -285,12 +312,3 @@ body {
         transform: scale(1.1);
     }
 }
-.nav-tabs .nav-link {
-    color: var(--snow) ;
-    background-color: var(--brand-col);
-}
-.nav-tabs .nav-item {
-    text-align:center !important;
-    width:14% !important;
-}
-
