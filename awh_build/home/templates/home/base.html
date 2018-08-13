@@ -4,17 +4,21 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/common.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
+<style>
+    #id_attach{
+    margin-left:-16%;
+    background:bottom;
+    }
+    .enquire_button{
+    background:bottom;
+    }
+</style>
 
 <!--Image and Form Container-->
 <header>
-
     <div id="banner_container" class="stack_em">
         <!--img-->
-        <!--<img id="banner_img" src="https://placeimg.com/1980/500/arch" alt="">-->
-        <video preload="none" loop="loop" autoplay="autoplay" id="banner_vid">
-            <source src="{% static 'home/video/awh.webm' %}" type="video/mp4">
-            <source src="{% static 'home/video/awh.mp4' %}" type="video/mp4">
-        </video>
+        <img id="banner_img" src="https://placeimg.com/1980/500/arch" alt="">
         <!--form-->
         <div class="jumbotron vertical-center" id="enquire_jumo">
             <h4 id="jumbo_heading" >Enquire Today</h4>
@@ -83,14 +87,8 @@
                             </div>
                             <!--col-->
                             <div class="col-md-5 d-flex flex-row-reverse">
-                                <label for="submit_btn" class="enquire_button">
-                                     Submit
-                                </label>
-                                <button type="submit" class="btn btn-default enquire_button none"><input class="clickable none" id="submit_btn" type ="submit"  name = "send"/></button>
+                                <button type="submit" class="btn btn-default enquire_button"><input id="submit_btn" type ="submit"  name = "send"/></button>
 
-                                <label for="id_attach" class="attach_btn">
-                                     <span id="file-selected">Attach File</span>
-                                </label>
                                 {{enquiry_form.attach}}
 
                             </div>
@@ -114,29 +112,25 @@
         <!--facts row-->
         <div class="row home_body_pad">
             <!--col-->
-            <div class="col-md-4 fact_col color-1 boxs">
-                <h5 class="facts facts_bold facts90">£20m +</h5>
-                <h4 class="facts facts_bold">Of Compensation</h4>
-                <h4 class="facts">Negotiated. Negated. Agreed.</h4>
-                <p class="more_info">• Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="more_info">• Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="more_info">• Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="col-md-4">
+                <h5 class="facts facts_bold">Over £20 million of compensation</h5>
+                <h4 class="facts facts_bold">Negotiated, Negated Agreed</h4>
             </div>
             <!--col-->
-            <div class="col-md-4 fact_col boxs">
-                <h5 class="facts facts_bold facts80">Over 25 Years' Experience.</h5>
-                <h4 class="facts">Renowned Market Professionals.</h4>
-                <label class="about_btn clickable">About Us</label>
+            <div class="col-md-4">
+                <h5 class="facts facts_bold">Curabitur volutpat eu dui quis pretium.</h5>
             </div>
             <!--col-->
-            <div class="col-md-4 fact_col color-2 boxs">
-                <h5 class="facts facts_bold facts90 snow">Talk to Us.</h5>
-                <a href="tel:+02070611100" class="clickable"><h6 class="facts facts_bold snow line2 clickable">0207 061 1100</h6></a>
-                <a href="mailto:info@awh.co.uk?Subject=Enquire" target="_top" class="clickable"><h6 class="facts facts30 snow line2 clickable">info@awh.co.uk</h6></a>
-                <h6 class="facts facts30 snow">12 Dorrington Street</h6>
-                <h6 class="facts facts30 snow">London</h6>
-                <h6 class="facts facts30 snow">EC1N 7TB</h6>
-                <a class="facts tel_num" href="tel:+02070611100"><i class="fas fa-phone large_phone clickable"></i></a>
+            <div class="col-md-4">
+                <h5 class="facts facts_bold">Donec consectetur scelerisque purus quis facilisis.</h5>
+            </div>
+        </div>
+
+        <!--mini text row-->
+        <div class="row home_body_pad">
+            <!--col-->
+            <div class="col-md-12">
+                <h5 class="mini_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet dapibus risus in ultricies. Etiam mollis, ex at commodo auctor, magna enim placerat nisl, nec congue urna elit id nibh. Vestibulum nec arcu diam. Maecenas varius sapien et justo tempor mattis. Aliquam ac ipsum lacus. Donec eu imperdiet nibh. Nulla quis mauris nec metus finibus mattis vitae nec sapien.</h5>
             </div>
         </div>
 
@@ -145,16 +139,16 @@
             <!--col-->
             <div class="col-md-4 padding-new">
                 <div class="case_box">
-                    <a href="{% url 'case_studies_view' index=1%}"><img class="case_img" src="{% static 'home/images/case/case1.jpg' %}">
-                        <p class="center_over_case">NW3</p>
+                    <a href="{% url 'case_studies_view' index=1%}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                        <p class="center_over_case">Case Study 1</p>
                     </a>
                 </div>
             </div>
             <!--col-->
             <div class="col-md-4 padding-new">
                 <div class="case_box">
-                    <a href="{% url 'case_studies_view' index=2%}"><img class="case_img" src="{% static 'home/images/case/case2.png' %}">
-                        <p class="center_over_case">N8</p>
+                    <a href="{% url 'case_studies_view' index=2%}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
+                        <p class="center_over_case">Case Study 2</p>
                     </a>
                 </div>
             </div>
@@ -162,52 +156,23 @@
             <div class="col-md-4 padding-new">
                 <div class="case_box">
                     <a href="{% url 'case_studies_view' index=3%}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
-                        <p class="center_over_case">RM1</p>
+                        <p class="center_over_case">Case Study 3</p>
                     </a>
                 </div>
             </div>
         </div>
 
         <!--map row-->
-        <div class="row home_body_pad">
+        <div class="row home_body_pad home_bottom_pad">
             <!--col-->
-            <div class="col-md-4 mini_cont">
-                <h5 class="mini_txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet dapibus risus in ultricies. Etiam mollis, ex at commodo auctor, magna enim placerat nisl, nec congue urna elit id nibh. Vestibulum nec arcu diam. Maecenas varius sapien et justo tempor mattis. Aliquam ac ipsum lacus. Donec eu imperdiet nibh. Nulla quis mauris nec metus finibus mattis vitae nec sapien.</h5>
+            <div class="col-md-7 map_caption">
+                <h5 class="facts">Quisque quis eros scelerisque magna gravida dapibus.</h5><br>
+                <h5 class="facts">Talk to us today</h5>
+                <a class="facts tel_num" href="tel:+02070611100"><i class="fas fa-phone"></i> 02070 611100</a>
+
             </div>
 
-            <div class="col-md-4 box_split">
-                <div class="re_pad">
-                    <h4 id="news">News and Resources</h4>
-                    <div class="rowflex">
-                        <label class="news_btn">
-                             News1
-                        </label>
-                        <label class="news_btn">
-                             News2
-                        </label>
-                        <label class="news_btn">
-                             News3
-                        </label>
-                    </div>
-                    <div class="rowflex">
-                        <label class="news_btn">
-                             News4
-                        </label>
-                        <label class="news_btn">
-                             News5
-                        </label>
-                        <label class="news_btn">
-                             News6
-                        </label>
-                    </div>
-                </div>
-                <div class="box_split_2">
-                    <h4 id="news">Contact Us</h4>
-                    <a class="home_email" href="mailto:email@email.com?Subject=Enquire" target="_top">email@email.com</a>
-                </div>
-            </div>
-
-            <div class="col-md-4 padding-new">
+            <div class="col-md-5">
                 <div class="col-md-3 map_container" id="map">
                     <!--requires API key-->
                     <!--<iframe id="map_frame" width="1000" height="1000" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRzyAIkwbdkgRCHz-tEf3D2Y&key=AIzaSyCiZxvmE2VQes9sbcocDG8jWA5kf3v2fok" allowfullscreen></iframe>-->
@@ -217,14 +182,49 @@
 
     </div>
 </main>
+<script>
+      // This example creates circles on the map, representing populations in North
+      // America.
 
+      // First, create an object containing LatLng and population for each city.
+      var citymap = {
+        london: {
+          center: {lat: 51.509865, lng: -0.118092},
+          population: 2714856
+        },
+        manchester: {
+          center: {lat: 53.4808, lng: -2.2426},
+          population: 2714856
+        }
+      };
 
-<script type="text/javascript" src="{% static 'home/js/map.js' %}" ></script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiZxvmE2VQes9sbcocDG8jWA5kf3v2fok&callback=initMap">
-</script>
-<script type="text/javascript" src="{% static 'home/js/looks.js' %}" ></script>
-<script type="text/javascript" src="{% static 'home/js/case_studies_nohov.js' %}" ></script>
+      function initMap() {
+        // Create the map.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 6.5,
+          center: {lat: 51.509865, lng: -0.118092},
+          mapTypeId: 'terrain'
+        });
 
+        // Construct the circle for each value in citymap.
+        // Note: We scale the area of the circle based on the population.
+        for (var city in citymap) {
+          // Add the circle for this city to the map.
+          var cityCircle = new google.maps.Circle({
+            strokeColor: '#FF0000',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#FF0000',
+            fillOpacity: 0.35,
+            map: map,
+            center: citymap[city].center,
+            radius: Math.sqrt(citymap[city].population) * 40
+          });
+        }
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiZxvmE2VQes9sbcocDG8jWA5kf3v2fok&callback=initMap">
+    </script>
 {% endblock %}
-<!--{  % block enquire_button %  }{  % endblock %  }-->
+{% block enquire_button %}{% endblock %}

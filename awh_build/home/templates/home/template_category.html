@@ -9,7 +9,7 @@
 <header id="banner_container" class="container" >
     <!--img-->
     <img id="banner_img" src="https://placeimg.com/1980/1000/arch" alt="">
-        <div class="container">
+        <div class=container">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-center">
                     <!--jumbo 1-->
@@ -32,29 +32,8 @@
 <!--body of -->
 <main class="container-fluid cont_pad">
     <!--gray row-->
-    <div class="row gray_bar_pad">
+    <div class="row gray_bar_pad rol_b4_case_margin">
         <img class="rics_logo float-right" src="{% static 'home/images/rics_logo.png' %}" alt="RICS Logo">
-    </div>
-
-    <!---col's-->
-    <!--row-->
-    <div class="row rol_b4_case_margin">
-        <!--col-->
-        <div class="col-md-4 color color-1">
-            <h3>Developer</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum, mauris vel iaculis auctor, velit nisi mattis turpis, eu cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a nunc rutrum, rhoncus diam eget, vulputate leo. Donec vitae elit interdum, maximus orci auctor, dictum mi. Vestibulum rutrum neque non diam aliquet efficitur. Mauris sagittis venenatis placerat.</p>
-        </div>
-        <!--col-->
-        <div class="col-md-4 color">
-            <h3>Neighbour</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum, mauris vel iaculis auctor, velit nisi mattis turpis, eu cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a nunc rutrum, rhoncus diam eget, vulputate leo. Donec vitae elit interdum, maximus orci auctor, dictum mi. Vestibulum rutrum neque non diam aliquet efficitur. Mauris sagittis venenatis placerat.</p>
-        </div>
-        <!--col-->
-        <div class="col-md-4 color color-2">
-            <h3>Received our Letter</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum, mauris vel iaculis auctor, velit nisi mattis turpis, eu cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a nunc rutrum, rhoncus diam eget, vulputate leo. Donec vitae elit interdum, maximus orci auctor, dictum mi. Vestibulum rutrum neque non diam aliquet efficitur. Mauris sagittis venenatis placerat.</p>
-        </div>
-
     </div>
 
     <!--tabs-->
@@ -83,6 +62,26 @@
     </section>
 
     <hr>
+    <!---col's-->
+    <!--row-->
+    <div class="row rol_b4_case_margin">
+        <!--col-->
+        <div class="col-md-4 color color-1">
+            <h3>Developer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum, mauris vel iaculis auctor, velit nisi mattis turpis, eu cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a nunc rutrum, rhoncus diam eget, vulputate leo. Donec vitae elit interdum, maximus orci auctor, dictum mi. Vestibulum rutrum neque non diam aliquet efficitur. Mauris sagittis venenatis placerat.</p>
+        </div>
+        <!--col-->
+        <div class="col-md-4 color color-2">
+            <h3>Neighbour</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum, mauris vel iaculis auctor, velit nisi mattis turpis, eu cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a nunc rutrum, rhoncus diam eget, vulputate leo. Donec vitae elit interdum, maximus orci auctor, dictum mi. Vestibulum rutrum neque non diam aliquet efficitur. Mauris sagittis venenatis placerat.</p>
+        </div>
+        <!--col-->
+        <div class="col-md-4 color color-1">
+            <h3>Received our Letter</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum, mauris vel iaculis auctor, velit nisi mattis turpis, eu cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a nunc rutrum, rhoncus diam eget, vulputate leo. Donec vitae elit interdum, maximus orci auctor, dictum mi. Vestibulum rutrum neque non diam aliquet efficitur. Mauris sagittis venenatis placerat.</p>
+        </div>
+
+    </div>
 
     <!--case study row-->
     <div class="row home_body_pad home_bottom_pad case_correct_padding rol_b4_case_margin">
@@ -90,7 +89,7 @@
         <div class="col-md-4 padding-new">
             <div class="case_box">
                 <a href="{% url 'case_studies_view' index=0%}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
-                    <p class="center_over_case">XX1</p>
+                    <p class="center_over_case">Case Study 1</p>
                 </a>
             </div>
         </div>
@@ -98,7 +97,7 @@
         <div class="col-md-4 padding-new">
             <div class="case_box">
                 <a href="{% url 'case_studies_view' index=0%}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
-                    <p class="center_over_case">XX1</p>
+                    <p class="center_over_case">Case Study 2</p>
                 </a>
             </div>
         </div>
@@ -106,7 +105,7 @@
         <div class="col-md-4 padding-new">
             <div class="case_box">
                 <a href="{% url 'case_studies_view' index=0%}"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
-                    <p class="center_over_case">XX1</p>
+                    <p class="center_over_case">Case Study 3</p>
                 </a>
             </div>
         </div>
@@ -114,5 +113,50 @@
 </main>
 
 <!--scripts-->
-<script type="text/javascript" src="{% static 'home/js/tab_index.js' %}" ></script>
+<script>
+    window.onload = function () {
+        var index='{{index|escapejs}}';
+        console.log(index);
+        if (index==='-99'){
+            var tab = document.getElementById("nav-menu0-tab");
+            tab.classList.add("active");
+            tab.classList.add("show");
+            var info = document.getElementById("nav-menu0");
+            info.classList.add("active");
+            info.classList.add("show");
+        }
+        else{
+            var elementId = "nav-menu" + index+"-tab";
+            var tab = document.getElementById(elementId);
+            console.log(elementId);
+            tab.classList.add("active");
+            tab.classList.add("show");
+            var elid = "nav-menu" + index;
+            var info = document.getElementById(elid);
+            info.classList.add("active");
+            info.classList.add("show");
+        }
+        if (index!='0' && index!='-99'){
+            var tab = document.getElementById("nav-menu0-tab");
+            tab.classList.remove("active");
+            tab.classList.remove("show");
+            var info = document.getElementById("nav-menu0");
+            info.classList.remove("active");
+            info.classList.remove("show");
+        }
+
+        for (i = 0; i++; i <= 6) {
+            if (i != index) {
+                var elementId = "nav-menu" + index+"-tab";
+                tab = document.getElementById(elementId);
+                tab.classList.remove("active")
+                tab.classList.remove("show");
+                var elid = "nav-menu" + index;
+                var info = document.getElementById(elid);
+                info.classList.remove("active");
+                info.classList.remove("show");
+            }
+        }
+    };
+</script>
 {% endblock %}
