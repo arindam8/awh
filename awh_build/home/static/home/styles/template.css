@@ -25,6 +25,7 @@
 body {
     background-color: var(--snow);
     font-family: var(--font-fam);
+    line-height: 1.15;
 }
 
 #nav_logo_img {

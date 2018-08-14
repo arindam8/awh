@@ -98,7 +98,7 @@
                     </form>
                 {% endif %}
         </div>
-        <h1 id="expert">Experts in Property</h1>
+        <!--<h1 id="expert">Experts in Property</h1>-->
     </div>
 
 </header>
@@ -108,7 +108,7 @@
     <div>
         <!--gray row-->
         <div class="row gray_bar_pad">
-            <img class="rics_logo float-right" src="{% static 'home/images/rics_logo.png' %}" alt="RICS Logo">
+            <!--<img class="rics_logo float-right" src="{% static 'home/images/rics_logo.png' %}" alt="RICS Logo">-->
         </div>
 
         <!--facts row-->
@@ -123,20 +123,18 @@
                 <p class="more_info snow">• Providing bespoke and strategic advice.</p>
             </div>
             <!--col-->
-            <div class="col-md-4 fact_col boxs">
-                <h5 class="facts facts_bold facts80">Over 25 Years' Experience.</h5>
-                <h4 class="facts">Renowned Market Professionals.</h4>
-                <label class="about_btn clickable">About Us</label>
+            <div class="col-md-4 padding-new">
+                <div class="case_box">
+                    <a href="{% url 'case_studies_view' index=2%}"><img class="case_img" src="{% static 'home/images/case/case2.png' %}">
+                        <p class="center_over_case">N8</p>
+                    </a>
+                </div>
             </div>
             <!--col-->
             <div class="col-md-4 fact_col color-2 boxs">
-                <h5 class="facts facts_bold facts90 snow">Talk to Us.</h5>
-                <a href="tel:+02070611100" class="clickable"><h6 class="facts facts_bold snow line2 clickable">0207 061 1100</h6></a>
-                <a href="mailto:info@awh.co.uk?Subject=Enquire" target="_top" class="clickable"><h6 class="facts facts30 snow line2 clickable">info@awh.co.uk</h6></a>
-                <h6 class="facts facts30 snow">12 Dorrington Street</h6>
-                <h6 class="facts facts30 snow">London</h6>
-                <h6 class="facts facts30 snow">EC1N 7TB</h6>
-                <!--<a class="facts tel_num" href="tel:+02070611100"><i class="fas fa-phone large_phone clickable"></i></a>-->
+                <h5 class="facts snow facts_bold facts80">Over 25 Years' Experience.</h5>
+                <h4 class="facts snow">Renowned Market Professionals.</h4>
+                <!--<label class="about_btn clickable snow">About Us</label>-->
             </div>
         </div>
 
@@ -151,12 +149,13 @@
                 </div>
             </div>
             <!--col-->
-            <div class="col-md-4 padding-new">
-                <div class="case_box">
-                    <a href="{% url 'case_studies_view' index=2%}"><img class="case_img" src="{% static 'home/images/case/case2.png' %}">
-                        <p class="center_over_case">N8</p>
-                    </a>
-                </div>
+            <div class="col-md-4 fact_col boxs">
+                <h5 class="facts facts_bold facts90">Talk to Us.</h5>
+                <a href="tel:+02070611100" class="clickable"><h6 class="facts facts_bold line2 clickable">0207 061 1100</h6></a>
+                <a href="mailto:info@awh.co.uk?Subject=Enquire" target="_top" class="clickable"><h6 class="facts facts30 line2 clickable">info@awh.co.uk</h6></a>
+                <h6 class="facts facts30">12 Dorrington Street</h6>
+                <h6 class="facts facts30">London</h6>
+                <h6 class="facts facts30">EC1N 7TB</h6>
             </div>
             <!--col-->
             <div class="col-md-4 padding-new">
@@ -171,48 +170,26 @@
         <!--map row-->
         <div class="row home_body_pad">
             <!--col-->
-            <div class="col-md-4 mini_cont">
-                <h4 class="snow what_we_do">What we do</h4>
+            <div class="col-md-4 mini_cont padding_top15 mobile_width">
+                <h4 class="snow what_we_do_news">What we do</h4>
                 <p class="mini_txt snow">Anderson Wilde and Harris are a multidisciplinary Chartered Surveying company with a specialist Rights of Light and Daylight and Sunlight Surveyors. The team have over 25 years’ experience in advising on both  Developer’s and the surrounding neighbours.</p>
             </div>
-
-            <div class="col-md-4 box_split">
-                <div class="re_pad half">
-                    <h4 id="news">News and Resources</h4>
-                    <div class="rowflex">
-                        <label class="news_btn">
-                             News1
-                        </label>
-                        <label class="news_btn">
-                             News2
-                        </label>
-                        <label class="news_btn">
-                             News3
-                        </label>
-                    </div>
-                    <div class="rowflex">
-                        <label class="news_btn">
-                             News4
-                        </label>
-                        <label class="news_btn">
-                             News5
-                        </label>
-                        <label class="news_btn">
-                             News6
-                        </label>
-                    </div>
-                </div>
-                <div class="box_split_2">
-                    <h4 class="snow" id="news">Contact Us</h4>
-                    <a class="home_email snow" href="mailto:email@email.com?Subject=Enquire" target="_top">email@email.com</a>
-                </div>
-            </div>
-
+            <!--col-->
             <div class="col-md-4 padding-new">
                 <div class="col-md-3 map_container" id="map">
                     <!--requires API key-->
                     <!--<iframe id="map_frame" width="1000" height="1000" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRzyAIkwbdkgRCHz-tEf3D2Y&key=AIzaSyCiZxvmE2VQes9sbcocDG8jWA5kf3v2fok" allowfullscreen></iframe>-->
                 </div>
+            </div>
+            <!--col-->
+            <div class="col-md-4 padding_top15 color-1 mobile_width">
+                <h4 class="what_we_do_news snow">News and Resources</h4>
+                <p class="news_date mini_txt snow">00/00/00.</p>
+                <p class="news_content mini_txt snow">Content nsdofnrpgiah ikbfaeorjbg ieubfiqe <a class="news_link">read more...</a></p>
+                <p class="news_date mini_txt snow">00/00/00.</p>
+                <p class="news_content mini_txt snow">Content nsdofnrpgiah ikbfaeorjbg ieubfiqe <a class="news_link">read more...</a></p>
+                <p class="news_date mini_txt snow">00/00/00.</p>
+                <p class="news_content mini_txt snow">Content nsdofnrpgiah ikbfaeorjbg ieubfiqe <a class="news_link">read more...</a></p>
             </div>
         </div>
 

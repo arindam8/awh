@@ -94,9 +94,7 @@
 }
 
 .mini_txt {
-    /*text-align: center;*/
-    font-size: 20px;
-    color: var(--black);
+    font-size: 1.6vw;
 }
 
 .home_email {
@@ -127,7 +125,6 @@
 }
 
 .facts{
-    /*text-align: center;*/
     font-size: 3vw;
     color: var(--black);
     line-height: 1.5;
@@ -185,19 +182,7 @@
     color: var(--snow);
 }
 
-.large_phone {
-    font-size: 10vw;
-    color: var(--snow);
-    position: absolute;
-    right: 5vw;
-    bottom: 5vw;
-}
-
 .fact_col:hover .large_phone {
-    color: var(--brand-col);
-}
-
-.large_phone_no_hov {
     color: var(--brand-col);
 }
 
@@ -209,11 +194,6 @@
 
 .fact_col:hover .clickable {
     cursor: pointer;
-}
-
-#news {
-    font-size: 30px;
-    padding-top: 15px;
 }
 
 .tel_num {
@@ -229,13 +209,6 @@
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.5s, transform 0.5s;
-}
-
-.half {
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .fact_col:hover .more_info {
@@ -254,44 +227,25 @@
     padding-bottom: 4rem;
 }
 
-.what_we_do {
-    font-size: 30px;
+.what_we_do_news {
+    font-size: 3vw;
+}
+
+.news_link:hover {
+    text-decoration: underline !important;
+}
+
+.news_date {
+    padding-top: 2vw;
+    line-height: 0;
+}
+
+.padding_top15 {
+    padding-top: 15px;
 }
 
 .mini_cont {
-    padding-top: 15px;
     background-color: var(--med-gray);
-}
-
-.box_split {
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-.re_pad {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-}
-
-.box_split_2 {
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: var(--teal);
-    flex: 1 1 auto;
-}
-
-.rowflex {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.news_btn {
-    cursor: pointer;
-    background-color: var(--brand-col);
-    color: var(--snow);
-    padding: 5px;
 }
 
 .map_container {
@@ -347,6 +301,17 @@
         width: auto;
     }
 
+    .what_we_do_news {
+        font-size: 9vw;
+    }
+
+    .mini_txt {
+        font-size: 4.8vw;
+    }
+
+    .mobile_width {
+        height: 100vw;
+    }
 
     .fact_col {
         height: 100vw;

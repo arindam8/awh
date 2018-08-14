@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="c1840ffc-ff9c-4437-b2a1-afe3437b1a11" name="Added form settings" comment="Added form file and email settings" />
-    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="test-">
+    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/js/looks.js" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/js/looks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" afterDir="false" />
     </list>
+    <list id="c1840ffc-ff9c-4437-b2a1-afe3437b1a11" name="Added form settings" comment="Added form file and email settings" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,29 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1307">
-              <caret line="34" column="85" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="264" column="21" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="174" column="42" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="42" />
+            <state relative-caret-position="499">
+              <caret line="110" column="117" selection-start-line="110" selection-start-column="117" selection-end-line="110" selection-end-column="117" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -49,26 +39,17 @@
       <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="257" column="20" selection-start-line="257" selection-start-column="20" selection-end-line="257" selection-end-column="20" />
+            <state relative-caret-position="4665">
+              <caret line="311" column="17" selection-start-line="311" selection-start-column="5" selection-end-line="311" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="looks.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/looks.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -80,6 +61,15 @@
       <find>shake</find>
       <find>font-family</find>
       <find>font-family: var(--font-fam);</find>
+      <find>half</find>
+      <find>rowflex</find>
+      <find>newsand</find>
+      <find>box</find>
+      <find>font</find>
+      <find>mini_cont</find>
+      <find>mini_text</find>
+      <find>news</find>
+      <find>fact_col</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,10 +97,10 @@
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/about.html" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/case.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/js/looks.js" />
-        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" />
-        <option value="$PROJECT_DIR$/awh_build/home/templates/home/base.html" />
-        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" />
+        <option value="$PROJECT_DIR$/awh_build/home/templates/home/base.html" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" />
       </list>
     </option>
   </component>
@@ -253,13 +243,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532460025131</updated>
-    </task>
-    <task id="LOCAL-00022" summary="begin work on enquire pop up">
-      <created>1532789649455</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1532789649457</updated>
     </task>
     <task id="LOCAL-00023" summary="enquire pop up works">
       <created>1532791499963</created>
@@ -597,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534182072788</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="changes from meeting">
+      <created>1534245103412</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1534245103415</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -682,7 +672,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added a phone link on mobile" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="fixed footer layout" />
     <MESSAGE value="home page look updates.&#10;&#10;TO DO:&#10;&#10;add  &quot;id&quot; to radio tags that matches &quot;for&quot; on matching label tags&#10;add &quot;enquire_radio_circle&quot; class to radio circle's.&#10;add &quot;enquire_radio&quot; class to labels" />
@@ -707,7 +696,8 @@
     <MESSAGE value="added profile info" />
     <MESSAGE value="mailto" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="changes from meeting" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes from meeting" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/generic.css" />
@@ -955,29 +945,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="174" column="42" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="257" column="20" selection-start-line="257" selection-start-column="20" selection-end-line="257" selection-end-column="20" />
+        <state relative-caret-position="499">
+          <caret line="110" column="117" selection-start-line="110" selection-start-column="117" selection-end-line="110" selection-end-column="117" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="264" column="21" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
+        <state relative-caret-position="405">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4665">
+          <caret line="311" column="17" selection-start-line="311" selection-start-column="5" selection-end-line="311" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
