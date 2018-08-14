@@ -19,7 +19,7 @@
     --black: #14080E;
     --font-fam: "soleil",sans-serif;
     --snow: #FFF9FB;
-    --teal: #51999C;
+    --teal: #88A2AA;
 }
 
 body {
@@ -256,14 +256,14 @@ body {
 @media (min-width: 767px) {
     .navbar-light .navbar-nav .nav-link {
         margin-right: 5px;
-        font-size: 17px;
+        font-size: 19px;
         background-color: var(--med-gray);
         color: var(--snow);
         height: 60px;
         display: flex;
         align-items: center;
-        width: 165px;
-        border-radius: 5px 5px 0px 0px;
+        width: 200px;
+        /*border-radius: 5px 5px 0px 0px;*/
         margin-top: 10px;
     }
 
@@ -273,7 +273,7 @@ body {
     }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1192px) {
     .navbar-light .navbar-nav .nav-link {
         width: 116px;
      }

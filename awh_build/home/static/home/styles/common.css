@@ -101,7 +101,7 @@ h3 {
 }
 
 .color-1 {
-    background-color: #88A2AA;;
+    background-color: var(--teal);
 }
 
 .color-2 {

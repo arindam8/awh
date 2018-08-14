@@ -231,6 +231,13 @@
     transition: opacity 0.5s, transform 0.5s;
 }
 
+.half {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .fact_col:hover .more_info {
     opacity: 1;
     transform: translateY(-50px);
@@ -245,6 +252,10 @@
 
 .home_bottom_pad {
     padding-bottom: 4rem;
+}
+
+.what_we_do {
+    font-size: 30px;
 }
 
 .mini_cont {
@@ -267,7 +278,7 @@
 .box_split_2 {
     padding-left: 15px;
     padding-right: 15px;
-    background-color: green;
+    background-color: var(--teal);
     flex: 1 1 auto;
 }
 

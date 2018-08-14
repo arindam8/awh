@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/case.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/case.css" afterDir="false" />
-    </list>
     <list id="c1840ffc-ff9c-4437-b2a1-afe3437b1a11" name="Added form settings" comment="Added form file and email settings" />
+    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="test-">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/js/looks.js" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/js/looks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,29 +19,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/about.html">
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="57" column="120" selection-start-line="57" selection-start-column="120" selection-end-line="57" selection-end-column="120" />
+            <state relative-caret-position="-1307">
+              <caret line="34" column="85" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="case.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/case.css">
+      <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="533">
+              <caret line="264" column="21" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/about.css">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+            <state relative-caret-position="314">
+              <caret line="174" column="42" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="226">
+              <caret line="257" column="20" selection-start-line="257" selection-start-column="20" selection-end-line="257" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1360">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="looks.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/looks.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -69,16 +100,17 @@
         <option value="$PROJECT_DIR$/awh_build/home/views.py" />
         <option value="$PROJECT_DIR$/awh_build/home/forms.py" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html" />
-        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" />
-        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" />
-        <option value="$PROJECT_DIR$/awh_build/home/templates/home/base.html" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/template.html" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/template_category.html" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/category.css" />
-        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/about.css" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/about.html" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/case.css" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/js/looks.js" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" />
+        <option value="$PROJECT_DIR$/awh_build/home/templates/home/base.html" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" />
       </list>
     </option>
   </component>
@@ -96,44 +128,62 @@
         <subPane>
           <expand>
             <path>
-              <item name="awh_build" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
               <item name="awh_build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="awh_build" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
               <item name="awh_build" type="462c0819:PsiDirectoryNode" />
-              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
+              <item name="configuration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="awh_build" type="b2602c69:ProjectViewProjectNode" />
-              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
-              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
-              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="awh_build" type="b2602c69:ProjectViewProjectNode" />
-              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
               <item name="awh_build" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="awh_build" type="b2602c69:ProjectViewProjectNode" />
-              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
-              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="awh_build" type="b2602c69:ProjectViewProjectNode" />
-              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
               <item name="awh_build" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
+              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="awh_build" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
               <item name="awh_build" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
+              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
               <item name="awh_build" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
@@ -141,15 +191,24 @@
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="awh_build" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
               <item name="awh_build" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
               <item name="awh_build" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="awh_build" type="b2602c69:ProjectViewProjectNode" />
-              <item name="awh_build" type="462c0819:PsiDirectoryNode" />
+              <item name="awh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="awh" type="462c0819:PsiDirectoryNode" />
               <item name="awh_build" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
@@ -194,13 +253,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532460025131</updated>
-    </task>
-    <task id="LOCAL-00021" summary="create template page and extend base">
-      <created>1532786320529</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1532786320530</updated>
     </task>
     <task id="LOCAL-00022" summary="begin work on enquire pop up">
       <created>1532789649455</created>
@@ -538,7 +590,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533408602496</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="commit">
+      <created>1534182072788</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1534182072788</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -548,13 +607,13 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.260181" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5011588" side_tool="true" weight="0.16150235" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32957748" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32957748" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49884126" weight="0.16150235" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49884126" visible="true" weight="0.16150235" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -566,21 +625,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24913093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32957748" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49884126" visible="true" weight="0.16150235" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5011588" side_tool="true" weight="0.16150235" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32957748" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -623,7 +682,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" home page bug fix/code tidy" />
     <MESSAGE value="added a phone link on mobile" />
     <MESSAGE value="fix bug" />
     <MESSAGE value="fixed footer layout" />
@@ -648,10 +706,10 @@
     <MESSAGE value="almost done again" />
     <MESSAGE value="added profile info" />
     <MESSAGE value="mailto" />
-    <option name="LAST_COMMIT_MESSAGE" value="mailto" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/env/bin/activate" />
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/generic.css" />
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/images/logo.png">
       <provider selected="true" editor-type-id="images" />
@@ -832,13 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="128" column="1" selection-start-line="128" selection-start-column="1" selection-end-line="128" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -867,52 +918,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="1" selection-start-line="80" selection-start-column="1" selection-end-line="80" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1289">
-          <caret line="165" column="53" selection-start-line="165" selection-start-column="53" selection-end-line="165" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/about.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
-          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="57" column="120" selection-start-line="57" selection-start-column="120" selection-end-line="57" selection-end-column="120" />
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/case.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="346">
+          <caret line="79" column="14" selection-start-line="79" selection-start-column="14" selection-end-line="79" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="57" column="120" selection-start-line="57" selection-start-column="120" selection-end-line="57" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/looks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1307">
+          <caret line="34" column="85" selection-start-line="34" selection-start-column="85" selection-end-line="34" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="174" column="42" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="257" column="20" selection-start-line="257" selection-start-column="20" selection-end-line="257" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="264" column="21" selection-start-line="264" selection-start-column="21" selection-end-line="264" selection-end-column="21" />
         </state>
       </provider>
     </entry>
