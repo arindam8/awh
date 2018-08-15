@@ -23,6 +23,8 @@ urlpatterns = [
     url(r'^home/', views.base_view, name='base_view'),
     #url(r'^rol/', views.rol_view, name='rol_view'),
     url(r'^rol/(?P<index>.)', views.rol_view, name='rol_view'),
+    url(r'^dos/(?P<index>.)', views.rol_view, name='dos_view'),
+    url(r'^pw/(?P<index>.)', views.rol_view, name='pw_view'),
     url(r'^about/', views.about_view, name='about_view'),
     url(r'^case_studies/(?P<index>.)', views.case_studies_view, name='case_studies_view')
 ]

@@ -63,3 +63,16 @@ def about_view(request):
 def case_studies_view(request,index=-99):
 
     return render(request, 'home/case_studies.html',{'index':index})
+
+
+def dos_view(request,index=-99):
+    if index=='0':
+        return render(request, 'home/dos.html',{'index':-99})
+    else:
+        return render(request, 'home/dos.html',{'index':index})
+
+def pw_view(request,index=-99):
+    if index=='0':
+        return render(request, 'home/pw.html',{'index':-99})
+    else:
+        return render(request, 'home/pw.html',{'index':index})
