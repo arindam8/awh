@@ -126,7 +126,6 @@
 
 .facts{
     font-size: 3vw;
-    color: var(--black);
     line-height: 1.5;
     transition: line-height 0.5s;
 }
@@ -149,10 +148,6 @@
 
 .facts30 {
     font-size: 2vw;
-}
-
-.snow {
-    color: var(--snow);
 }
 
 .about_btn {
@@ -184,6 +179,10 @@
 
 .fact_col:hover .large_phone {
     color: var(--brand-col);
+}
+
+.click_squ:hover {
+    cursor: pointer;
 }
 
 .clickable:hover {

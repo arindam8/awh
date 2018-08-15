@@ -25,6 +25,8 @@
 
 #right_jumo {
     margin-left: 7.5px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: var(--snow);
 }
 
 .jumbo_h {
@@ -38,6 +40,10 @@ hr {
 
 .cont_pad {
     padding-bottom: 3rem;
+}
+
+.justify {
+    text-align: justify;
 }
 
 .rol_b4_case_margin {
@@ -69,7 +75,10 @@ hr {
 .nav-tabs .nav-link {
     color: var(--snow) ;
     background-color: var(--brand-col);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
+
 .nav-tabs .nav-item {
     text-align: center !important;
     width: 14% !important;

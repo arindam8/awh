@@ -53,9 +53,9 @@ body {
 }
 
 .footer {
-    background-color: var(--dark-gray);
+    background-color: var(--snow);
     padding: 10px;
-    color: var(--snow);
+    color: var(--black);
 }
 
 .footer_col_h {
@@ -64,7 +64,7 @@ body {
 }
 
 .footer-link {
-    color: var(--snow);
+    color: var(--black);
     font-size: 12px;
     text-decoration: underline;
 }
@@ -277,6 +277,7 @@ body {
 @media (max-width: 1192px) {
     .navbar-light .navbar-nav .nav-link {
         width: 116px;
+        font-size: 17px;
      }
 }
 
