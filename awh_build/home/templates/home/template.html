@@ -31,19 +31,19 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto mt-2 mt-md-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'about_view' %}">About <img id="about_logo_img" src="{% static 'home/images/logo.png' %}" alt="Company Logo"></a>
+                    <a class="nav-link nav_about" href="{% url 'about_view' %}">About <img id="about_logo_img" src="{% static 'home/images/logo.png' %}" alt="Company Logo"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'rol_view' index=0%}">Rights of Light</a>
+                    <a class="nav-link nav_rol" href="{% url 'rol_view' index=0%}">Rights of Light</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'dos_view' index=0%}">Daylight and Sunlighting</a>
+                    <a class="nav-link nav_dos" href="{% url 'dos_view' index=0%}">Daylight and Sunlighting</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'pw_view' index=0%}">Party Wall</a>
+                    <a class="nav-link nav_pw" href="{% url 'pw_view' index=0%}">Party Wall</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'case_studies_view' index=-99%}">Case Studies</a>
+                    <a class="nav-link nav_case" href="{% url 'case_studies_view' index=-99%}">Case Studies</a>
                 </li>
             </ul>
         </div>

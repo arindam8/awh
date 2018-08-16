@@ -107,3 +107,7 @@ hr {
 	border-width: 11px;
 	margin-left: -11px;
 }
+
+.nav_case {
+    background-color: var(--brand-col) !important;
+}

@@ -110,3 +110,7 @@ hr {
         height: inherit;
     }
 }
+
+.nav_rol {
+    background-color: var(--brand-col) !important;
+}
