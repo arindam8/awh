@@ -50,6 +50,11 @@ h3 {
     filter: blur(0px); /*was 3px*/
 }
 
+.case_box:hover .center_over_case {
+    mix-blend-mode: unset;
+    color: var(--brand-col)
+}
+
 .case_box_ho_hov {
     transform: scale(1.5); /*for zoom*/
     filter: blur(0px); /*was 3px*/

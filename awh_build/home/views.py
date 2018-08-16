@@ -45,9 +45,6 @@ def base_view(request):
 
     return render(request, 'home/base.html', {'enquiry_form': form})
 
-
-
-
 def about_view(request):
     return render(request, 'home/about.html')
 

@@ -28,6 +28,11 @@ body {
     line-height: 1.15;
 }
 
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
+}
+
 #nav_logo_img {
     height: 50px;
 }
@@ -77,9 +82,9 @@ body {
     text-decoration: underline;
 }
 
-/*.footer-link:hover {
-    color: white;
-}*/
+.footer-link:hover {
+    color: var(--brand-col);
+}
 
 .footer_copy {
     font-size: 10px;
