@@ -17,15 +17,16 @@
 
     <title>AWH - Rights of Light</title>
 </head>
-<body>
 
+<body>
     <!--Responsive Navbar-->
     <nav class="navbar navbar-expand-md sticky-top navbar-light bg-dark">
+        <!--logo-->
+        <a class="navbar-brand" href="{% url 'base_view' %}"><img id="nav_logo_img" src="{% static 'home/images/logo.png' %}" alt="Company Logo"></a>
         <!--Collapse Button-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="{% url 'base_view' %}"><img id="nav_logo_img" src="{% static 'home/images/logo.png' %}" alt="Company Logo"></a>
         <!--Links-->
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav ml-auto mt-2 mt-md-0">
@@ -36,10 +37,10 @@
                     <a class="nav-link" href="{% url 'rol_view' index=0%}">Rights of Light</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'rol_view' index=0%}">Daylight and Sunlighting</a>
+                    <a class="nav-link" href="{% url 'dos_view' index=0%}">Daylight and Sunlighting</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'rol_view' index=0%}">Party Wall</a>
+                    <a class="nav-link" href="{% url 'pw_view' index=0%}">Party Wall</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'case_studies_view' index=-99%}">Case Studies</a>
@@ -65,8 +66,8 @@
 
     {% block content %}
     {% endblock %}
-    {% block enquire_button %}
 
+    {% block enquire_button %}
     <!--enquire widget-->
     <!--enquire button-->
     <div id="enquire_widget" class="shake" onclick="toggle_form()">
@@ -87,66 +88,11 @@
         </div>
     </div>
     {% endblock %}
-    <div class="jumbotron vertical-center" id="popup_jumbo">
-        <h4 id="form_heading">Enquire Today</h4>
-        <h4 id="close_popup" onclick="toggle_form()"><i class="fas fa-times"></i></h4>
 
-        <!--Form-->
-        <form id="contact-form" name="contact-form"  action="mail.php" method="POST">
-            <div class="contact-form">
-                <textarea id="descript_field" class="form-control" rows="1" id="comment" placeholder="Description"></textarea>
-            </div>
-            <!--row-->
-            <div class="form-row">
-                <!--col-->
-                <div class="col-md-8">
-                    <div class="contact-form">
-                        <input type="text" class="form-control" id="name" placeholder="Name">
-                    </div>
-                </div>
-                <!--col-->
-                <div class="col-md-4">
-                    <div class="contact-form">
-                        <input type="text" class="form-control" id="postcode" placeholder="Postcode">
-                    </div>
-                </div>
-            </div>
-            <!--row-->
-            <div class="form-row">
-                    <!--col-->
-                    <div class="col-md-8">
-                        <div class="contact-form">
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="contact-form">
-                            <input type="tel" class="form-control" id="number" placeholder="Phone number">
-                        </div>
-                    </div>
-            </div>
-            <div class="form-row">
-                <!--col-->
-                <div class="col-md-7 d-flex align-content-center">
-                    <!--Radio Buttons-->
-                    <input id="radio1" type="radio" name="opt_form" class="enquire_radio_circle" checked>
-                    <label for="radio1" class="radio-inline enquire_radio">Developer</label>
-                    <input id="radio2" type="radio" name="opt_form" class="enquire_radio_circle">
-                    <label for="radio2" class="radio-inline enquire_radio">Architect</label>
-                    <input id="radio3" type="radio" name="opt_form" class="enquire_radio_circle">
-                    <label for="radio3" class="radio-inline enquire_radio">Neighbour</label>
-                    <input id="radio4" type="radio" name="opt_form" class="enquire_radio_circle">
-                    <label for="radio4" class="radio-inline enquire_radio">Other</label>
+    <!--ENQUIRE FORM HERE-->
+    <!--<div class="jumbotron vertical-center" id="popup_jumbo">-->
+    <!--</div>-->
 
-                </div>
-                <!--col-->
-                <div class="col-md-5 d-flex flex-row-reverse">
-                    <button type="submit" class="btn btn-default enquire_button">Submit</button>
-                    <button type="file" class="btn btn-default enquire_button">Attach Document</button>
-                </div>
-            </div>
-        </form>
-    </div>
 
     <!--Footer-->
     <footer class="footer">

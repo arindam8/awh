@@ -44,6 +44,14 @@ body {
         padding-right: 10px;
     }
 
+    .navbar-brand {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
 
 #about_logo_img {
     height: 18px;
