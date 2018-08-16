@@ -1,6 +1,7 @@
 var pop_up;
 var fadeTarget;
 var fadeTarget2;
+var fadeTarget3;
 var toggle;
 
 function toggle_form() {
@@ -20,6 +21,7 @@ function fadeOut() {
     fadeTarget.classList.add('enquire_widget_translate');
     //fadeTarget2.classList.add('playstate');
     fadeTarget2.classList.add('enquire_widget_translate');
+    fadeTarget3.classList.add('enquire_widget_translate');
 }
 
 
@@ -36,12 +38,14 @@ function fadein() {
     fadeTarget.classList.remove('enquire_widget_translate');
     //fadeTarget2.classList.remove('playstate');
     fadeTarget2.classList.remove('enquire_widget_translate');
+    fadeTarget3.classList.remove('enquire_widget_translate');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     pop_up = document.getElementById("popup_jumbo");
     fadeTarget = document.getElementById("enquire_widget");
     fadeTarget2 = document.getElementById("enquire_widget_mini");
+    fadeTarget3 = document.getElementById("phone_widget_mini");
     toggle = 1;
 
     document.getElementById ("enquire_widget").addEventListener ("click", toggle_form, false);
