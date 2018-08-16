@@ -93,11 +93,11 @@
     <!--<div class="jumbotron vertical-center" id="popup_jumbo">-->
     <!--</div>-->
     <div class="jumbotron vertical-center" id="popup_jumbo">
-        <h4 id="jumbo_heading" >Enquire Today</h4>
-        <h4 id="close_popup"><i class="fas fa-times"></i></h4>
+        <h4 class="red_bar" id="jumbo_heading" >Enquire Today</h4>
+        <h4 class="red_bar close_popup"><i class="fas fa-times" id="close_popup"></i></h4>
         <!--Form-->
-        {% if enquiry_form.errors %}
-        {% for field in enquiry_form %}
+        {% if enquiry_form_pop_up.errors %}
+        {% for field in enquiry_form_pop_up %}
         {% for error in field.errors %}
         <div class="alert alert-danger">
             <strong>{{ error|escape }}</strong>
@@ -105,25 +105,25 @@
         {% endfor %}
         {% endfor %}
         {% endif %}
-        {{message}}
-        {% if enquiry_form %}
+        {{message_pop_up}}
+        {% if enquiry_form_pop_up %}
         {% csrf_token %}
-        <form id="contact-form" name="contact-form" method="POST" action ="." enctype="multipart/form-data">
+        <form id="contact-form" name="contact-form" method="POST" action ="{% url 'popup' %}" enctype="multipart/form-data">
             <div class="contact-form">
-                {{enquiry_form.description}}
+                {{enquiry_form_pop_up.description}}
             </div>
             <!--row-->
             <div class="form-row">
                 <!--col-->
                 <div class="col-md-8">
                     <div class="contact-form">
-                        {{enquiry_form.name}}
+                        {{enquiry_form_pop_up.name}}
                     </div>
                 </div>
                 <!--col-->
                 <div class="col-md-4">
                     <div class="contact-form">
-                        {{enquiry_form.postcode}}
+                        {{enquiry_form_pop_up.postcode}}
                     </div>
                 </div>
             </div>
@@ -132,23 +132,23 @@
                 <!--col-->
                 <div class="col-md-8">
                     <div class="contact-form">
-                        {{enquiry_form.email}}
+                        {{enquiry_form_pop_up.email}}
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="contact-form">
 
-                        {{enquiry_form.phone}}
+                        {{enquiry_form_pop_up.phone}}
                     </div>
                 </div>
             </div>
             <div class="form-row">
                 <!--col-->
                 <div class="col-md-7 d-flex align-content-center">
-                    {% for choice in enquiry_form.category.field.choices %}
+                    {% for choice in enquiry_form_pop_up.category.field.choices %}
                     <!--<li style="list-style-type:None;">-->
                     <input class='enquire_radio_circle' type="radio" name="category" value="{{choice.0}}" id="{{choice.0}}"
-                           {% ifequal enquiry_form.category.data choice.0 %}
+                           {% ifequal enquiry_form_pop_up.category.data choice.0 %}
                            checked="checked"
                            {% endifequal %}/>
                     <label class='enquire_radio' for="{{choice.0}}"> {{choice.1}} </label>
@@ -157,15 +157,15 @@
                 </div>
                 <!--col-->
                 <div class="col-md-5 d-flex flex-row-reverse mobile_margin">
-                    <label for="submit_btn" class="enquire_button">
+                    <label for="submit_btn_pu" class="enquire_button">
                         Submit
                     </label>
-                    <button type="submit" class="btn btn-default enquire_button none"><input class="clickable none" id="submit_btn" type ="submit"  name = "send"/></button>
+                    <button type="submit" class="btn btn-default enquire_button none"><input class="clickable none" id="submit_btn_pu" type ="submit"  name = "send"/></button>
 
                     <label for="id_attach" class="attach_btn">
                         <span id="file-selected">Attach File</span>
                     </label>
-                    {{enquiry_form.attach}}
+                    {{enquiry_form_pop_up.attach}}
 
                 </div>
             </div>
@@ -237,6 +237,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--Other Scripts-->
-
+    <script type="text/javascript" src="{% static 'home/js/looks.js' %}" ></script>
 </body>
 </html>

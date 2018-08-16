@@ -5,18 +5,6 @@
     --line-col: var(--med-gray); /*rgba(0,0,0,.1);*/
 }
 
-#enquire_widget {
-    visibility: visible;
-}
-
-#enquire_widget_mini {
-    visibility: visible;
-}
-
-#phone_widget_mini {
-    visibility: visible;
-}
-
 .proj_size {
     font-size: 30px;
     text-align: center;

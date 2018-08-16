@@ -17,6 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
 from home import views
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     #url(r'^home/', include('home.urls'))
@@ -26,5 +27,7 @@ urlpatterns = [
     url(r'^dos/(?P<index>.)', views.dos_view, name='dos_view'),
     url(r'^pw/(?P<index>.)', views.pw_view, name='pw_view'),
     url(r'^about/', views.about_view, name='about_view'),
+    url(r'^main/', views.main, name='main'),
+    url(r'^popup/', views.popup, name='popup'),
     url(r'^case_studies/(?P<index>.)', views.case_studies_view, name='case_studies_view')
 ]

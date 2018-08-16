@@ -7,7 +7,8 @@
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
 
             <div class="jumbotron vertical-center" id="enquire_jumo">
-                <h4 id="jumbo_heading" >Enquire Today</h4>
+                <h4 class="red_bar" id="jumbo_heading" >Enquire Today</h4>
+                <div class="red_bar close_popup"></div>
                 <!--Form-->
                 {% if enquiry_form.errors %}
                 {% for field in enquiry_form %}
@@ -21,7 +22,7 @@
                 {{message}}
                 {% if enquiry_form %}
                 {% csrf_token %}
-                <form id="contact-form" name="contact-form" method="POST" action ="." enctype="multipart/form-data">
+                <form id="contact-form" name="contact-form" method="POST" action ="{% url 'main' %}" enctype="multipart/form-data">
                     <div class="contact-form">
                         {{enquiry_form.description}}
                     </div>
@@ -79,7 +80,6 @@
                                 <span id="file-selected">Attach File</span>
                             </label>
                             {{enquiry_form.attach}}
-
                         </div>
                     </div>
                 </form>
