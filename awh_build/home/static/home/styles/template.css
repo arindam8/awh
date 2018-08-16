@@ -69,6 +69,10 @@ label {
     margin-left: 5px;
 }
 
+.about_logo_invert {
+    display: none;
+}
+
 .footer {
     background-color: var(--snow);
     padding: 10px;
