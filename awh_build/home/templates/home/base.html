@@ -1,108 +1,95 @@
 {% extends 'home/template.html' %}
-{% block content %}
+
+{% block header %}
 
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/common.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
 
-<!--Image and Form Container-->
-<header>
-
-    <div id="banner_container" class="stack_em">
-        <!--img-->
-        <!--<img id="banner_img" src="https://placeimg.com/1980/500/arch" alt="">-->
-        <video preload="none" loop="loop" autoplay="autoplay" id="banner_vid">
-            <source src="{% static 'home/video/awh.webm' %}" type="video/mp4">
-            <source src="{% static 'home/video/awh.mp4' %}" type="video/mp4">
-        </video>
-        <!--form-->
-        <div class="jumbotron vertical-center" id="enquire_jumo">
-            <h4 id="jumbo_heading" >Enquire Today</h4>
-            <!--Form-->
-            {% if enquiry_form.errors %}
+<!--here-->
+            <div class="jumbotron vertical-center" id="enquire_jumo">
+                <h4 id="jumbo_heading" >Enquire Today</h4>
+                <!--Form-->
+                {% if enquiry_form.errors %}
                 {% for field in enquiry_form %}
-                    {% for error in field.errors %}
-                        <div class="alert alert-danger">
-                            <strong>{{ error|escape }}</strong>
-                        </div>
-                    {% endfor %}
+                {% for error in field.errors %}
+                <div class="alert alert-danger">
+                    <strong>{{ error|escape }}</strong>
+                </div>
                 {% endfor %}
-
-            {% endif %}
-            {{message}}
+                {% endfor %}
+                {% endif %}
+                {{message}}
                 {% if enquiry_form %}
                 {% csrf_token %}
-                    <form id="contact-form" name="contact-form" method="POST" action ="." enctype="multipart/form-data">
-                        <div class="contact-form">
-                            {{enquiry_form.description}}
-                        </div>
-                        <!--row-->
-                        <div class="form-row">
-                            <!--col-->
-                            <div class="col-md-8">
-                                <div class="contact-form">
-                                    {{enquiry_form.name}}
-                                </div>
-                            </div>
-                            <!--col-->
-                            <div class="col-md-4">
-                                <div class="contact-form">
-                                    {{enquiry_form.postcode}}
-                                </div>
-                            </div>
-                        </div>
-                        <!--row-->
-                        <div class="form-row">
-                                <!--col-->
-                                <div class="col-md-8">
-                                    <div class="contact-form">
-                                        {{enquiry_form.email}}
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="contact-form">
-
-                                        {{enquiry_form.phone}}
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="form-row">
+                <form id="contact-form" name="contact-form" method="POST" action ="." enctype="multipart/form-data">
+                    <div class="contact-form">
+                        {{enquiry_form.description}}
+                    </div>
+                    <!--row-->
+                    <div class="form-row">
                         <!--col-->
-                            <div class="col-md-7 d-flex align-content-center">
-                                {% for choice in enquiry_form.category.field.choices %}
-                                      <!--<li style="list-style-type:None;">-->
-                                            <input class='enquire_radio_circle' type="radio" name="category" value="{{choice.0}}" id="{{choice.0}}"
-                                              {% ifequal enquiry_form.category.data choice.0 %}
-                                                 checked="checked"
-                                              {% endifequal %}/>
-                                            <label class='enquire_radio' for="{{choice.0}}"> {{choice.1}} </label>
-                                      <!--</li>-->
-                                {% endfor %}
-
-
-                            </div>
-                            <!--col-->
-                            <div class="col-md-5 d-flex flex-row-reverse">
-                                <label for="submit_btn" class="enquire_button">
-                                     Submit
-                                </label>
-                                <button type="submit" class="btn btn-default enquire_button none"><input class="clickable none" id="submit_btn" type ="submit"  name = "send"/></button>
-
-                                <label for="id_attach" class="attach_btn">
-                                     <span id="file-selected">Attach File</span>
-                                </label>
-                                {{enquiry_form.attach}}
-
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                {{enquiry_form.name}}
                             </div>
                         </div>
-                    </form>
+                        <!--col-->
+                        <div class="col-md-4">
+                            <div class="contact-form">
+                                {{enquiry_form.postcode}}
+                            </div>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div class="form-row">
+                        <!--col-->
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                {{enquiry_form.email}}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-form">
+
+                                {{enquiry_form.phone}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <!--col-->
+                        <div class="col-md-7 d-flex align-content-center">
+                            {% for choice in enquiry_form.category.field.choices %}
+                            <!--<li style="list-style-type:None;">-->
+                            <input class='enquire_radio_circle' type="radio" name="category" value="{{choice.0}}" id="{{choice.0}}"
+                                   {% ifequal enquiry_form.category.data choice.0 %}
+                                   checked="checked"
+                                   {% endifequal %}/>
+                            <label class='enquire_radio' for="{{choice.0}}"> {{choice.1}} </label>
+                            <!--</li>-->
+                            {% endfor %}
+                        </div>
+                        <!--col-->
+                        <div class="col-md-5 d-flex flex-row-reverse">
+                            <label for="submit_btn" class="enquire_button">
+                                Submit
+                            </label>
+                            <button type="submit" class="btn btn-default enquire_button none"><input class="clickable none" id="submit_btn" type ="submit"  name = "send"/></button>
+
+                            <label for="id_attach" class="attach_btn">
+                                <span id="file-selected">Attach File</span>
+                            </label>
+                            {{enquiry_form.attach}}
+
+                        </div>
+                    </div>
+                </form>
                 {% endif %}
-        </div>
-        <!--<h1 id="expert">Experts in Property</h1>-->
-    </div>
+            </div>
+<!--to here-->
+{% endblock %}
 
-</header>
-
+{% block content %}
 <!--Body-->
 <main class="container-fluid">
     <div>

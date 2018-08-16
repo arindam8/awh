@@ -48,6 +48,21 @@
         </div>
     </nav>
 
+    <header>
+        <div id="banner_container" class="stack_em">
+            <!--img-->
+            <!--<img id="banner_img" src="https://placeimg.com/1980/500/arch" alt="">-->
+            <video preload="none" loop="loop" autoplay="autoplay" id="banner_vid">
+                <source src="{% static 'home/video/awh.webm' %}" type="video/mp4">
+                <source src="{% static 'home/video/awh.mp4' %}" type="video/mp4">
+            </video>
+
+            {% block header %}
+            {% endblock %}
+
+        </div>
+    </header>
+
     {% block content %}
     {% endblock %}
     {% block enquire_button %}

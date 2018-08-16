@@ -1,5 +1,6 @@
 {% extends 'home/template.html' %}
-{% block content %}
+
+{% block header %}
 
 {% load static %}
 <script type="text/javascript" src="{% static 'home/js/tab_index.js' %}" ></script>
@@ -8,29 +9,28 @@
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/common.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/category.css' %}" />
 
-<header id="banner_container" class="container" >
-    <!--img-->
-    <img id="banner_img" src="https://placeimg.com/1980/1000/arch" alt="">
-        <div class="container">
+        <div class="container category_container">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-center">
                     <!--jumbo 1-->
                     <div class="jumbotron banner_jumbo " id="left_jumo">
-                        <h2 class="jumbo_h">Right of Light</h2>
-                        <p class="jumbo_para justify" >A Right to Light is common law issue. It is an easement that an aperture can acquire either through the 1832 Prescription Act or by Express Grant. Acquiring a Right to Light through prescription requires the aperture to be in place for more than 20 years and the easement entitles the dominant owner to see a specific amount of a sky from a certain percentage of the room. When a proposed development causes an infringement, the neighbouring properties are entitled to a remedy.</p>
+                        <h2 class="jumbo_h">Daylighting and Sunlighting</h2>
+                        <p class="jumbo_para justify" >Daylight and Sunlight Assessments are a common requirement of planning application when reviewing the impact, a proposed development will to surrounding properties light. Review of Daylighting and Sunlight levels can be required to a development and/or to the surrounding properties.</p>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
                     <!--jumbo 2-->
                     <div class="jumbotron banner_jumbo " id="right_jumo">
                         <h2 class="jumbo_h">Our Experience</h2>
-                        <p class="jumbo_para justify" >A Rights of Light infringement can carry a huge liability for a Developer and have the potential to render schemes unfeasible. We have dealt with schemes on both a large and small scale and ensured that our clients best interests are met. Once we have been appointed we devise a strategy using our extensive technical, legal and practical knowledge to protect our clients’ interests.</p>
+                        <p class="jumbo_para justify" >We can provide advice from the beginning stage of a project through a Pre-application and finally onto a Planning Application. The report will assess the properties and the development using the methodologies in the BRE Guidance Site Layout Planning for Daylight and Sunlight. A Guide to Good Practice. Further to this our expertise have provide design advice and we have attended Planning Committee Meetings.</p>
                     </div>
                 </div>
             </div>
         </div>
-</header>
 
+{% endblock %}
+
+{% block content %}
 <!--body of -->
 <main class="container-fluid">
     <!--row-->
