@@ -1,15 +1,3 @@
-#enquire_widget {
-    visibility: visible;
-}
-
-#enquire_widget_mini {
-    visibility: visible;
-}
-
-#phone_widget_mini {
-    visibility: visible;
-}
-
 .banner_jumbo {
     z-index: 100;
     background-color: rgba(255, 249, 251, 0.8);
@@ -114,8 +102,4 @@ hr {
         padding-right: 0px;
         height: inherit;
     }
-}
-
-.nav_rol {
-    background-color: var(--brand-col) !important;
 }

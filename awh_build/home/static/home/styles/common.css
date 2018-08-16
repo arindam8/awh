@@ -35,6 +35,144 @@ h3 {
     padding-bottom: 4rem;
 }
 
+/*****************
+enquiry
+*****************/
+
+#enquire_widget {
+    visibility: visible;
+}
+
+#enquire_widget_mini {
+    visibility: visible;
+}
+
+#phone_widget_mini {
+    visibility: visible;
+}
+
+.red_bar {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: var(--brand-col);
+    color: var(--snow);
+    display: inline-block;
+    width: 50%;
+    height: 48px;
+}
+
+.close_popup {
+    float: right;
+    user-select: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.jumbotron, .form-control {
+    border-radius: 0;
+}
+
+#contact-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-form {
+    padding-bottom: 10px;
+}
+
+.enquire_radio {
+    margin-right: 10px;
+}
+
+.enquire_radio_circle {
+    margin-right: 5px;
+}
+
+#submit_btn {
+    background-color: var(--brand-col);
+    color: var(--snow);
+    border: 0px;
+}
+
+.enquire_button {
+    background-color: var(--brand-col);
+    height: 38px;
+    width: 115px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 0px;
+    color: var(--snow);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.clickable:hover {
+    cursor: pointer;
+    color: var(--brand-col);
+    text-decoration: none;
+}
+
+.attach_btn {
+    height: 38px;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--brand-col);
+    color: var(--snow);
+    width: 115px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.attach_btn:hover {
+    cursor: pointer;
+}
+
+#descript_field {
+    max-height: 152px;
+    min-height: 38px;
+}
+
+.contact-form {
+    padding-bottom: 10px;
+}
+
+.enquire_radio {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.enquire_radio_circle {
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.enquire_button {
+    margin-left: 10px;
+}
+
+.jumbotron {
+    border-radius: 0px;
+}
+
+@media (max-width: 767px) {
+    .mobile_margin {
+        margin-top: 10px;
+    }
+}
+
+/*****************
+enquiry end
+*****************/
+
 
 /*case study css*/
 .case_box {

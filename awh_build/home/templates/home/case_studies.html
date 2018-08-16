@@ -253,12 +253,9 @@ window.onload = function () {
 
     var elementId = "#collapse" + index;
         var elid="collapse" + index;
-        console.log(elementId);
         qstring="a[href='"+elementId+"']";
-        console.log(qstring);
         var tab=document.querySelectorAll(qstring);
         var info=document.getElementById(elid);
-        console.log(tab);
         tab[0].classList.remove("collapsed");
         tab[0].setAttribute("aria-expanded", "true");
         info.classList.add("show");

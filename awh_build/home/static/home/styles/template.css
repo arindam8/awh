@@ -216,15 +216,17 @@ label {
 }
 
 #popup_jumbo {
-    background-color: var(--light-gray);
-    padding: 15px;
-    z-index: 100;
     position: fixed;
     bottom: -392px;
     right: 50px;
     margin-left: 100px;
     visibility: hidden;
     transition: 0.7s;
+    background-color: rgba(255, 249, 251, 0.8);
+    margin: auto;
+    width: 767px;
+    padding: 0px;
+    z-index: 100;
     /*transition-timing-function: cubic-bezier(0.39, 1.46, 0.91, 1.32);*/
 }
 
@@ -238,42 +240,9 @@ label {
     float: left;
 }
 
-#close_popup {
-    float: right;
-    user-select: none;
-}
-
 #close_popup:hover {
     cursor: pointer
 }
-
-#descript_field {
-    max-height: 152px;
-    min-height: 38px;
-}
-
-.contact-form {
-    padding-bottom: 10px;
-}
-
-.enquire_radio {
-    margin-right: 10px;
-    margin-top: 5px;
-}
-
-.enquire_radio_circle {
-    margin-right: 5px;
-    margin-top: 8px;
-}
-
-.enquire_button {
-    margin-left: 10px;
-}
-
-.jumbotron {
-    border-radius: 0px;
-}
-
 
 @media (min-width: 767px) {
     .navbar-light .navbar-nav .nav-link {
@@ -297,8 +266,14 @@ label {
 
 @media (max-width: 1192px) {
     .navbar-light .navbar-nav .nav-link {
-        width: 116px;
+        width: 150px; /*16*/
         font-size: 17px;
+     }
+}
+
+@media (max-width: 936px) {
+    .navbar-light .navbar-nav .nav-link {
+        width: 116px;
      }
 }
 

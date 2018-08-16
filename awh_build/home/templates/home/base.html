@@ -7,7 +7,8 @@
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
 
             <div class="jumbotron vertical-center" id="enquire_jumo">
-                <h4 id="jumbo_heading" >Enquire Today</h4>
+                <h4 class="red_bar" id="jumbo_heading" >Enquire Today</h4>
+                <div class="red_bar close_popup"></div>
                 <!--Form-->
                 {% if enquiry_form.errors %}
                 {% for field in enquiry_form %}
@@ -79,7 +80,6 @@
                                 <span id="file-selected">Attach File</span>
                             </label>
                             {{enquiry_form.attach}}
-
                         </div>
                     </div>
                 </form>
