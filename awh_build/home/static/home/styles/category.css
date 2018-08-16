@@ -33,6 +33,11 @@
     font-weight: bold;
 }
 
+.rol_box_padding {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
 hr {
     margin-top: 1rem;
     margin-bottom: 3rem;
@@ -84,10 +89,6 @@ hr {
     width: 14% !important;
 }
 
-.color {
-    padding-top: 15px;
-}
-
 @media (max-width: 1192px) {
     .nav-tabs .nav-item {
         padding-left: 5px;
@@ -100,6 +101,10 @@ hr {
         width: 32.5% !important;
         margin-bottom: 5px;
         height: 54px;
+    }
+
+    .mob_height {
+        min-height: 230px;
     }
 }
 
