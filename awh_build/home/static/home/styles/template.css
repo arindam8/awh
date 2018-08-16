@@ -28,6 +28,15 @@ body {
     line-height: 1.15;
 }
 
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
+}
+
+label {
+    margin-bottom: 0px;
+}
+
 #nav_logo_img {
     height: 50px;
 }
@@ -44,12 +53,24 @@ body {
         padding-right: 10px;
     }
 
+    .navbar-brand {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
 
 #about_logo_img {
     height: 18px;
     position: relative;
     bottom: 1px;
     margin-left: 5px;
+}
+
+.about_logo_invert {
+    display: none;
 }
 
 .footer {
@@ -69,9 +90,9 @@ body {
     text-decoration: underline;
 }
 
-/*.footer-link:hover {
-    color: white;
-}*/
+.footer-link:hover {
+    color: var(--brand-col);
+}
 
 .footer_copy {
     font-size: 10px;

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const delay = index * 200;
         point.style.transitionDelay = `${delay}ms`;
         const top = 50 + (index * 10);
-        point.style.top =  `calc(${top}% + 80px)`
+        point.style.top =  `calc(${top}% + 85px)`
     });
 
     var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);

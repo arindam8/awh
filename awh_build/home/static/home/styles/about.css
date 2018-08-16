@@ -53,3 +53,15 @@
     margin-bottom: 0px;
     color: var(--black);
 }
+
+.nav_about {
+    background-color: var(--brand-col) !important;
+}
+
+.about_logo_normal {
+    display: none;
+}
+
+.about_logo_invert {
+    display: block;
+}

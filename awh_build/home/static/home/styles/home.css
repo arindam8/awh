@@ -33,12 +33,10 @@
 
 .enquire_radio {
     margin-right: 10px;
-    margin-top: 5px;
 }
 
 .enquire_radio_circle {
     margin-right: 5px;
-    margin-top: 8px;
 }
 
 .enquire_button {
@@ -112,7 +110,6 @@
 
 .fact_col:hover .facts {
     line-height: 1;
-    cursor: default;
 }
 
 .line2 {
@@ -183,6 +180,27 @@
 
 .click_squ:hover {
     cursor: pointer;
+}
+
+.bodySquLink {
+    color: var(--black);
+}
+
+.bodySquLink:hover {
+    color: var(--brand-col);
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
+    cursor: pointer;
+}
+
+.fact_col:hover .line2 {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
+}
+
+.fact_col:hover .underline {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
 }
 
 .clickable:hover {
@@ -292,6 +310,11 @@
 }
 
 @media (max-width: 767px) {
+    .mobile_margin {
+        margin-top: 10px;
+    }
+
+
     #expert {
         top: 0px;
     }

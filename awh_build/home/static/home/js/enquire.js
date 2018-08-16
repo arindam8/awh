@@ -1,7 +1,7 @@
-var pop_up = document.getElementById("popup_jumbo");
-var fadeTarget = document.getElementById("enquire_widget");
-var fadeTarget2 = document.getElementById("enquire_widget_mini");
-var toggle = 1;
+var pop_up;
+var fadeTarget;
+var fadeTarget2;
+var toggle;
 
 function toggle_form() {
     if (toggle == 1) {
@@ -37,3 +37,14 @@ function fadein() {
     //fadeTarget2.classList.remove('playstate');
     fadeTarget2.classList.remove('enquire_widget_translate');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    pop_up = document.getElementById("popup_jumbo");
+    fadeTarget = document.getElementById("enquire_widget");
+    fadeTarget2 = document.getElementById("enquire_widget_mini");
+    toggle = 1;
+
+    document.getElementById ("enquire_widget").addEventListener ("click", toggle_form, false);
+    document.getElementById ("enquire_widget_mini").addEventListener ("click", toggle_form, false);
+    document.getElementById ("close_popup").addEventListener ("click", toggle_form, false);
+});

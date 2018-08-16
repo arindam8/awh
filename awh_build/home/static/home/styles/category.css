@@ -33,6 +33,11 @@
     font-weight: bold;
 }
 
+.rol_box_padding {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
 hr {
     margin-top: 1rem;
     margin-bottom: 3rem;
@@ -84,6 +89,33 @@ hr {
     width: 14% !important;
 }
 
-.color {
-    padding-top: 15px;
+@media (max-width: 1192px) {
+    .nav-tabs .nav-item {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-tabs .nav-item {
+        width: 32.5% !important;
+        margin-bottom: 5px;
+        height: 54px;
+    }
+
+    .mob_height {
+        min-height: 230px;
+    }
+}
+
+@media (max-width: 464px) {
+    .nav-tabs .nav-item {
+        padding-left: 0px;
+        padding-right: 0px;
+        height: inherit;
+    }
+}
+
+.nav_rol {
+    background-color: var(--brand-col) !important;
 }

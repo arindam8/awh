@@ -1,17 +1,17 @@
 {% extends 'home/template.html' %}
-{% block content %}
+
+{% block header %}
 
 {% load static %}
 <!--styles-->
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/common.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/about.css' %}" />
 
-<header id="banner_container" class="container" >
-    <!--img-->
-    <img id="banner_img" src="https://placeimg.com/1980/1000/arch" alt="">
-</header>
+{% endblock %}
 
 
+
+{% block content %}
 <div class="container-fluid">
     <!--row-->
     <div class="row body_pad">
