@@ -231,7 +231,7 @@ label {
 }
 
 .popup_jumbo_translate {
-    bottom: 8px !important;
+    bottom: 50px !important;
     visibility: visible !important;
     transition: 1s;
 }
@@ -275,11 +275,15 @@ label {
     .navbar-light .navbar-nav .nav-link {
         width: 116px;
      }
+    #popup_jumbo {
+        width: auto;
+    }
 }
 
 @media (max-width: 767px) {
     .navbar-light .navbar-nav .nav-link {
         width: 100%;
+        padding-left: 10px;
      }
 
     #popup_jumbo {
@@ -301,7 +305,7 @@ label {
     }
 
     .popup_jumbo_translate {
-        bottom: -12px !important;
+        bottom: 20px !important;
         visibility: visible !important;
         transition: 1s;
     }

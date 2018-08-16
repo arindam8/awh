@@ -98,4 +98,5 @@ hr {
 
 .nav_case {
     background-color: var(--brand-col) !important;
+    color: var(--snow) !important;
 }
