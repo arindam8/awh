@@ -14,11 +14,6 @@ def get_credentials():
     creds={'email':data['email_host'],'password':data['email_password']}
     return (creds)
 
-
-
-
-
-
 def base_view(request):
     if request.method != 'POST':
         form = EnquiryForm()
@@ -51,19 +46,16 @@ def base_view(request):
     return render(request, 'home/base.html', {'enquiry_form': form})
 
 
-def rol_view(request,index=-99):
-    if index=='0':
-        return render(request, 'home/template_category.html',{'index':-99})
-    else:
-        return render(request, 'home/template_category.html',{'index':index})
+
 
 def about_view(request):
     return render(request, 'home/about.html')
 
-def case_studies_view(request,index=-99):
-
-    return render(request, 'home/case_studies.html',{'index':index})
-
+def rol_view(request,index=-99):
+    if index=='0':
+        return render(request, 'home/rol.html',{'index':-99})
+    else:
+        return render(request, 'home/rol.html',{'index':index})
 
 def dos_view(request,index=-99):
     if index=='0':
@@ -76,3 +68,6 @@ def pw_view(request,index=-99):
         return render(request, 'home/pw.html',{'index':-99})
     else:
         return render(request, 'home/pw.html',{'index':index})
+
+def case_studies_view(request, index=-99):
+    return render(request, 'home/case_studies.html', {'index': index})
