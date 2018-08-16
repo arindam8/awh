@@ -244,7 +244,7 @@ label {
     cursor: pointer
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .navbar-light .navbar-nav .nav-link {
         margin-right: 5px;
         font-size: 19px;
@@ -279,7 +279,7 @@ label {
 
 @media (max-width: 767px) {
     .navbar-light .navbar-nav .nav-link {
-        width: 250px;
+        width: 100%;
      }
 
     #popup_jumbo {
