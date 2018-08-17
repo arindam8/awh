@@ -92,10 +92,8 @@ enquiry
     margin-right: 5px;
 }
 
-#submit_btn {
-    background-color: var(--brand-col);
-    color: var(--snow);
-    border: 0px;
+#submit_btn, #submit_btn_pu, .enquire_button_none, #id_attach, #id_attach_pop {
+    display: none;
 }
 
 .enquire_button {
@@ -130,6 +128,11 @@ enquiry
     text-align: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.file-selected {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .attach_btn:hover {

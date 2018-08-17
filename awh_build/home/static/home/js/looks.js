@@ -2,11 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
     /********************
     change the text in the attach label
     ********************/
-    default_attach = document.getElementById('id_attach');
-    default_attach.onchange = function() {
-        const fileName = default_attach.value;
-        document.getElementById("file-selected").textContent=fileName.replace(/^.*\\/, "");
-    };
+    document.querySelectorAll(".id_attach").forEach(el => {
+        el.onchange = function() {
+            const fileName = el.value;
+            el.previousElementSibling.firstElementChild.textContent=fileName.replace(/^.*\\/, "");
+        }
+    })
 
     /********************
     style the bullet points dynamicly
