@@ -19,7 +19,9 @@
                 {% endfor %}
                 {% endfor %}
                 {% endif %}
-                {{message}}
+                <div class="form_message">
+                    {{message}}
+                </div>
                 {% if enquiry_form %}
                 {% csrf_token %}
                 <form id="contact-form" name="contact-form" method="POST" action ="{% url 'main' %}" enctype="multipart/form-data">

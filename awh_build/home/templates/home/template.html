@@ -105,7 +105,9 @@
         {% endfor %}
         {% endfor %}
         {% endif %}
-        {{message_pop_up}}
+        <div class="form_message">
+            {{message_pop_up}}
+        </div>
         {% if enquiry_form_pop_up %}
         {% csrf_token %}
         <form id="contact-form" name="contact-form" method="POST" action ="{% url 'popup' %}" enctype="multipart/form-data">

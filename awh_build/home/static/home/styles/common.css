@@ -22,7 +22,9 @@
     margin-right: auto;
 }
 
-/*body css*/
+/****************
+body css
+*****************/
 h3 {
     font-weight: bold;
 }
@@ -61,6 +63,13 @@ enquiry
     display: inline-block;
     width: 50%;
     height: 48px;
+    margin-bottom: 0px;
+}
+
+.form_message {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding-top: 5px;
 }
 
 .close_popup {
@@ -201,11 +210,6 @@ enquiry end
     color: var(--brand-col)
 }
 
-.center_over_case_no_hov {
-    mix-blend-mode: unset;
-    color: var(--brand-col)
-}
-
 .case_box_ho_hov {
     transform: scale(1.5); /*for zoom*/
     filter: blur(0px); /*was 3px*/
@@ -225,6 +229,11 @@ enquiry end
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.center_over_case_no_hov {
+    mix-blend-mode: unset;
+    color: var(--brand-col);
 }
 
 .case_red {

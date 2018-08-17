@@ -37,29 +37,36 @@ label {
     margin-bottom: 0px;
 }
 
+p {
+    font-size: 18px;
+}
+
+/*****************
+restyle nav bar
+******************/
+
 #nav_logo_img {
     height: 50px;
 }
 
-/*restyle nav bar*/
-    .bg-dark {
-        background-color: var(--snow) !important;
-    }
+.bg-dark {
+    background-color: var(--snow) !important;
+}
 
-    .navbar {
-        min-height: 70px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-right: 10px;
-    }
+.navbar {
+    min-height: 70px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+}
 
-    .navbar-brand {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        margin-right: 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 
 #about_logo_img {
@@ -73,6 +80,9 @@ label {
     display: none;
 }
 
+/******************
+restyle footer
+******************/
 .footer {
     background-color: var(--snow);
     padding: 10px;
@@ -100,8 +110,9 @@ label {
     padding-top: 20px;
 }
 
-/*widget*/
-
+/******************
+widget
+******************/
 .enq_jumbo {
     padding: 6px 8px 1px 8px;
     margin: 0px;
@@ -204,16 +215,16 @@ label {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 */
-
+/*
 .shake {
     transition: transform .4s;
 }
 
-.shake:hover, .shake:focus {
+.shake:hover, .shake:focus {*/
     /*animation: shake 0.5s;
     animation-iteration-count: infinite;*/
-    transform: scale(1.05);
-}
+/*    transform: scale(1.05);
+}*/
 
 #popup_jumbo {
     position: fixed;
