@@ -28,7 +28,7 @@
                 <div class="row">
                     <!--col-->
                     <div class="col-md-4 padding-new padding-left">
-                        <div class="case_box" onclick="toggle_fade(1)">
+                        <div id="collapse_image1" class="case_box" onclick="toggle_fade(1)">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><img class="case_img" src="{% static 'home/images/case/CASE_LARGE1_NW3_SQU.jpg' %}">
                                 <p class="center_over_case">NW3</p>
                             </a>
@@ -43,7 +43,7 @@
                     </div>
                     <!--col-->
                     <div class="col-md-4 padding-new">
-                        <div class="case_box" onclick="toggle_fade(2)">
+                        <div id="collapse_image2" class="case_box" onclick="toggle_fade(2)">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><img class="case_img" src="{% static 'home/images/case/CASE_LARGE2_RM1_SQU.jpg' %}">
                                 <p class="center_over_case">RM1</p>
                             </a>
@@ -56,7 +56,7 @@
                     </div>
                     <!--col-->
                     <div class="col-md-4 padding-new padding-right">
-                        <div class="case_box" onclick="toggle_fade(3)">
+                        <div id="collapse_image3" class="case_box" onclick="toggle_fade(3)">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><img class="case_img" src="{% static 'home/images/case/CASE_LARGE3_NW8_SQU.jpg' %}">
                                 <p class="center_over_case">NW8</p>
                             </a>
@@ -121,7 +121,7 @@
                 <div class="row">
                     <!--col-->
                     <div class="col-md-4 padding-new padding-left">
-                        <div class="case_box" onclick="toggle_fade(4)">
+                        <div id="collapse_image4" class="case_box" onclick="toggle_fade(4)">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
                                 <p class="center_over_case">XX1</p>
                             </a>
@@ -135,7 +135,7 @@
 
                     <!--col-->
                     <div class="col-md-4 padding-new">
-                        <div class="case_box" onclick="toggle_fade(5)">
+                        <div id="collapse_image5" class="case_box" onclick="toggle_fade(5)">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse5"><img class="case_img" src="{% static 'home/images/case/CASE_MED2_SW12_SQU.png' %}">
                                 <p class="center_over_case">SW12</p>
                             </a>
@@ -148,7 +148,7 @@
                     </div>
                     <!--col-->
                     <div class="col-md-4 padding-new padding-right">
-                        <div class="case_box" onclick="toggle_fade(6)">
+                        <div id="collapse_image6" class="case_box" onclick="toggle_fade(6)">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse6"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
                                 <p class="center_over_case">XX1</p>
                             </a>
@@ -192,7 +192,7 @@
                 <div class="row">
                     <!--col-->
                     <div class="col-md-4 padding-new padding-left">
-                        <div class="case_box" onclick="toggle_fade(7)">
+                        <div id="collapse_image7" class="case_box" onclick="toggle_fade(7)">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse7"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
                                 <p class="center_over_case">XX1</p>
                             </a>
@@ -205,7 +205,7 @@
                     </div>
                     <!--col-->
                     <div class="col-md-4 padding-new">
-                        <div class="case_box" onclick="toggle_fade(8)">
+                        <div id="collapse_image8" class="case_box" onclick="toggle_fade(8)">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse8"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
                                 <p class="center_over_case">XX1</p>
                             </a>
@@ -218,7 +218,7 @@
                     </div>
                     <!--col-->
                     <div class="col-md-4 padding-new padding-right">
-                        <div class="case_box" onclick="toggle_fade(9)">
+                        <div id="collapse_image9" class="case_box" onclick="toggle_fade(9)">
                             <a data-toggle="collapse" data-parent="#accordion" href="#collapse9"><img class="case_img" src="https://placeimg.com/1000/1000/arch">
                                 <p class="center_over_case">XX1</p>
                             </a>
@@ -261,7 +261,6 @@
 <script>
 window.onload = function () {
     var index ='{{index|escapejs}}';
-
     var elementId = "#collapse" + index;
     var elid      = "collapse" + index;
     var qstring   = "a[href='" + elementId + "']";
@@ -270,6 +269,10 @@ window.onload = function () {
     tab[0].classList.remove("collapsed");
     tab[0].setAttribute("aria-expanded", "true");
     info.classList.add("show");
+    toggle_fade(index);
+    var collapse_image = "#collapse_image" + index;
+    collapse_image = document.querySelector(collapse_image);
+    collapse_image.scrollIntoView(true);
 };
 </script>
 {% endblock %}

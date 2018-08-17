@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="scroll on home bugs and clean up">
+    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="more detail fix's and features">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/js/case_studies_nohov.js" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/js/case_studies_nohov.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/category.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/category.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/template.html" afterDir="false" />
     </list>
     <list id="c1840ffc-ff9c-4437-b2a1-afe3437b1a11" name="Added form settings" comment="Added form file and email settings" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +41,7 @@
         <counts>
           <entry key="css" value="47" />
           <entry key="html" value="51" />
-          <entry key="js" value="19" />
+          <entry key="js" value="20" />
           <entry key="png" value="1" />
           <entry key="py" value="22" />
         </counts>
@@ -59,7 +51,7 @@
           <entry key="CSS" value="47" />
           <entry key="HTML" value="51" />
           <entry key="Image" value="1" />
-          <entry key="JavaScript" value="19" />
+          <entry key="JavaScript" value="20" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="21" />
         </counts>
@@ -67,18 +59,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="911" />
-          <entry key="html" value="772" />
+          <entry key="html" value="852" />
           <entry key="js" value="397" />
           <entry key="py" value="35" />
-          <entry key="txt" value="542" />
+          <entry key="txt" value="572" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="911" />
-          <entry key="HTML" value="772" />
+          <entry key="HTML" value="852" />
           <entry key="JavaScript" value="397" />
-          <entry key="PLAIN_TEXT" value="542" />
+          <entry key="PLAIN_TEXT" value="572" />
           <entry key="Python" value="35" />
         </counts>
       </usages-collector>
@@ -89,8 +81,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="263" lean-forward="true" selection-start-line="263" selection-end-line="263" />
+            <state relative-caret-position="746">
+              <caret line="267" column="50" selection-start-line="267" selection-start-column="50" selection-end-line="267" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/case_studies_fade.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -180,7 +181,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="53" />
     <option name="y" value="22" />
-    <option name="width" value="1867" />
+    <option name="width" value="1666" />
     <option name="height" value="1140" />
   </component>
   <component name="ProjectView">
@@ -330,13 +331,6 @@
       <option name="presentableId" value="Default" />
       <updated>1532460025131</updated>
       <workItem from="1534415778732" duration="1600000" />
-    </task>
-    <task id="LOCAL-00041" summary="minor aestetic updates">
-      <created>1532896249442</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1532896249442</updated>
     </task>
     <task id="LOCAL-00042" summary="header image handling for all screen sizes">
       <created>1532898228566</created>
@@ -674,7 +668,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534505774245</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="more detail fix's and features">
+      <created>1534517017866</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1534517017866</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -690,10 +691,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="53" y="22" width="1867" height="1140" extended-state="0" />
+    <frame x="53" y="22" width="1666" height="1140" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2509589" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2820197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -782,7 +783,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rics logo pos" />
     <MESSAGE value="sbmt id fix" />
     <MESSAGE value="almost done" />
     <MESSAGE value="almost done again" />
@@ -807,7 +807,8 @@
     <MESSAGE value="css &amp; js for the enquire forms" />
     <MESSAGE value="some content and bugs etc..." />
     <MESSAGE value="scroll on home bugs and clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="scroll on home bugs and clean up" />
+    <MESSAGE value="more detail fix's and features" />
+    <option name="LAST_COMMIT_MESSAGE" value="more detail fix's and features" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -954,13 +955,6 @@
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/map.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/case_studies_fade.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1074,10 +1068,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/case_studies_fade.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="263" lean-forward="true" selection-start-line="263" selection-end-line="263" />
+        <state relative-caret-position="746">
+          <caret line="267" column="50" selection-start-line="267" selection-start-column="50" selection-end-line="267" selection-end-column="50" />
         </state>
       </provider>
     </entry>
