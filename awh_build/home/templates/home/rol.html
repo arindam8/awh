@@ -111,9 +111,8 @@
 
 <script>
     window.onload = function () {
-        console.log("right file rol");
         var index='{{index|escapejs}}';
-        if (index==='-99'){
+        if (index==='-99') {
             var tab = document.getElementById("nav-menu0-tab");
             tab.classList.add("active");
             tab.classList.add("show");
@@ -121,8 +120,8 @@
             info.classList.add("active");
             info.classList.add("show");
         }
-        else{
-            var elementId = "nav-menu" + index+"-tab";
+        else {
+            var elementId = "nav-menu" + index + "-tab";
             var tab = document.getElementById(elementId);
             tab.classList.add("active");
             tab.classList.add("show");
@@ -130,6 +129,7 @@
             var info = document.getElementById(elid);
             info.classList.add("active");
             info.classList.add("show");
+            info.scrollIntoView(true); //here
         }
         if (index!='0' && index!='-99'){
             var tab = document.getElementById("nav-menu0-tab");
@@ -139,10 +139,9 @@
             info.classList.remove("active");
             info.classList.remove("show");
         }
-
         for (i = 0; i++; i <= 6) {
             if (i != index) {
-                var elementId = "nav-menu" + index+"-tab";
+                var elementId = "nav-menu" + index + "-tab";
                 tab = document.getElementById(elementId);
                 tab.classList.remove("active")
                 tab.classList.remove("show");
