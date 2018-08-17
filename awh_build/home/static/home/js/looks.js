@@ -48,14 +48,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (child.classList.contains("facts")) {
                         child.classList.add('no_hover');
                     }
+                    if (typeof (child.childNodes[0].classList) !== "undefined") {
+                        if (child.childNodes[0].classList.contains("facts")) {
+                            child.childNodes[0].classList.add('no_hover');
+                        }
+                    }
+                    if (child.classList.contains("no_hover_under")) {
+                        child.classList.add('no_hover_underline');
+                    }
                     if (child.classList.contains("more_info")) {
                         child.classList.add('no_hover_info');
-                    }
-                    if (child.classList.contains("about_btn")) {
-                        child.classList.add('about_btn_no_hov');
-                    }
-                    if (child.classList.contains("tel_num")) {
-                        document.querySelector('.large_phone').classList.add('large_phone_no_hov');
                     }
                 })
             }
@@ -64,14 +66,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (child.classList.contains("facts")) {
                         child.classList.remove('no_hover');
                     }
+                    if (typeof (child.childNodes[0].classList) !== "undefined") {
+                        if (child.childNodes[0].classList.contains("facts")) {
+                            child.childNodes[0].classList.remove('no_hover');
+                        }
+                    }
+                    if (child.classList.contains("no_hover_under")) {
+                        child.classList.remove('no_hover_underline');
+                    }
                     if (child.classList.contains("more_info")) {
                         child.classList.remove('no_hover_info');
-                    }
-                    if (child.classList.contains("about_btn")) {
-                        child.classList.remove('about_btn_no_hov');
-                    }
-                    if (child.classList.contains("tel_num")) {
-                        document.querySelector('.large_phone').classList.remove('large_phone_no_hov');
                     }
                 })
             }
@@ -79,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     /********************
-    observe enquiery form
+    observe enquiry form
     ********************/
     var observer = new IntersectionObserver(enq);
     var target = document.querySelector('#enquire_jumo');

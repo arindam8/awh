@@ -10,11 +10,6 @@
     z-index: 100;
 }
 
-#comment {
-    resize: none;
-    height: 76px;
-}
-
 #expert {
     text-align: center;
     color: var(--snow);
@@ -169,6 +164,11 @@
     opacity: 1;
     transform: translateY(-50px);
     transition: opacity 0.5s, transform 0.5s;
+}
+
+.no_hover_underline {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
 }
 
 .home_bottom_pad {

@@ -74,6 +74,11 @@ enquiry
     border-radius: 0;
 }
 
+.comment {
+    resize: none;
+    height: 76px;
+}
+
 #contact-form {
     padding-left: 10px;
     padding-right: 10px;
@@ -192,6 +197,11 @@ enquiry end
 }
 
 .case_box:hover .center_over_case {
+    mix-blend-mode: unset;
+    color: var(--brand-col)
+}
+
+.center_over_case_no_hov {
     mix-blend-mode: unset;
     color: var(--brand-col)
 }
