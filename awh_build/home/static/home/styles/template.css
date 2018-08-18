@@ -1,15 +1,18 @@
-/*Load this CSS file first on initial template*/
-/*These styles persist*/
-/*Every other page must load common.css first*/
-/*Followed by sheet specific css file*/
+/******************
+Load this CSS file first on initial template
+These styles persist
+Every other page must load common.css first
+Followed by sheet specific css file
+******************/
 
-/*Colour Scheme
+/******************
+Colour Scheme
 #D3D4D9 light gray
 #38393A med gray
 #14080E black
 #FFF9FB snow
 #B50A37 reddish brand awh branding
-*/
+******************/
 
 :root {
     --light-gray: #D3D4D9;
@@ -179,13 +182,11 @@ widget
 #enquire_widget_jumo_mini {
     background-color: var(--brand-col);
     color: var(--snow);
-    /*border-radius: 10px 0px 0px 10px;*/
 }
 
 #phone_widget_jumo_mini {
     background-color: var(--brand-col);
     color: var(--snow);
-    /*border-radius: 0px 10px 10px 0px;*/
 }
 
 .bold_text {
@@ -195,36 +196,6 @@ widget
 .white_text, .white_text:hover {
     color: var(--snow);
 }
-
-/*
-.playstate {
-    animation-play-state: paused  !important;
-}
-
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-*/
-/*
-.shake {
-    transition: transform .4s;
-}
-
-.shake:hover, .shake:focus {*/
-    /*animation: shake 0.5s;
-    animation-iteration-count: infinite;*/
-/*    transform: scale(1.05);
-}*/
 
 #popup_jumbo {
     position: fixed;
@@ -238,7 +209,6 @@ widget
     width: 767px;
     padding: 0px;
     z-index: 100;
-    /*transition-timing-function: cubic-bezier(0.39, 1.46, 0.91, 1.32);*/
 }
 
 .popup_jumbo_translate {
@@ -265,7 +235,6 @@ widget
         display: flex;
         align-items: center;
         width: 200px;
-        /*border-radius: 5px 5px 0px 0px;*/
         margin-top: 10px;
     }
 
@@ -323,5 +292,12 @@ widget
 
     .shake:hover, .shake:focus {
         transform: scale(1.1);
+    }
+}
+
+@media (max-width: 480px) {
+    #popup_jumbo {
+        right: 0px;
+        margin-left: 0px;
     }
 }

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="scroll for rlo, dos, pw">
+    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="case study font size">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/template.html" afterDir="false" />
     </list>
     <list id="c1840ffc-ff9c-4437-b2a1-afe3437b1a11" name="Added form settings" comment="Added form file and email settings" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +42,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="49" />
-          <entry key="html" value="54" />
+          <entry key="css" value="50" />
+          <entry key="html" value="57" />
           <entry key="js" value="20" />
           <entry key="png" value="1" />
           <entry key="py" value="23" />
@@ -49,8 +51,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="49" />
-          <entry key="HTML" value="54" />
+          <entry key="CSS" value="50" />
+          <entry key="HTML" value="57" />
           <entry key="Image" value="1" />
           <entry key="JavaScript" value="20" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -59,19 +61,19 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="917" />
-          <entry key="html" value="942" />
+          <entry key="css" value="983" />
+          <entry key="html" value="948" />
           <entry key="js" value="397" />
           <entry key="py" value="39" />
-          <entry key="txt" value="626" />
+          <entry key="txt" value="646" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="917" />
-          <entry key="HTML" value="942" />
+          <entry key="CSS" value="983" />
+          <entry key="HTML" value="948" />
           <entry key="JavaScript" value="397" />
-          <entry key="PLAIN_TEXT" value="626" />
+          <entry key="PLAIN_TEXT" value="646" />
           <entry key="Python" value="39" />
         </counts>
       </usages-collector>
@@ -82,8 +84,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1842">
-              <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="669">
+              <caret line="154" column="20" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2107">
+              <caret line="118" selection-start-line="118" selection-end-line="118" />
             </state>
           </provider>
         </entry>
@@ -92,8 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gray_bar_pad</find>
-      <find>rics_logo</find>
       <find>CLI</find>
       <find>cursor: pointer;</find>
       <find>snow</find>
@@ -122,6 +140,8 @@
       <find>comment</find>
       <find>facts</find>
       <find>.case_box:hover .center_over_case</find>
+      <find>.FORM-CONTROL</find>
+      <find>.form_CONTROL</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,9 +169,6 @@
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/js/looks.js" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/js/case_studies_nohov.js" />
-        <option value="$PROJECT_DIR$/awh_build/home/templates/home/base.html" />
-        <option value="$PROJECT_DIR$/awh_build/home/templates/home/template.html" />
-        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/category.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/about.css" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/about.html" />
@@ -160,6 +177,9 @@
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/pw.html" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/dos.html" />
         <option value="$PROJECT_DIR$/awh_build/home/forms.py" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" />
+        <option value="$PROJECT_DIR$/awh_build/home/templates/home/template.html" />
+        <option value="$PROJECT_DIR$/awh_build/home/templates/home/base.html" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" />
       </list>
     </option>
@@ -323,13 +343,6 @@
       <option name="presentableId" value="Default" />
       <updated>1532460025131</updated>
       <workItem from="1534415778732" duration="1600000" />
-    </task>
-    <task id="LOCAL-00044" summary=" home page bug fix/code tidy">
-      <created>1532901191655</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1532901191655</updated>
     </task>
     <task id="LOCAL-00045" summary="added a phone link on mobile">
       <created>1532902542240</created>
@@ -667,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534520224830</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="case study font size">
+      <created>1534586331896</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1534586331897</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -775,7 +795,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="almost done again" />
     <MESSAGE value="added profile info" />
     <MESSAGE value="mailto" />
     <MESSAGE value="commit" />
@@ -800,7 +819,8 @@
     <MESSAGE value="more detail fix's and features" />
     <MESSAGE value="auto scroll on case studies" />
     <MESSAGE value="scroll for rlo, dos, pw" />
-    <option name="LAST_COMMIT_MESSAGE" value="scroll for rlo, dos, pw" />
+    <MESSAGE value="case study font size" />
+    <option name="LAST_COMMIT_MESSAGE" value="case study font size" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -948,24 +968,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="104" column="20" lean-forward="true" selection-start-line="104" selection-start-column="20" selection-end-line="104" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/case_studies_nohov.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -980,13 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="700">
           <caret line="51" column="62" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
@@ -1053,10 +1052,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="96" column="35" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2107">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1842">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="669">
+          <caret line="154" column="20" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
         </state>
       </provider>
     </entry>
