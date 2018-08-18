@@ -1,4 +1,6 @@
-/*banner css*/
+/*****************
+banner css
+*****************/
 #banner_container {
     /*position: absolute;*/
     align-items: center;
@@ -40,7 +42,6 @@ h3 {
 /*****************
 enquiry
 *****************/
-
 #enquire_widget {
     visibility: visible;
 }
@@ -187,11 +188,8 @@ enquiry
 }
 
 /*****************
-enquiry end
+case study css
 *****************/
-
-
-/*case study css*/
 .case_box {
     padding: 0px;
     position: relative;
@@ -223,7 +221,7 @@ enquiry end
 .center_over_case {
     position: absolute;
     font-weight: bold;
-    font-size: 9vw;
+    font-size: 4.5vw;
     color: white;
     mix-blend-mode: exclusion;
     top: 50%;

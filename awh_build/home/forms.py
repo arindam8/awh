@@ -1,6 +1,4 @@
-
 from django import forms
-
 
 class EnquiryForm(forms.Form):
     CHOICES = (
@@ -8,10 +6,9 @@ class EnquiryForm(forms.Form):
         ('Architect', 'Architect'),
         ('Neighbour', 'Neighbour'),
         ('Other', 'Other'),
-
     )
 
-    name=forms.CharField(label="Name",max_length=1000,widget = forms.TextInput(attrs={'placeholder':'Full Name','id':'name','class': "form-control"}))
+    name = forms.CharField(label="Name",max_length=1000,widget = forms.TextInput(attrs={'placeholder':'Full Name','id':'name','class': "form-control"}))
     email = forms.EmailField(label="Email",required=False,widget = forms.TextInput(attrs={'placeholder':'E-mail','id':'email','class': "form-control"}))
     description = forms.CharField(label="Description",max_length=1000,widget = forms.Textarea(attrs={'placeholder':'Description e.g. Development Type, Planning Application Number, etc...','rows':'1','class': "form-control comment"}))
     postcode = forms.CharField(label="Postcode",max_length=100,widget = forms.TextInput(attrs={'placeholder':'Postcode','id':'postcode','class': "form-control"}))
@@ -26,9 +23,7 @@ class EnquiryForm(forms.Form):
 
         if (email=='' and phone==''):
             msg = forms.ValidationError("One of the fields is required")
-
             self.add_error('email', msg)
-
 
         return self.cleaned_data
 
@@ -38,10 +33,9 @@ class EnquiryFormPopUp(forms.Form):
         ('Architect', 'Architect'),
         ('Neighbour', 'Neighbour'),
         ('Other', 'Other'),
-
     )
 
-    name=forms.CharField(label="Name",max_length=1000,widget = forms.TextInput(attrs={'placeholder':'Full Name','id':'name','class': "form-control"}))
+    name = forms.CharField(label="Name",max_length=1000,widget = forms.TextInput(attrs={'placeholder':'Full Name','id':'name','class': "form-control"}))
     email = forms.EmailField(label="Email",required=False,widget = forms.TextInput(attrs={'placeholder':'E-mail','id':'email','class': "form-control"}))
     description = forms.CharField(label="Description",max_length=1000,widget = forms.Textarea(attrs={'placeholder':'Description e.g. Development Type, Planning Application Number, etc...','id':'comment','rows':'1','class': "form-control comment"}))
     postcode = forms.CharField(label="Postcode",max_length=100,widget = forms.TextInput(attrs={'placeholder':'Postcode','id':'postcode','class': "form-control"}))
@@ -56,8 +50,6 @@ class EnquiryFormPopUp(forms.Form):
 
         if (email=='' and phone==''):
             msg = forms.ValidationError("One of the fields is required")
-
             self.add_error('email', msg)
-
 
         return self.cleaned_data
