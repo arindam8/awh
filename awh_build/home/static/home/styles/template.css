@@ -300,4 +300,12 @@ widget
         right: 0px;
         margin-left: 0px;
     }
+
+    .footer_col_h {
+        font-size: 14px;
+    }
+
+    .footer-link {
+        font-size: 10px;
+    }
 }
