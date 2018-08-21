@@ -7,6 +7,8 @@ import json
 from django.shortcuts import render
 from .forms import EnquiryForm, EnquiryFormPopUp
 import tweepy
+import jsonpickle
+
 
 
 def get_credentials():
@@ -18,6 +20,7 @@ def get_credentials():
 
 def base_view(request):
     disp_tweets = get_tweets()
+    disp_tweets = jsonpickle.encode(disp_tweets)
 
     if request.method != 'POST':
 
@@ -174,8 +177,11 @@ def get_tweets():
     disp_tweets = []
     for tweet in public_tweets:
         tweet_info = {}
-        tweet_info['Summary'] = ''
-        tweet_info['Link'] = tweet
+        #tweet_info['Summary'] = ''
+        tweet_info['text'] = tweet.text
+        tweet_info['link_'] = tweet.entities['urls'][0]['expanded_url']
+        tweet_info['created'] = str(tweet.created_at)
+
         disp_tweets.append(tweet_info)
     return (disp_tweets)
 
