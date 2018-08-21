@@ -93,8 +93,8 @@
     <!--<div class="jumbotron vertical-center" id="popup_jumbo">-->
     <!--</div>-->
     <div class="jumbotron vertical-center" id="popup_jumbo">
-        <h4 class="red_bar" id="jumbo_heading" >Enquire Today</h4>
-        <h4 class="red_bar close_popup"><i class="fas fa-times" id="close_popup"></i></h4>
+        <h4 class="red_bar red_barL" id="jumbo_heading" >Enquire Today</h4>
+        <h4 class="red_bar red_barR close_popup"><i class="fas fa-times" id="close_popup"></i></h4>
         <!--Form-->
         {% if enquiry_form_pop_up.errors %}
         {% for field in enquiry_form_pop_up %}
@@ -105,7 +105,9 @@
         {% endfor %}
         {% endfor %}
         {% endif %}
-        {{message_pop_up}}
+        <div class="form_message">
+            {{message_pop_up}}
+        </div>
         {% if enquiry_form_pop_up %}
         {% csrf_token %}
         <form id="contact-form" name="contact-form" method="POST" action ="{% url 'popup' %}" enctype="multipart/form-data">
@@ -160,10 +162,10 @@
                     <label for="submit_btn_pu" class="enquire_button">
                         Submit
                     </label>
-                    <button type="submit" class="btn btn-default enquire_button none"><input class="clickable none" id="submit_btn_pu" type ="submit"  name = "send"/></button>
+                    <button type="submit" class="btn btn-default enquire_button_none"><input class="clickable none" id="submit_btn_pu" type ="submit"  name = "send"/></button>
 
-                    <label for="id_attach" class="attach_btn">
-                        <span id="file-selected">Attach File</span>
+                    <label for="id_attach_pop" class="attach_btn">
+                        <span class="file-selected">Attach File</span>
                     </label>
                     {{enquiry_form_pop_up.attach}}
 

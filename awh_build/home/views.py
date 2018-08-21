@@ -6,6 +6,7 @@ from django.core.mail import EmailMessage
 import json
 from django.shortcuts import render
 from .forms import EnquiryForm, EnquiryFormPopUp
+import tweepy
 
 
 def get_credentials():
@@ -16,10 +17,14 @@ def get_credentials():
     return (creds)
 
 def base_view(request):
+    disp_tweets = get_tweets()
+
     if request.method != 'POST':
+
+
         form = EnquiryForm()
         form_pu = EnquiryFormPopUp()
-        return render(request,'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu})
+        return render(request,'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu,'tweets':disp_tweets})
 
     form = EnquiryForm(request.POST, request.FILES)
     form_pu = EnquiryFormPopUp(request.POST, request.FILES)
@@ -40,24 +45,25 @@ def base_view(request):
                 attach = request.FILES['attach']
                 mail.attach(attach.name, attach.read(), attach.content_type)
             mail.send()
-            return render(request,'home/base.html', {'message': 'Thanks for the enquiry. We will be in touch shortly'})
+            return render(request,'home/base.html', {'message': 'Thanks for the enquiry. We will be in touch shortly','tweets':disp_tweets})
         except:
-            return render(request,'home/base.html', {'message': 'Either the attachment is too  big or corrupt'})
+            return render(request,'home/base.html', {'message': 'Either the attachment is too  big or corrupt','tweets':disp_tweets})
 
 
-        return render(request,'home/base.html', {'message': 'Unable to send email. Please try again later'})
+        return render(request,'home/base.html', {'message': 'Unable to send email. Please try again later','tweets':disp_tweets})
     else:
         print ('noowww')
 
-    return render(request, 'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu})
+    return render(request, 'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu,'tweets':disp_tweets})
 
 
 
 def main(request):
+    disp_tweets = get_tweets()
     if request.method != 'POST':
         form = EnquiryForm()
         form_pu = EnquiryFormPopUp()
-        return render(request,'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu})
+        return render(request,'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu,'tweets':disp_tweets})
 
     form = EnquiryForm(request.POST, request.FILES)
     form_pu = EnquiryFormPopUp(request.POST, request.FILES)
@@ -78,22 +84,23 @@ def main(request):
                 mail.attach(attach.name, attach.read(), attach.content_type)
             mail.send()
             form_p = EnquiryFormPopUp()
-            return render(request,'home/base.html', {'message': 'Thanks for the enquiry. We will be in touch shortly','enquiry_form_pop_up':form_p})
+            return render(request,'home/base.html', {'message': 'Thanks for the enquiry. We will be in touch shortly','enquiry_form_pop_up':form_p,'tweets':disp_tweets})
         except:
             form_p = EnquiryFormPopUp()
-            return render(request,'home/base.html', {'message': 'Either the attachment is too  big or corrupt','enquiry_form_pop_up':form_p})
+            return render(request,'home/base.html', {'message': 'Either the attachment is too  big or corrupt','enquiry_form_pop_up':form_p,'tweets':disp_tweets})
 
         form_p = EnquiryFormPopUp()
-        return render(request,'home/base.html', {'message': 'Unable to send email. Please try again later','enquiry_form_pop_up':form_p})
+        return render(request,'home/base.html', {'message': 'Unable to send email. Please try again later','enquiry_form_pop_up':form_p,'tweets':disp_tweets})
     form_p = EnquiryFormPopUp()
-    return render(request, 'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_p})
+    return render(request, 'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_p,'tweets':disp_tweets})
 
 
 def popup(request):
+    disp_tweets = get_tweets()
     if request.method != 'POST':
         form = EnquiryForm()
         form_pu = EnquiryFormPopUp()
-        return render(request,'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu})
+        return render(request,'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu,'tweets':disp_tweets})
 
     form = EnquiryForm(request.POST, request.FILES)
     form_pu = EnquiryFormPopUp(request.POST, request.FILES)
@@ -114,15 +121,15 @@ def popup(request):
                 mail.attach(attach.name, attach.read(), attach.content_type)
             mail.send()
             form_p=EnquiryForm()
-            return render(request,'home/base.html', {'message_pop_up': 'Thanks for the enquiry. We will be in touch shortly','enquiry_form':form_p})
+            return render(request,'home/base.html', {'message_pop_up': 'Thanks for the enquiry. We will be in touch shortly','enquiry_form':form_p,'tweets':disp_tweets})
         except:
             form_p = EnquiryForm()
-            return render(request,'home/base.html', {'message_pop_up': 'Either the attachment is too  big or corrupt','enquiry_form':form_p})
+            return render(request,'home/base.html', {'message_pop_up': 'Either the attachment is too  big or corrupt','enquiry_form':form_p,'tweets':disp_tweets})
 
         form_p=EnquiryForm()
-        return render(request,'home/base.html', {'message_pop_up': 'Unable to send email. Please try again later','enquiry_form':form_p})
+        return render(request,'home/base.html', {'message_pop_up': 'Unable to send email. Please try again later','enquiry_form':form_p,'tweets':disp_tweets})
     form_p = EnquiryForm()
-    return render(request, 'home/base.html', {'enquiry_form': form,'enquiry_form':form_p})
+    return render(request, 'home/base.html', {'enquiry_form': form,'enquiry_form':form_p,'tweets':disp_tweets})
 
 
 
@@ -155,3 +162,20 @@ def pw_view(request,index=-99):
 def case_studies_view(request, index=-99):
     form_pu = EnquiryFormPopUp()
     return render(request, 'home/case_studies.html', {'index': index,'enquiry_form_pop_up':form_pu})
+
+
+def get_tweets():
+    auth = tweepy.OAuthHandler('8uY1nssYzWu0f8dF5MeREgqVr', '0V1KRinGxlEVXuvTWDHcbxpWTYLcZPta2yZ9jRHdjQSgtLvCe9')
+    auth.set_access_token('1031669552541773826-G7vQXztmoyzCNIZozNGG8vq3zhLy8K', '6mAG4KAphfh7EXFbrykdI12r5lCvNb0QqYVi1OjlUjYed')
+
+    api = tweepy.API(auth)
+
+    public_tweets = api.home_timeline()
+    disp_tweets = []
+    for tweet in public_tweets:
+        tweet_info = {}
+        tweet_info['Summary'] = ''
+        tweet_info['Link'] = tweet
+        disp_tweets.append(tweet_info)
+    return (disp_tweets)
+

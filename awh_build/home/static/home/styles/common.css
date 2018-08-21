@@ -1,4 +1,6 @@
-/*banner css*/
+/*****************
+banner css
+*****************/
 #banner_container {
     /*position: absolute;*/
     align-items: center;
@@ -22,7 +24,9 @@
     margin-right: auto;
 }
 
-/*body css*/
+/****************
+body css
+*****************/
 h3 {
     font-weight: bold;
 }
@@ -38,7 +42,6 @@ h3 {
 /*****************
 enquiry
 *****************/
-
 #enquire_widget {
     visibility: visible;
 }
@@ -59,8 +62,22 @@ enquiry
     background-color: var(--brand-col);
     color: var(--snow);
     display: inline-block;
-    width: 50%;
     height: 48px;
+    margin-bottom: 0px;
+}
+
+.red_barL {
+    width: 85%;
+}
+
+.red_barR {
+    width: 15%;
+}
+
+.form_message {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding-top: 5px;
 }
 
 .close_popup {
@@ -72,6 +89,12 @@ enquiry
 
 .jumbotron, .form-control {
     border-radius: 0;
+    font-size: inherit;
+}
+
+.comment {
+    resize: none;
+    height: 76px;
 }
 
 #contact-form {
@@ -92,10 +115,8 @@ enquiry
     margin-right: 5px;
 }
 
-#submit_btn {
-    background-color: var(--brand-col);
-    color: var(--snow);
-    border: 0px;
+#submit_btn, #submit_btn_pu, .enquire_button_none, #id_attach, #id_attach_pop {
+    display: none;
 }
 
 .enquire_button {
@@ -111,6 +132,7 @@ enquiry
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+    font-size: 16px;
 }
 
 .clickable:hover {
@@ -130,6 +152,12 @@ enquiry
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    font-size: 16px;
+}
+
+.file-selected {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .attach_btn:hover {
@@ -170,11 +198,8 @@ enquiry
 }
 
 /*****************
-enquiry end
+case study css
 *****************/
-
-
-/*case study css*/
 .case_box {
     padding: 0px;
     position: relative;
@@ -206,12 +231,17 @@ enquiry end
 .center_over_case {
     position: absolute;
     font-weight: bold;
-    font-size: 9vw;
+    font-size: 4.5vw;
     color: white;
     mix-blend-mode: exclusion;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.center_over_case_no_hov {
+    mix-blend-mode: unset;
+    color: var(--brand-col);
 }
 
 .case_red {
@@ -245,6 +275,16 @@ enquiry end
 
 @media (max-width: 767px) {
     .center_over_case {
-        font-size: 27vw;
+        font-size: 13.5vw;
+    }
+
+    .jumbotron, .form-control {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 343px) {
+    .enquire_radio {
+        font-size: 12PX;
     }
 }

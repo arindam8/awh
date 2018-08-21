@@ -8,9 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('case_box_ho_hov');
+                entry.target.nextElementSibling.classList.add('center_over_case_no_hov');
             }
             else {
                 entry.target.classList.remove('case_box_ho_hov');
+                entry.target.nextElementSibling.classList.remove('center_over_case_no_hov');
             }
         })
     }

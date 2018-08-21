@@ -7,8 +7,8 @@
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
 
             <div class="jumbotron vertical-center" id="enquire_jumo">
-                <h4 class="red_bar" id="jumbo_heading" >Enquire Today</h4>
-                <div class="red_bar close_popup"></div>
+                <h4 class="red_bar red_barL" id="jumbo_heading" >Enquire Today</h4>
+                <div class="red_bar red_barR close_popup"></div>
                 <!--Form-->
                 {% if enquiry_form.errors %}
                 {% for field in enquiry_form %}
@@ -19,7 +19,9 @@
                 {% endfor %}
                 {% endfor %}
                 {% endif %}
-                {{message}}
+                <div class="form_message">
+                    {{message}}
+                </div>
                 {% if enquiry_form %}
                 {% csrf_token %}
                 <form id="contact-form" name="contact-form" method="POST" action ="{% url 'main' %}" enctype="multipart/form-data">
@@ -74,10 +76,10 @@
                             <label for="submit_btn" class="enquire_button">
                                 Submit
                             </label>
-                            <button type="submit" class="btn btn-default enquire_button none"><input class="clickable none" id="submit_btn" type ="submit"  name = "send"/></button>
+                            <button type="submit" class="btn btn-default enquire_button_none"><input class="clickable none" id="submit_btn" type ="submit"  name = "send"/></button>
 
                             <label for="id_attach" class="attach_btn">
-                                <span id="file-selected">Attach File</span>
+                                <span class="file-selected">Attach File</span>
                             </label>
                             {{enquiry_form.attach}}
                         </div>
@@ -95,9 +97,9 @@
         <div class="row home_body_pad">
             <!--col-->
             <a class="col-md-4 fact_col color-1 boxs click_squ"  href="{% url 'about_view' %}">
-                <h5 class="facts facts_bold facts90 snow click_squ">£20m +</h5>
-                <h4 class="facts facts_bold snow click_squ">Of Compensation</h4>
-                <h4 class="facts snow click_squ">Negotiated. Negated. Agreed.</h4>
+                <h5 class="facts no_hover_under facts_bold facts90 snow click_squ">£20m +</h5>
+                <h4 class="facts no_hover_under facts_bold snow click_squ">Of Compensation</h4>
+                <h4 class="facts no_hover_under snow click_squ">Negotiated. Negated. Agreed.</h4>
                 <p class="more_info snow click_squ">• On over 300 Projects.</p>
                 <p class="more_info snow click_squ">• Acting for Developers and Neighbours.</p>
                 <p class="more_info snow click_squ">• Providing bespoke and strategic advice.</p>
@@ -112,8 +114,8 @@
             </div>
             <!--col-->
             <a class="col-md-4 fact_col color-2 boxs click_squ"  href="{% url 'about_view' %}">
-                <h5 class="facts snow facts_bold facts80 click_squ">Over 25 Years' Experience.</h5>
-                <h4 class="facts snow click_squ">Experts in Property</h4>
+                <h5 class="facts no_hover_under snow facts_bold facts80 click_squ">Over 25 Years' Experience.</h5>
+                <h4 class="facts no_hover_under snow click_squ">Experts in Property</h4>
             </a>
         </div>
 
@@ -129,9 +131,9 @@
             </div>
             <!--col-->
             <div class="col-md-4 fact_col boxs">
-                <a href="{% url 'about_view' %}" class="bodySquLink"><h5 class="facts facts_bold facts90 underline">Talk to Us.</h5></a>
-                <a href="tel:+02070611100" class="bodySquLink"><h6 class="click_squ facts facts_bold line2">0207 061 1100</h6></a>
-                <a href="mailto:info@awh.co.uk?Subject=Enquire" target="_top" class="bodySquLink"><h6 class="click_squ facts facts30 line2">info@awh.co.uk</h6></a>
+                <a href="{% url 'about_view' %}" class="bodySquLink no_hover_under"><h5 class="facts facts_bold facts90 underline">Talk to Us.</h5></a>
+                <a href="tel:+02070611100" class="bodySquLink no_hover_under"><h6 class="click_squ facts facts_bold line2">0207 061 1100</h6></a>
+                <a href="mailto:info@awh.co.uk?Subject=Enquire" target="_top" class="bodySquLink no_hover_under"><h6 class="click_squ facts facts30 line2">info@awh.co.uk</h6></a>
                 <h6 class="facts facts30">12 Dorrington Street</h6>
                 <h6 class="facts facts30">London</h6>
                 <h6 class="facts facts30">EC1N 7TB</h6>
@@ -155,10 +157,7 @@
             </div>
             <!--col-->
             <div class="col-md-4 padding-new">
-                <div class="col-md-3 map_container" id="map">
-                    <!--requires API key-->
-                    <!--<iframe id="map_frame" width="1000" height="1000" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRzyAIkwbdkgRCHz-tEf3D2Y&key=AIzaSyCiZxvmE2VQes9sbcocDG8jWA5kf3v2fok" allowfullscreen></iframe>-->
-                </div>
+                    <img class="awh3D" src="{% static 'home/images/logo3DSNOW.jpg' %}">
             </div>
             <!--col-->
             <div class="col-md-4 padding_top15 color-1 mobile_width">
@@ -175,11 +174,6 @@
     </div>
 </main>
 
-
-<script type="text/javascript" src="{% static 'home/js/map.js' %}" ></script>
-<script async defer
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiZxvmE2VQes9sbcocDG8jWA5kf3v2fok&callback=initMap">
-</script>
 <script type="text/javascript" src="{% static 'home/js/looks.js' %}" ></script>
 <script type="text/javascript" src="{% static 'home/js/case_studies_nohov.js' %}" ></script>
 

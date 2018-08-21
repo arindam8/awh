@@ -39,6 +39,7 @@
 .box_align {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .profile_deets {
@@ -54,6 +55,10 @@
     color: var(--black);
 }
 
+/*******
+correct nav styles
+*******/
+
 .nav_about {
     background-color: var(--brand-col) !important;
     color: var(--snow) !important;
@@ -64,5 +69,5 @@
 }
 
 .about_logo_invert {
-    display: block;
+    display: inline-block;
 }
