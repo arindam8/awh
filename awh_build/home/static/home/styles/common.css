@@ -273,6 +273,10 @@ case study css
     color: var(--snow);
 }
 
+.red {
+    color: var(--brand-col);
+}
+
 @media (max-width: 767px) {
     .center_over_case {
         font-size: 13.5vw;

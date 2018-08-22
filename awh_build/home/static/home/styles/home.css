@@ -186,6 +186,27 @@
 .news_date {
     padding-top: 2vw;
     line-height: 0;
+    display: block;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+}
+
+.news_date:hover {
+    color: var(--brand-col);
+}
+
+.news_link {
+    font-size: 1.6vw;
+    color: var(--snow);
+    text-decoration: underline;
+}
+
+.news_link:hover {
+    color: var(--brand-col);
+}
+
+.news_content {
+    font-size: 1.6vw;
 }
 
 .padding_top15 {

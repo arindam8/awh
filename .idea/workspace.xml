@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="MOBILE stuff">
-      <change afterPath="$PROJECT_DIR$/awh_build/home/static/home/js/tweet.js" afterDir="false" />
+    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="link front end to tweets">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/configuration/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/configuration/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/js/tweet.js" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/js/tweet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/case.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/case.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/views.py" afterDir="false" />
     </list>
     <list id="c1840ffc-ff9c-4437-b2a1-afe3437b1a11" name="Added form settings" comment="Added form file and email settings" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,7 +46,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="50" />
+          <entry key="css" value="53" />
           <entry key="html" value="64" />
           <entry key="js" value="22" />
           <entry key="json" value="3" />
@@ -55,7 +56,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="50" />
+          <entry key="CSS" value="53" />
           <entry key="HTML" value="64" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="3" />
@@ -66,21 +67,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="991" />
-          <entry key="html" value="1362" />
-          <entry key="js" value="613" />
+          <entry key="css" value="1101" />
+          <entry key="html" value="1394" />
+          <entry key="js" value="623" />
           <entry key="json" value="47" />
           <entry key="py" value="233" />
-          <entry key="txt" value="687" />
+          <entry key="txt" value="711" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="991" />
-          <entry key="HTML" value="1362" />
+          <entry key="CSS" value="1101" />
+          <entry key="HTML" value="1394" />
           <entry key="JSON" value="47" />
-          <entry key="JavaScript" value="613" />
-          <entry key="PLAIN_TEXT" value="687" />
+          <entry key="JavaScript" value="623" />
+          <entry key="PLAIN_TEXT" value="711" />
           <entry key="Python" value="233" />
         </counts>
       </usages-collector>
@@ -97,11 +98,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="165" column="81" selection-start-line="165" selection-start-column="81" selection-end-line="165" selection-end-column="81" />
+            <state relative-caret-position="723">
+              <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/case.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="194" column="28" selection-start-line="194" selection-start-column="28" selection-end-line="194" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="593">
+              <caret line="276" column="26" selection-start-line="276" selection-start-column="26" selection-end-line="276" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -109,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/tweet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+            <state relative-caret-position="180">
+              <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -139,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="359">
+              <caret line="25" column="53" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -151,7 +179,6 @@
     <findStrings>
       <find>CLI</find>
       <find>cursor: pointer;</find>
-      <find>snow</find>
       <find>jumb</find>
       <find>click</find>
       <find>.facts</find>
@@ -179,6 +206,7 @@
       <find>.case_box:hover .center_over_case</find>
       <find>.FORM-CONTROL</find>
       <find>.form_CONTROL</find>
+      <find>snow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,9 +228,7 @@
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/rol.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/pw.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/dos.css" />
-        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/case.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/js/enquire.js" />
-        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/js/looks.js" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/js/case_studies_nohov.js" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/category.css" />
@@ -213,13 +239,15 @@
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/dos.html" />
         <option value="$PROJECT_DIR$/awh_build/home/forms.py" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/template.html" />
-        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/template.css" />
         <option value="$PROJECT_DIR$/awh_build/configuration/config.json" />
-        <option value="$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html" />
         <option value="$PROJECT_DIR$/awh_build/home/views.py" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/common.css" />
         <option value="$PROJECT_DIR$/awh_build/home/static/home/js/tweet.js" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/home.css" />
         <option value="$PROJECT_DIR$/awh_build/home/templates/home/base.html" />
+        <option value="$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html" />
+        <option value="$PROJECT_DIR$/awh_build/home/static/home/styles/case.css" />
       </list>
     </option>
   </component>
@@ -387,13 +415,6 @@
       <option name="presentableId" value="Default" />
       <updated>1532460025131</updated>
       <workItem from="1534415778732" duration="1600000" />
-    </task>
-    <task id="LOCAL-00047" summary="fixed footer layout">
-      <created>1532941840988</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1532941840988</updated>
     </task>
     <task id="LOCAL-00048" summary="home page look updates.&#10;&#10;TO DO:&#10;&#10;add  &quot;id&quot; to radio tags that matches &quot;for&quot; on matching label tags&#10;add &quot;enquire_radio_circle&quot; class to radio circle's.&#10;add &quot;enquire_radio&quot; class to labels">
       <created>1533037142319</created>
@@ -731,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534588750928</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="link front end to tweets">
+      <created>1534892153758</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1534892153760</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -750,7 +778,7 @@
     <frame x="0" y="22" width="1666" height="1140" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2955665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2955665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -760,7 +788,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295129" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49884126" visible="true" weight="0.09064885" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49884126" visible="true" weight="0.09064885" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.3295129" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.22614504" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011588" side_tool="true" weight="0.16150235" />
@@ -839,7 +867,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit" />
     <MESSAGE value="changes from meeting" />
     <MESSAGE value="changes from meeting with MD" />
     <MESSAGE value="made header extend the base template." />
@@ -864,7 +891,8 @@
     <MESSAGE value="case study font size" />
     <MESSAGE value="make it play nicer on mobile" />
     <MESSAGE value="MOBILE stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="MOBILE stuff" />
+    <MESSAGE value="link front end to tweets" />
+    <option name="LAST_COMMIT_MESSAGE" value="link front end to tweets" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/images/logo.png">
@@ -929,13 +957,6 @@
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/images/case/CASE_LARGE1_NW3_SUB1.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/case.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="100" column="34" selection-start-line="100" selection-start-column="34" selection-end-line="100" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/map.js" />
     <entry file="file://$PROJECT_DIR$/awh_build/home/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -944,13 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="231" column="14" lean-forward="true" selection-start-line="231" selection-start-column="14" selection-end-line="231" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1000,13 +1014,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990">
-          <caret line="154" column="20" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1089,20 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/looks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="699">
@@ -1113,17 +1106,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/looks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/js/tweet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        <state relative-caret-position="180">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="194" column="28" selection-start-line="194" selection-start-column="28" selection-end-line="194" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="165" column="81" selection-start-line="165" selection-start-column="81" selection-end-line="165" selection-end-column="81" />
+        <state relative-caret-position="723">
+          <caret line="168" column="35" selection-start-line="168" selection-start-column="35" selection-end-line="168" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="593">
+          <caret line="276" column="26" selection-start-line="276" selection-start-column="26" selection-end-line="276" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/templates/home/case_studies.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/styles/case.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

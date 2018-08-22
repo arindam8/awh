@@ -18,6 +18,10 @@
     margin-right: 0px;
 }
 
+.case-row-top {
+    margin-top: 15px;
+}
+
 .body_pad {
     padding-top: 3rem !important;
 }
