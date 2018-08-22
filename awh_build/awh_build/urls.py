@@ -29,6 +29,6 @@ urlpatterns = [
     url(r'^about/', views.about_view, name='about_view'),
     url(r'^main/', views.main, name='main'),
     url(r'^popup/', views.popup, name='popup'),
-    url(r'^case-studies/(?P<index>.)', views.case_studies_view, name='case_studies_view'),
+    url(r'^projects/(?P<index>.)', views.case_studies_view, name='case_studies_view'),
     url(r'^', views.base_view, name='base_view')
 ]

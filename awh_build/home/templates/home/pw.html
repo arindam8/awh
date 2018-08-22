@@ -46,7 +46,7 @@
             <p class="justify">As the owner of a Rights of Light easement you have certain Rights that entitle you to a remedy. Rights of Light is a very specialist subject and dealing with the Developers and their consultants can be confusing, it is best to considering having your own Rights of Light specialist who can look after your best interests.</p>
         </div>
         <!--col-->
-        <div class="col-md-4 mob_height color-2 rol_box_padding">
+        <div id="scroll_obj" class="col-md-4 mob_height color-2 rol_box_padding">
             <h3 class="snow">Received our Letter</h3>
             <p class="snow justify">We may have tried to contact you to discuss a potential Rights of Light issue at your property. We would appreciate if you would take the time to talk to us so that we can explain more.</p>
         </div>
@@ -55,7 +55,7 @@
 
     <!--tabs-->
     <h2 id="services_h" >Services</h2>
-    <section>
+    <section class="tabs_section">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <a class="nav-item nav-link" id="nav-menu0-tab" data-toggle="tab" href="#nav-menu0" role="tab" aria-controls="nav-home" aria-selected="true">Pre-Acquisition Advice</a>
@@ -129,7 +129,8 @@
             var info = document.getElementById(elid);
             info.classList.add("active");
             info.classList.add("show");
-            info.scrollIntoView(true); //here
+            var scroll = document.getElementById("scroll_obj");
+            scroll.scrollIntoView(true); //here
         }
         if (index!='0' && index!='-99'){
             var tab = document.getElementById("nav-menu0-tab");

@@ -25,7 +25,6 @@ def base_view(request):
 
     if request.method != 'POST':
 
-
         form = EnquiryForm()
         form_pu = EnquiryFormPopUp()
         return render(request,'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu,'tweets':disp_tweets})
