@@ -3,6 +3,7 @@
 {% block header %}
 
 {% load static %}
+<!--Page Specific Styles-->
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/common.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
 
@@ -62,13 +63,11 @@
                         <!--col-->
                         <div class="col-md-7 d-flex align-content-center">
                             {% for choice in enquiry_form.category.field.choices %}
-                            <!--<li style="list-style-type:None;">-->
                             <input class='enquire_radio_circle' type="radio" name="category" value="{{choice.0}}" id="{{choice.0}}"
                                    {% ifequal enquiry_form.category.data choice.0 %}
                                    checked="checked"
                                    {% endifequal %}/>
                             <label class='enquire_radio' for="{{choice.0}}"> {{choice.1}} </label>
-                            <!--</li>-->
                             {% endfor %}
                         </div>
                         <!--col-->
@@ -93,7 +92,7 @@
 <!--Body-->
 <main class="container-fluid">
     <div>
-        <!--facts row-->
+        <!--top row-->
         <div class="row home_body_pad">
             <!--col-->
             <a class="col-md-4 fact_col color-1 boxs click_squ"  href="{% url 'about_view' %}">
@@ -119,7 +118,7 @@
             </a>
         </div>
 
-        <!--case study row-->
+        <!--middle row-->
         <div class="row home_body_pad case_correct_padding">
             <!--col-->
             <div class="col-md-4 padding-new">
@@ -148,7 +147,7 @@
             </div>
         </div>
 
-        <!--map row-->
+        <!--bottom row-->
         <div class="row home_body_pad">
             <!--col-->
             <div class="col-md-4 mini_cont padding_top15 mobile_width">
@@ -174,13 +173,13 @@
     </div>
 </main>
 
-<!--pass var django to js files-->
+<!--pass variables from django to js files-->
 <script>
    var tweets
    tweets = "{{ tweets|escapejs }}"
 </script>
 
-<!--scripts-->
+<!--Scripts-->
 <script type="text/javascript" src="{% static 'home/js/looks.js' %}" ></script>
 <script type="text/javascript" src="{% static 'home/js/case_studies_nohov.js' %}" ></script>
 <script type="text/javascript" src="{% static 'home/js/tweet.js' %}" ></script>
