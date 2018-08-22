@@ -21,7 +21,7 @@ from home import views
 urlpatterns = [
     #url(r'^admin/', admin.site.urls),
     #url(r'^home/', include('home.urls'))
-    url(r'^', views.base_view, name='base_view'),
+
     #url(r'^rol/', views.rol_view, name='rol_view'),
     url(r'^rights-of-light/(?P<index>.)', views.rol_view, name='rol_view'),
     url(r'^daylight-and-sunlighting/(?P<index>.)', views.dos_view, name='dos_view'),
@@ -29,5 +29,6 @@ urlpatterns = [
     url(r'^about/', views.about_view, name='about_view'),
     url(r'^main/', views.main, name='main'),
     url(r'^popup/', views.popup, name='popup'),
-    url(r'^case-studies/(?P<index>.)', views.case_studies_view, name='case_studies_view')
+    url(r'^case-studies/(?P<index>.)', views.case_studies_view, name='case_studies_view'),
+    url(r'^', views.base_view, name='base_view')
 ]

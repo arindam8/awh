@@ -19,8 +19,9 @@ def get_credentials():
     return (creds)
 
 def base_view(request):
-    disp_tweets = get_tweets()
-    disp_tweets = jsonpickle.encode(disp_tweets)
+    #disp_tweets = get_tweets()
+    #disp_tweets = jsonpickle.encode(disp_tweets)
+    disp_tweets=[]
 
     if request.method != 'POST':
 
