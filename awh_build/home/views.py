@@ -54,7 +54,6 @@ def base_view(request):
 
         return render(request,'home/base.html', {'message': 'Unable to send email. Please try again later','tweets':disp_tweets})
     else:
-        print ('noowww')
 
     return render(request, 'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu,'tweets':disp_tweets})
 
