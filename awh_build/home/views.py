@@ -31,7 +31,6 @@ def base_view(request):
 
     form = EnquiryForm(request.POST, request.FILES)
     form_pu = EnquiryFormPopUp(request.POST, request.FILES)
-    print ('here')
     if form.is_valid():
         description = form.cleaned_data['description']
         postcode = form.cleaned_data['postcode']
@@ -177,7 +176,6 @@ def get_tweets():
     disp_tweets = []
     for tweet in public_tweets:
         tweet_info = {}
-        #tweet_info['Summary'] = ''
         tweet_info['text'] = tweet.text
         tweet_info['link_'] = tweet.entities['urls'][0]['expanded_url']
         tweet_info['created'] = str(tweet.created_at)
