@@ -213,6 +213,10 @@
     padding-top: 15px;
 }
 
+.padding_bottom15 {
+    padding-bottom: 15px;
+}
+
 .mini_cont {
     background-color: var(--dark-gray);
 }

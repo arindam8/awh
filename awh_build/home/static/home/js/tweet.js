@@ -2,7 +2,8 @@ tweets = JSON.parse(tweets)
 for (let i = 0; i < tweets.length; i++) {
    tweets[i].text = tweets[i].text.split("http")[0]
    tweets[i].created = tweets[i].created.split(" ")[0]
-   tweets[i].created = tweets[i].created.replace(/-/g, "/");
+   tweets[i].created = new Date(tweets[i].created)
+   tweets[i].created = tweets[i].created.toLocaleDateString();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
