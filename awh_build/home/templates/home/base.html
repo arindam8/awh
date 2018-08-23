@@ -64,7 +64,7 @@
                         <div class="col-md-7 d-flex align-content-center">
                             {% for choice in enquiry_form.category.field.choices %}
                             <input class='enquire_radio_circle' type="radio" name="category" value="{{choice.0}}" id="{{choice.0}}"
-                                   {% ifequal enquiry_form.category.data choice.0 %}
+                                   {% ifequal choice.0 "Developer" %}
                                    checked="checked"
                                    {% endifequal %}/>
                             <label class='enquire_radio' for="{{choice.0}}"> {{choice.1}} </label>

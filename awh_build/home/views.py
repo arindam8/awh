@@ -25,12 +25,13 @@ def base_view(request):
 
     if request.method != 'POST':
 
-        form = EnquiryForm()
-        form_pu = EnquiryFormPopUp()
+        form = EnquiryForm(initial={'category':'Developer'})
+        form_pu = EnquiryFormPopUp(initial={'category':'Developer'})
         return render(request,'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu,'tweets':disp_tweets})
 
     form = EnquiryForm(request.POST, request.FILES)
     form_pu = EnquiryFormPopUp(request.POST, request.FILES)
+    print ('here')
     if form.is_valid():
         description = form.cleaned_data['description']
         postcode = form.cleaned_data['postcode']
@@ -42,7 +43,7 @@ def base_view(request):
         category = form.cleaned_data['category']
         body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category
         try:
-            mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, [email])
+            mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, ['rightsoflight@awh.co.uk'])
             if len(request.FILES) != 0:
                 attach = request.FILES['attach']
                 mail.attach(attach.name, attach.read(), attach.content_type)
@@ -54,6 +55,7 @@ def base_view(request):
 
         return render(request,'home/base.html', {'message': 'Unable to send email. Please try again later','tweets':disp_tweets})
     else:
+        print ('noowww')
 
         return render(request, 'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu,'tweets':disp_tweets})
 
@@ -62,8 +64,8 @@ def base_view(request):
 def main(request):
     disp_tweets = get_tweets()
     if request.method != 'POST':
-        form = EnquiryForm()
-        form_pu = EnquiryFormPopUp()
+        form = EnquiryForm(initial={'category':'Developer'})
+        form_pu = EnquiryFormPopUp(initial={'category':'Developer'})
         return render(request,'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu,'tweets':disp_tweets})
 
     form = EnquiryForm(request.POST, request.FILES)
@@ -79,28 +81,28 @@ def main(request):
         category = form.cleaned_data['category']
         body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category
         try:
-            mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, [email])
+            mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, ['rightsoflight@awh.co.uk'])
             if len(request.FILES) != 0:
                 attach = request.FILES['attach']
                 mail.attach(attach.name, attach.read(), attach.content_type)
             mail.send()
-            form_p = EnquiryFormPopUp()
+            form_p = EnquiryFormPopUp(initial={'category':'Developer'})
             return render(request,'home/base.html', {'message': 'Thanks for the enquiry. We will be in touch shortly','enquiry_form_pop_up':form_p,'tweets':disp_tweets})
         except:
-            form_p = EnquiryFormPopUp()
+            form_p = EnquiryFormPopUp(initial={'category':'Developer'})
             return render(request,'home/base.html', {'message': 'Either the attachment is too  big or corrupt','enquiry_form_pop_up':form_p,'tweets':disp_tweets})
 
-        form_p = EnquiryFormPopUp()
+        form_p = EnquiryFormPopUp(initial={'category':'Developer'})
         return render(request,'home/base.html', {'message': 'Unable to send email. Please try again later','enquiry_form_pop_up':form_p,'tweets':disp_tweets})
-    form_p = EnquiryFormPopUp()
+    form_p = EnquiryFormPopUp(initial={'category':'Developer'})
     return render(request, 'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_p,'tweets':disp_tweets})
 
 
 def popup(request):
     disp_tweets = get_tweets()
     if request.method != 'POST':
-        form = EnquiryForm()
-        form_pu = EnquiryFormPopUp()
+        form = EnquiryForm(initial={'category':'Developer'})
+        form_pu = EnquiryFormPopUp(initial={'category':'Developer'})
         return render(request,'home/base.html', {'enquiry_form': form,'enquiry_form_pop_up':form_pu,'tweets':disp_tweets})
 
     form = EnquiryForm(request.POST, request.FILES)
@@ -116,15 +118,15 @@ def popup(request):
         category = form_pu.cleaned_data['category']
         body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category
         try:
-            mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, [email])
+            mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, ['rightsoflight@awh.co.uk'])
             if len(request.FILES) != 0:
                 attach = request.FILES['attach']
                 mail.attach(attach.name, attach.read(), attach.content_type)
             mail.send()
-            form_p=EnquiryForm()
+            form_p=EnquiryForm(initial={'category':'Developer'})
             return render(request,'home/base.html', {'message_pop_up': 'Thanks for the enquiry. We will be in touch shortly','enquiry_form':form_p,'tweets':disp_tweets})
         except:
-            form_p = EnquiryForm()
+            form_p = EnquiryForm(initial={'category':'Developer'})
             return render(request,'home/base.html', {'message_pop_up': 'Either the attachment is too  big or corrupt','enquiry_form':form_p,'tweets':disp_tweets})
 
         form_p=EnquiryForm()
@@ -136,49 +138,65 @@ def popup(request):
 
 
 def about_view(request):
-    form_pu = EnquiryFormPopUp()
+    form_pu = EnquiryFormPopUp(initial={'category':'Developer'})
     return render(request, 'home/about.html',{'enquiry_form_pop_up':form_pu})
 
 def rol_view(request,index=-99):
-    form_pu = EnquiryFormPopUp()
+    form_pu = EnquiryFormPopUp(initial={'category':'Developer'})
     if index=='0':
         return render(request, 'home/rol.html',{'index':-99,'enquiry_form_pop_up':form_pu})
     else:
         return render(request, 'home/rol.html',{'index':index,'enquiry_form_pop_up':form_pu})
 
 def dos_view(request,index=-99):
-    form_pu = EnquiryFormPopUp()
+    form_pu = EnquiryFormPopUp(initial={'category':'Developer'})
     if index=='0':
         return render(request, 'home/dos.html',{'index':-99,'enquiry_form_pop_up':form_pu})
     else:
         return render(request, 'home/dos.html',{'index':index,'enquiry_form_pop_up':form_pu})
 
 def pw_view(request,index=-99):
-    form_pu = EnquiryFormPopUp()
+    form_pu = EnquiryFormPopUp(initial={'category':'Developer'})
     if index=='0':
         return render(request, 'home/pw.html',{'index':-99,'enquiry_form_pop_up':form_pu})
     else:
         return render(request, 'home/pw.html',{'index':index,'enquiry_form_pop_up':form_pu})
 
 def case_studies_view(request, index=-99):
-    form_pu = EnquiryFormPopUp()
+    form_pu = EnquiryFormPopUp(initial={'category':'Developer'})
     return render(request, 'home/case_studies.html', {'index': index,'enquiry_form_pop_up':form_pu})
 
 
 def get_tweets():
     auth = tweepy.OAuthHandler('8uY1nssYzWu0f8dF5MeREgqVr', '0V1KRinGxlEVXuvTWDHcbxpWTYLcZPta2yZ9jRHdjQSgtLvCe9')
     auth.set_access_token('1031669552541773826-G7vQXztmoyzCNIZozNGG8vq3zhLy8K', '6mAG4KAphfh7EXFbrykdI12r5lCvNb0QqYVi1OjlUjYed')
+    last_set=[]
+    try:
+        api = tweepy.API(auth)
 
-    api = tweepy.API(auth)
+        public_tweets = api.home_timeline()
+        disp_tweets = []
+        for tweet in public_tweets:
+            tweet_info = {}
+            tweet_info['text'] = tweet.text
+            tweet_info['link_'] = tweet.entities['urls'][0]['expanded_url']
+            tweet_info['created'] = str(tweet.created_at)
 
-    public_tweets = api.home_timeline()
-    disp_tweets = []
-    for tweet in public_tweets:
-        tweet_info = {}
-        tweet_info['text'] = tweet.text
-        tweet_info['link_'] = tweet.entities['urls'][0]['expanded_url']
-        tweet_info['created'] = str(tweet.created_at)
+            disp_tweets.append(tweet_info)
+        last_set=disp_tweets
+        f = open("tweets.txt", "w")
+        f.write(str(last_set))
+        f.close()
+        with open('tweets.txt') as f:
+            s = f.readline()
+        print (type(s))
+        print ('herree')
+        f.close()
+        return (disp_tweets)
 
-        disp_tweets.append(tweet_info)
-    return (disp_tweets)
+    except:
+        with open('tweets.txt') as f:
+            s = f.readline()
+        f.close()
+        return (s)
 
