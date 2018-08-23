@@ -11,11 +11,12 @@
 
     <script type="text/javascript" src="{% static 'home/js/enquire.js' %}" ></script>
 
-    <!--other css-->
+    <!--Other CSS-->
     <link rel="stylesheet" href="https://use.typekit.net/ekb4avl.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <title>AWH - Rights of Light</title>
+    <link rel="shortcut icon" href="{%  static 'home/images/favicon.ico' %}">
 </head>
 
 <body>
@@ -43,7 +44,7 @@
                     <a class="nav-link nav_pw" href="{% url 'pw_view' index=0%}">Party Wall</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav_case" href="{% url 'case_studies_view' index=-99%}">Case Studies</a>
+                    <a class="nav-link nav_case" href="{% url 'case_studies_view' index=-99%}">Projects</a>
                 </li>
             </ul>
         </div>
@@ -51,11 +52,8 @@
 
     <header>
         <div id="banner_container" class="stack_em">
-            <!--img-->
-            <!--<img id="banner_img" src="https://placeimg.com/1980/500/arch" alt="">-->
-            <video preload="none" loop="loop" autoplay="autoplay" id="banner_vid">
+            <video loop="loop" muted autoplay="autoplay" id="banner_vid">
                 <source src="{% static 'home/video/awh.webm' %}" type="video/mp4">
-                <source src="{% static 'home/video/awh.mp4' %}" type="video/mp4">
             </video>
 
             {% block header %}
@@ -68,15 +66,15 @@
     {% endblock %}
 
     {% block enquire_button %}
-    <!--enquire widget-->
-    <!--enquire button-->
+    <!--Enquire Widget-->
+    <!--Enquire Button-->
     <div id="enquire_widget" class="shake">
         <div class="jumbotron enq_jumbo" id="enquire_widget_jumo">
             <h4 class="bold_text" >Enquire</h4>
         </div>
     </div>
 
-    <!--mobile buttons-->
+    <!--Mobile Buttons-->
     <div id="enquire_widget_mini" class="shake">
         <div class="jumbotron enq_jumbo" id="enquire_widget_jumo_mini">
             <h4 class="bold_text"><i class="far fa-envelope-open"></i></h4>
@@ -89,13 +87,10 @@
     </div>
     {% endblock %}
 
-    <!--ENQUIRE FORM HERE-->
-    <!--<div class="jumbotron vertical-center" id="popup_jumbo">-->
-    <!--</div>-->
+    <!--Form-->
     <div class="jumbotron vertical-center" id="popup_jumbo">
         <h4 class="red_bar red_barL" id="jumbo_heading" >Enquire Today</h4>
         <h4 class="red_bar red_barR close_popup"><i class="fas fa-times" id="close_popup"></i></h4>
-        <!--Form-->
         {% if enquiry_form_pop_up.errors %}
         {% for field in enquiry_form_pop_up %}
         {% for error in field.errors %}
@@ -148,13 +143,11 @@
                 <!--col-->
                 <div class="col-md-7 d-flex align-content-center">
                     {% for choice in enquiry_form_pop_up.category.field.choices %}
-                    <!--<li style="list-style-type:None;">-->
                     <input class='enquire_radio_circle' type="radio" name="category" value="{{choice.0}}" id="{{choice.0}}"
-                           {% ifequal enquiry_form_pop_up.category.data choice.0 %}
+                           {% ifequal choice.0 "Developer" %}
                            checked="checked"
                            {% endifequal %}/>
                     <label class='enquire_radio' for="{{choice.0}}"> {{choice.1}} </label>
-                    <!--</li>-->
                     {% endfor %}
                 </div>
                 <!--col-->
@@ -184,8 +177,8 @@
                 <!--col-->
                 <div class="col-3">
                     <p class="footer_col_h" >Links</p>
-                    <a class="footer-link" href="#">Linked In</a><br />
-                    <a class="footer-link" href="#">Blog</a><br />
+                    <a class="footer-link" href="https://www.linkedin.com/company/anderson-wilde-&-harris">Linked In</a><br />
+                    <a class="footer-link" href="http://awh.co.uk/anderson-wilde-harris-blog/">Blog</a><br />
                     <a class="footer-link" href="#">Q2 Update</a><br />
                     <a class="footer-link" href="#">Contact Us</a>
                 </div>

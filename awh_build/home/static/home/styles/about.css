@@ -10,8 +10,18 @@
     visibility: visible;
 }
 
+.about_bottom {
+    padding-bottom: 15px;
+}
+
 #about_story {
     text-align: center;
+}
+
+.about_s_pad {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: justify;
 }
 
 .about_bottom {
@@ -28,11 +38,11 @@
 }
 
 .about_links:hover {
-    color: var(--black);
+    color: var(--brand-col);
 }
 
 .profile_img {
-    border-radius: 100%;
+    /*border-radius: 100%;*/
     width: 150px;
 }
 
@@ -53,6 +63,14 @@
 .profile_email {
     margin-bottom: 0px;
     color: var(--black);
+}
+
+.profile_email:hover {
+    color: var(--brand-col);
+}
+
+.profile_job {
+    font-size: 16px;
 }
 
 /*******

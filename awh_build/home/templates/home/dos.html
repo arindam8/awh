@@ -3,9 +3,10 @@
 {% block header %}
 
 {% load static %}
+<!--Page Specific JS-->
 <script type="text/javascript" src="{% static 'home/js/tab_index.js' %}" ></script>
 
-<!--styles-->
+<!--Page Specific Styles-->
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/common.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/category.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/dos.css' %}" />
@@ -16,14 +17,14 @@
                     <!--jumbo 1-->
                     <div class="jumbotron banner_jumbo " id="left_jumo">
                         <h2 class="jumbo_h">Daylighting and Sunlighting</h2>
-                        <p class="jumbo_para justify" >Daylight and Sunlight Assessments are a common requirement of planning application when reviewing the impact, a proposed development will to surrounding properties light. Review of Daylighting and Sunlight levels can be required to a development and/or to the surrounding properties.</p>
+                        <p class="jumbo_para justify" >Daylight and Sunlight Assessments are a common requirement to support a planning application. They review the natural light to either a proposed development or the impact the development has on the light to the surrounding properties. Due to the increasingly restricted site the impact and level of daylight and sunlight are becoming increasingly important.</p>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
                     <!--jumbo 2-->
                     <div class="jumbotron banner_jumbo " id="right_jumo">
                         <h2 class="jumbo_h">Our Experience</h2>
-                        <p class="jumbo_para justify" >We can provide advice from the beginning stage of a project through a Pre-application and finally onto a Planning Application. The report will assess the properties and the development using the methodologies in the BRE Guidance Site Layout Planning for Daylight and Sunlight. A Guide to Good Practice. Further to this our expertise have provide design advice and we have attended Planning Committee Meetings.</p>
+                        <p class="jumbo_para justify" >We have provided advice from the design stage, during Pre-application and finally onto a Planning Application. The report will assess the properties and the development using the methodologies in the BRE Guidance Site Layout Planning for Daylight and Sunlight. A Guide to Good Practice. Further to this we have discussed levels of daylighting and sunlight at Planning Committee Meetings.</p>
                     </div>
                 </div>
             </div>
@@ -32,50 +33,93 @@
 {% endblock %}
 
 {% block content %}
-<!--body of -->
+<!--Body-->
 <main class="container-fluid">
     <!--row-->
     <div class="row rol_b4_case_margin">
         <!--col-->
         <div class="col-md-4 mob_height color-1 rol_box_padding">
-            <h3 class="snow">Developer</h3>
-            <p class="snow justify">The complication arising through Rights of Light can be significant. As a Developer you are a risk from time and monetary costs that are unlikely to be recouped. Considering Rights of Light at the acquisition stage can benefit you project by negotiating the purchase price or by providing a contingency if such problems arise.</p>
+            <h3 class="snow">Assessing a Development</h3>
+            <p class="snow justify">Development confined to restrictive sites are becoming more common. Planners are requiring that the levels of Daylighting and Sunlight to a proposal to be assessed. The BRE Guidance provides for different methodologies to be used to ensure that there is good housing stock. The following are typically required: Vertical Sky Component, Average Daylight Factor, No Sky Line, Room Depth, Annual Probable Sunlight Hours and Overshadowing to Gardens and Open Spaces.</p>
         </div>
         <!--col-->
         <div class="col-md-4 mob_height rol_box_padding">
-            <h3>Neighbour</h3>
-            <p class="justify">As the owner of a Rights of Light easement you have certain Rights that entitle you to a remedy. Rights of Light is a very specialist subject and dealing with the Developers and their consultants can be confusing, it is best to considering having your own Rights of Light specialist who can look after your best interests.</p>
+            <h3>Assessing the Surrounding Properties</h3>
+            <p class="justify">The impact on surrounding properties can be the reason a proposal with gain planning consent or have its planning refused. The BRE Guidance provides for different methodologies to be used to ensure the impact to the levels of daylighting and sunlighting to the surrounding properties is kept to good standards. The test used are: Vertical Sky Component, No Sky Line, Annual Probable Sunlight Hours and Overshadowing to Gardens and Open Spaces.</p>
         </div>
         <!--col-->
-        <div class="col-md-4 mob_height color-2 rol_box_padding">
-            <h3 class="snow">Received our Letter</h3>
-            <p class="snow justify">We may have tried to contact you to discuss a potential Rights of Light issue at your property. We would appreciate if you would take the time to talk to us so that we can explain more.</p>
+        <div id="scroll_obj" class="col-md-4 mob_height color-2 rol_box_padding">
+            <h3 class="snow">The Difference between Daylight and Sunlight and Rights of Light</h3>
+            <p class="snow justify">Daylight and Sunlighting is a planning consideration and is used by the Local Planning Authority to establish the appropriateness of a development within the built environment. Rights of Light is a common law issue, in which an aperture that has been in place for more than 20 years acquires an easement entitling it a pathway over neighbouring land (the development). Although the issues are different we have extensive knowledge of both and can assist.</p>
         </div>
 
     </div>
 
     <!--tabs-->
     <h2 id="services_h" >Services</h2>
-    <section>
+    <section class="tabs_section">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link" id="nav-menu0-tab" data-toggle="tab" href="#nav-menu0" role="tab" aria-controls="nav-home" aria-selected="true">Pre-Acquisition Advice</a>
-                <a class="nav-item nav-link" id="nav-menu1-tab" data-toggle="tab" href="#nav-menu1" role="tab" aria-controls="nav-profile" aria-selected="false">Initial Feasibility Report</a>
-                <a class="nav-item nav-link" id="nav-menu2-tab" data-toggle="tab" href="#nav-menu2" role="tab" aria-controls="nav-contact" aria-selected="false">Site Optimisation and Feasibility</a>
-                <a class="nav-item nav-link" id="nav-menu3-tab" data-toggle="tab" href="#nav-menu3" role="tab" aria-controls="nav-contact" aria-selected="false">Technical Analysis</a>
-                <a class="nav-item nav-link" id="nav-menu4-tab" data-toggle="tab" href="#nav-menu4" role="tab" aria-controls="nav-contact" aria-selected="false">Full Rights of Light Assessment</a>
-                <a class="nav-item nav-link" id="nav-menu5-tab" data-toggle="tab" href="#nav-menu5" role="tab" aria-controls="nav-contact" aria-selected="false">Strategic Advice and Negotiation</a>
-                <a class="nav-item nav-link" id="nav-menu6-tab" data-toggle="tab" href="#nav-menu6" role="tab" aria-controls="nav-contact" aria-selected="false">Easy Reference Chart</a>
+                <a class="nav-item nav-link" id="nav-menu0-tab" data-toggle="tab" href="#nav-menu0" role="tab" aria-controls="nav-home" aria-selected="true">Site Optimisation and Feasibility</a>
+                <a class="nav-item nav-link" id="nav-menu1-tab" data-toggle="tab" href="#nav-menu1" role="tab" aria-controls="nav-profile" aria-selected="false">Daylight and Sunlight Assessment</a>
+                <a class="nav-item nav-link" id="nav-menu2-tab" data-toggle="tab" href="#nav-menu2" role="tab" aria-controls="nav-contact" aria-selected="false">Assessment of Proposed Development</a>
+                <a class="nav-item nav-link" id="nav-menu3-tab" data-toggle="tab" href="#nav-menu3" role="tab" aria-controls="nav-contact" aria-selected="false">Design Advice</a>
+                <a class="nav-item nav-link" id="nav-menu4-tab" data-toggle="tab" href="#nav-menu4" role="tab" aria-controls="nav-contact" aria-selected="false">Planning Committee Meeting Attendance</a>
+                <a class="nav-item nav-link" id="nav-menu5-tab" data-toggle="tab" href="#nav-menu5" role="tab" aria-controls="nav-contact" aria-selected="false">Easy reference Chart</a>
+                <a class="nav-item nav-link" id="nav-menu6-tab" data-toggle="tab" href="#nav-menu6" role="tab" aria-controls="nav-contact" aria-selected="false">Project Timeline</a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-menu0" role="tabpanel" aria-labelledby="nav-home-tab"><h3>Menu 0</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-            <div class="tab-pane fade" id="nav-menu1" role="tabpanel" aria-labelledby="nav-profile-tab"><h3>Menu 1</h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            <div class="tab-pane fade" id="nav-menu2" role="tabpanel" aria-labelledby="nav-contact-tab"><h3>Menu 2</h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</div>
-            <div class="tab-pane fade" id="nav-menu3" role="tabpanel" aria-labelledby="nav-contact-tab"><h3>Menu 3</h3>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
-            <div class="tab-pane fade" id="nav-menu4" role="tabpanel" aria-labelledby="nav-contact-tab"><h3>Menu 4</h3>facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a.</div>
-            <div class="tab-pane fade" id="nav-menu5" role="tabpanel" aria-labelledby="nav-contact-tab"><h3>Menu 5</h3>cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit.</div>
-            <div class="tab-pane fade" id="nav-menu6" role="tabpanel" aria-labelledby="nav-contact-tab"><h3>Menu 6</h3>quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit.</div>
+            <div class="tab-pane fade show active" id="nav-menu0" role="tabpanel" aria-labelledby="nav-home-tab">
+                <h3>Site Optimisation and Feasibility</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Site inspection and property measurement.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>3D modelling of the surrounding built environment.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>A maximum building envelope.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Cutbacks to an existing proposal to limit the impact.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <h3>Daylight and Sunlight Assessment</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Site inspection and property measurement.
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Property data and source collection.
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Surrounding development analysis.
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>3D modelling of the surrounding built environment.
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Daylight and Sunlight testing.
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Detailed report suitable for pre-app or planning application.
+            </div>
+            <div class="tab-pane fade" id="nav-menu2" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3>Assessment of Proposed Development</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Site inspection and property measurement.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>3D modelling of the surrounding built environment.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Daylight and Sunlight testing.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Detailed report suitable for pre-app or planning application.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu3" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3>Design Advice</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>External Daylight and Sunlight recommendations.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Internal Daylight and Sunlight recommendations.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Cutbacks and additions.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu4" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3>Planning Committee Meeting Attendance</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Discussion of Daylighting and Sunlighting for a proposed development.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Discussion the impact on the levels of Daylighting and Sunlighting to the properties surrounding a development.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Detailed explanation of Daylight and Sunlighting.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu5" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3>Easy reference Chart</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div><a class="tabs_link" href="#">Easy Reference Chart <i class="fas fa-external-link-square-alt"></i></a></p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu6" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3>Project Timeline</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div><a class="tabs_link" href="#">Project Timeline <i class="fas fa-external-link-square-alt"></i></a></p>
+            </div>
         </div>
     </section>
 
@@ -130,7 +174,8 @@
             var info = document.getElementById(elid);
             info.classList.add("active");
             info.classList.add("show");
-            info.scrollIntoView(true); //here
+            var scroll = document.getElementById("scroll_obj");
+            scroll.scrollIntoView(true); //here
         }
         if (index!='0' && index!='-99'){
             var tab = document.getElementById("nav-menu0-tab");

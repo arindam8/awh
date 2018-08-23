@@ -41,7 +41,17 @@ label {
 }
 
 p {
-    font-size: 18px;
+    font-size: 19px;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 /*****************
@@ -177,6 +187,11 @@ widget
 #enquire_widget_jumo {
     background-color: var(--brand-col);
     color: var(--snow);
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #enquire_widget_jumo_mini {
@@ -248,7 +263,11 @@ widget
     .navbar-light .navbar-nav .nav-link {
         width: 150px; /*16*/
         font-size: 17px;
-     }
+    }
+
+    #enquire_widget_jumo {
+        width: 150px;
+    }
 }
 
 @media (max-width: 936px) {
@@ -257,6 +276,11 @@ widget
      }
     #popup_jumbo {
         width: auto;
+    }
+
+
+    #enquire_widget_jumo {
+        width: 116px;
     }
 }
 

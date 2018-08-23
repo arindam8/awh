@@ -47,6 +47,20 @@ hr {
     text-align: center;
     padding-top: 10px;
     font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tab_title {
+    padding-bottom: 15px;
+}
+
+.tab-pane {
+    font-size: 19px;
+}
+
+.tabs_section {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .nav-tabs {
@@ -74,9 +88,16 @@ hr {
 
 .nav-tabs .nav-item {
     text-align: center !important;
-    width: 14% !important;
     min-height: 60px;
     font-size: 18px;
+}
+
+.tabs_link {
+    color: var(--black);
+}
+
+.tabs_link:hover {
+    color: var(--brand-col);
 }
 
 @media (max-width: 1192px) {

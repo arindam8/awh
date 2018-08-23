@@ -3,9 +3,10 @@
 {% block header %}
 
 {% load static %}
+<!--Page Specific JS-->
 <script type="text/javascript" src="{% static 'home/js/tab_index.js' %}" ></script>
 
-<!--styles-->
+<!--Page Specific Styles-->
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/common.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/category.css' %}" />
 <link rel="stylesheet" type="text/css" href="{% static 'home/styles/pw.css' %}" />
@@ -15,15 +16,15 @@
                 <div class="col-md-6 d-flex justify-content-center">
                     <!--jumbo 1-->
                     <div class="jumbotron banner_jumbo " id="left_jumo">
-                        <h2 class="jumbo_h">Party Wall</h2>
-                        <p class="jumbo_para justify" >A Right to Light is common law issue. It is an easement that an aperture can acquire either through the 1832 Prescription Act or by Express Grant. Acquiring a Right to Light through prescription requires the aperture to be in place for more than 20 years and the easement entitles the dominant owner to see a specific amount of a sky from a certain percentage of the room. When a proposed development causes an infringement, the neighbouring properties are entitled to a remedy.</p>
+                        <h2 class="jumbo_h">Party Wall Act (1996)</h2>
+                        <p class="jumbo_para justify" >A party wall is a common wall between two or more properties and cannot wholly belong to any one property owner. When you are carrying out work on your property or a client’s property it is important to consider whether the planned work will affect the party wall. Work that affects a party wall is dealt with under the Party Wall Act (1996). The Act permits owners to carry out certain specific works whilst at the same time protecting the interests of anyone else who might be affected by that work.</p>
                     </div>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center">
                     <!--jumbo 2-->
                     <div class="jumbotron banner_jumbo " id="right_jumo">
                         <h2 class="jumbo_h">Our Experience</h2>
-                        <p class="jumbo_para justify" >A Rights of Light infringement can carry a huge liability for a Developer and have the potential to render schemes unfeasible. We have dealt with schemes on both a large and small scale and ensured that our clients best interests are met. Once we have been appointed we devise a strategy using our extensive technical, legal and practical knowledge to protect our clients’ interests.</p>
+                        <p class="jumbo_para justify">As an impartial party and mediator, a professional and experienced surveyor fills a vital role in the process of making changes to a party wall. Anderson Wilde & Harris has extensive experience acting on projects of all sizes including some of the largest developments and through to taking cases through court proceedings.</p>
                     </div>
                 </div>
             </div>
@@ -31,50 +32,79 @@
 {% endblock %}
 
 {% block content %}
-<!--body of -->
+<!--Body-->
 <main class="container-fluid">
     <!--row-->
     <div class="row rol_b4_case_margin">
         <!--col-->
         <div class="col-md-4 mob_height color-1 rol_box_padding">
-            <h3 class="snow">Developer</h3>
-            <p class="snow justify">The complication arising through Rights of Light can be significant. As a Developer you are a risk from time and monetary costs that are unlikely to be recouped. Considering Rights of Light at the acquisition stage can benefit you project by negotiating the purchase price or by providing a contingency if such problems arise.</p>
+            <h3 class="snow">What is Covered By the Act</h3>
+            <p class="snow justify">Most work affecting the party wall is included. If work is planned the neighbouring property or adjoining owner needs to be notified with a Party Wall Award. The works which require a party wall award are: Cutting into a wall to take bearing of a beam; inserting a damp proof course; raising a party wall; demolishing and rebuilding a party wall; underpinning in whole or in part of the party wall; weathering the junction; excavating foundation within 3 meters and excavating foundations within 6 meters.</p>
         </div>
         <!--col-->
         <div class="col-md-4 mob_height rol_box_padding">
-            <h3>Neighbour</h3>
-            <p class="justify">As the owner of a Rights of Light easement you have certain Rights that entitle you to a remedy. Rights of Light is a very specialist subject and dealing with the Developers and their consultants can be confusing, it is best to considering having your own Rights of Light specialist who can look after your best interests.</p>
+            <h3>What do I do</h3>
+            <p class="justify">If you wish to carry out the work covered by the act, you will have to serve notice on the neighbour with whom the wall is shared and obtain their consent. The notice must be served at least two months before starting work. If all affected neighbours provide written consent to the work within 14 days of receiving the notice, then you can proceed with the work. If, however, they explicitly disagree or simply do not respond within 14 days then they must be treated as dissenting to the work, and additional steps are required before beginning work.</p>
         </div>
         <!--col-->
-        <div class="col-md-4 mob_height color-2 rol_box_padding">
-            <h3 class="snow">Received our Letter</h3>
-            <p class="snow justify">We may have tried to contact you to discuss a potential Rights of Light issue at your property. We would appreciate if you would take the time to talk to us so that we can explain more.</p>
+        <div id="scroll_obj" class="col-md-4 mob_height color-2 rol_box_padding">
+            <h3 class="snow">Received a Notice from your Neighbour?</h3>
+            <p class="snow justify">If you are an Adjoining Owner and you receive a notice under the Party Wall etc. Act 1996, you will have 14 days to carefully consider how to safeguard your interests. The following three notices are available: 1) Consent to Notice 2) Dissent to the Notice and appoint your own surveyor 3) Dissent to the Notice and Concur in the appointment of an Agreed surveyor.</p>
         </div>
 
     </div>
 
     <!--tabs-->
     <h2 id="services_h" >Services</h2>
-    <section>
+    <section class="tabs_section">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link" id="nav-menu0-tab" data-toggle="tab" href="#nav-menu0" role="tab" aria-controls="nav-home" aria-selected="true">Pre-Acquisition Advice</a>
-                <a class="nav-item nav-link" id="nav-menu1-tab" data-toggle="tab" href="#nav-menu1" role="tab" aria-controls="nav-profile" aria-selected="false">Initial Feasibility Report</a>
-                <a class="nav-item nav-link" id="nav-menu2-tab" data-toggle="tab" href="#nav-menu2" role="tab" aria-controls="nav-contact" aria-selected="false">Site Optimisation and Feasibility</a>
-                <a class="nav-item nav-link" id="nav-menu3-tab" data-toggle="tab" href="#nav-menu3" role="tab" aria-controls="nav-contact" aria-selected="false">Technical Analysis</a>
-                <a class="nav-item nav-link" id="nav-menu4-tab" data-toggle="tab" href="#nav-menu4" role="tab" aria-controls="nav-contact" aria-selected="false">Full Rights of Light Assessment</a>
-                <a class="nav-item nav-link" id="nav-menu5-tab" data-toggle="tab" href="#nav-menu5" role="tab" aria-controls="nav-contact" aria-selected="false">Strategic Advice and Negotiation</a>
-                <a class="nav-item nav-link" id="nav-menu6-tab" data-toggle="tab" href="#nav-menu6" role="tab" aria-controls="nav-contact" aria-selected="false">Easy Reference Chart</a>
+                <a class="nav-item nav-link" id="nav-menu0-tab" data-toggle="tab" href="#nav-menu0" role="tab" aria-controls="nav-home" aria-selected="true">Party Wall Notices</a>
+                <a class="nav-item nav-link" id="nav-menu1-tab" data-toggle="tab" href="#nav-menu1" role="tab" aria-controls="nav-profile" aria-selected="false">Party Wall Awards</a>
+                <a class="nav-item nav-link" id="nav-menu2-tab" data-toggle="tab" href="#nav-menu2" role="tab" aria-controls="nav-contact" aria-selected="false">Schedule of Condition</a>
+                <a class="nav-item nav-link" id="nav-menu3-tab" data-toggle="tab" href="#nav-menu3" role="tab" aria-controls="nav-contact" aria-selected="false">Building Owner</a>
+                <a class="nav-item nav-link" id="nav-menu4-tab" data-toggle="tab" href="#nav-menu4" role="tab" aria-controls="nav-contact" aria-selected="false">Adjoining Owner</a>
             </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-menu0" role="tabpanel" aria-labelledby="nav-home-tab"><h3>Menu 0</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-            <div class="tab-pane fade" id="nav-menu1" role="tabpanel" aria-labelledby="nav-profile-tab"><h3>Menu 1</h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-            <div class="tab-pane fade" id="nav-menu2" role="tabpanel" aria-labelledby="nav-contact-tab"><h3>Menu 2</h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</div>
-            <div class="tab-pane fade" id="nav-menu3" role="tabpanel" aria-labelledby="nav-contact-tab"><h3>Menu 3</h3>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
-            <div class="tab-pane fade" id="nav-menu4" role="tabpanel" aria-labelledby="nav-contact-tab"><h3>Menu 4</h3>facilisis ex non, fringilla urna. Aliquam sit amet diam ultrices, scelerisque leo in, elementum diam. Nam a.</div>
-            <div class="tab-pane fade" id="nav-menu5" role="tabpanel" aria-labelledby="nav-contact-tab"><h3>Menu 5</h3>cursus metus purus vehicula tellus. Ut a quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit.</div>
-            <div class="tab-pane fade" id="nav-menu6" role="tabpanel" aria-labelledby="nav-contact-tab"><h3>Menu 6</h3>quam ullamcorper, facilisis ex non, fringilla urna. Aliquam sit.</div>
+            <div class="tab-pane fade show active" id="nav-menu0" role="tabpanel" aria-labelledby="nav-home-tab">
+                <h3>Party Wall Notices</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Advice on the whether a Party Wall notice is required.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Serving Party Wall notices.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <h3>Party Wall Awards</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Act on behalf of adjoining owner or building owner.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Site inspections.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Producing schedule of conditions.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Drafting a Party Wall award.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Serving the Party Wall award(s).</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Checking off the schedule of condition.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu2" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3>Schedule of Condition</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Site Inspection</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Report detailing condition of the property(s).</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Relative photographic schedule.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu3" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3>Building Owner</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Advice for developer(s).</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Party Wall notices.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Party Wall awards.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu4" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3>Adjoining Owner</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Site Inspection</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Advice of proposed works.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Review of draft and Party Wall awards.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Review of photographic schedules.</p>
+            </div>
         </div>
     </section>
 
@@ -129,7 +159,8 @@
             var info = document.getElementById(elid);
             info.classList.add("active");
             info.classList.add("show");
-            info.scrollIntoView(true); //here
+            var scroll = document.getElementById("scroll_obj");
+            scroll.scrollIntoView(true); //here
         }
         if (index!='0' && index!='-99'){
             var tab = document.getElementById("nav-menu0-tab");

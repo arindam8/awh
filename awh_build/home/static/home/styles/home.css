@@ -186,10 +186,35 @@
 .news_date {
     padding-top: 2vw;
     line-height: 0;
+    display: block;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+}
+
+.news_date:hover {
+    color: var(--brand-col);
+}
+
+.news_link {
+    font-size: 1.6vw;
+    color: var(--snow);
+    text-decoration: underline;
+}
+
+.news_link:hover {
+    color: var(--brand-col);
+}
+
+.news_content {
+    font-size: 1.6vw;
 }
 
 .padding_top15 {
     padding-top: 15px;
+}
+
+.padding_bottom15 {
+    padding-bottom: 15px;
 }
 
 .mini_cont {
@@ -211,6 +236,20 @@
 
     .what_we_do_news {
         font-size: 9vw;
+    }
+
+    .news_date {
+        padding-top: 6vw;
+        margin-bottom: 3vw;
+        font-size: 6vw;
+    }
+
+    .news_link {
+        font-size: 4.8vw;
+    }
+
+    .news_content {
+        font-size: 4.8vw;
     }
 
     .mini_txt {

@@ -32,7 +32,7 @@ h3 {
 }
 
 .body_pad {
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .bottom_pad {
@@ -272,6 +272,28 @@ case study css
 .snow {
     color: var(--snow);
 }
+
+.red {
+    color: var(--brand-col);
+}
+
+/***********
+Spacing for bullets
+***********/
+
+.spaceb4 {
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.spacea {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/***********
+Media query's
+***********/
 
 @media (max-width: 767px) {
     .center_over_case {

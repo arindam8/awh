@@ -27,6 +27,7 @@ function fadeOut() {
 
 function slideIn() {
     pop_up.classList.add("popup_jumbo_translate");
+
 }
 
 function slideOut() {
