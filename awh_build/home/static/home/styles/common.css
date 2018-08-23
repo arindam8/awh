@@ -210,7 +210,7 @@ case study css
 
 .case_box:hover .case_img {
     transform: scale(1.5); /*for zoom*/
-    filter: blur(0px); /*was 3px*/
+    /*filter: blur(0px); was 3px*/
 }
 
 .case_box:hover .center_over_case {
@@ -247,6 +247,10 @@ case study css
 .case_red {
     color: var(--brand-col);
     mix-blend-mode: unset;
+}
+
+.case_img_scale {
+    transform: scale(1.5); /*for zoom*/
 }
 
 .padding-new {
