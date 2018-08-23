@@ -4,7 +4,7 @@ for (let i = 0; i < tweets.length; i++) {
    tweets[i].created = tweets[i].created.split(" ")[0]
    tweets[i].created = new Date(tweets[i].created)
    tweets[i].created = tweets[i].created.toLocaleDateString();
-   //tweets[i].created = tweets[i].created.replace(/-/g, "/");
+   tweets[i].created = tweets[i].created.replace(/\//g, '.');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
