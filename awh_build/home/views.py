@@ -41,7 +41,7 @@ def base_view(request):
 
         name = form.cleaned_data['name']
         category = form.cleaned_data['category']
-        body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category
+        body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category+"\n"+email
         try:
             mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, ['rightsoflight@awh.co.uk'])
             if len(request.FILES) != 0:
@@ -79,7 +79,7 @@ def main(request):
 
         name = form.cleaned_data['name']
         category = form.cleaned_data['category']
-        body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category
+        body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category+"\n"+email
         try:
             mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, ['rightsoflight@awh.co.uk'])
             if len(request.FILES) != 0:
@@ -116,7 +116,7 @@ def popup(request):
 
         name = form_pu.cleaned_data['name']
         category = form_pu.cleaned_data['category']
-        body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category
+        body=description+"\n"+name+"\n"+postcode+"\n"+phone+"\n"+category+"\n"+email
         try:
             mail = EmailMessage("AWH CUSTOMER ENQUIRY: URGENT!", body, settings.EMAIL_HOST_USER, ['rightsoflight@awh.co.uk'])
             if len(request.FILES) != 0:
