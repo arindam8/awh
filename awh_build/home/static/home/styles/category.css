@@ -98,9 +98,16 @@ hr {
 
 .nav-tabs .nav-item {
     text-align: center !important;
-    width: 14% !important;
     min-height: 60px;
     font-size: 18px;
+}
+
+.tabs_link {
+    color: var(--black);
+}
+
+.tabs_link:hover {
+    color: var(--brand-col);
 }
 
 @media (max-width: 1192px) {
