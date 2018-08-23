@@ -60,6 +60,7 @@ label {
 
 p {
     font-size: 19px;
+    line-height: 1.2;
 }
 
 .row {
@@ -103,7 +104,7 @@ restyle nav bar
 #about_logo_img {
     height: 18px;
     position: relative;
-    bottom: 1px;
+    bottom: 3px;
     margin-left: 5px;
 }
 
