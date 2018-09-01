@@ -171,15 +171,16 @@ def get_tweets():
     last_set=[]
     try:
         api = tweepy.API(auth)
-
+        #print (api)
         public_tweets = api.home_timeline()
+        #print (public_tweets)
         disp_tweets = []
         for tweet in public_tweets:
             tweet_info = {}
             tweet_info['text'] = tweet.text
             tweet_info['link_'] = tweet.entities['urls'][0]['expanded_url']
             tweet_info['created'] = str(tweet.created_at)
-
+            print (tweet_info)
             disp_tweets.append(tweet_info)
         last_set=disp_tweets
         f = open("tweets.txt", "w")
@@ -187,8 +188,7 @@ def get_tweets():
         f.close()
         with open('tweets.txt') as f:
             s = f.readline()
-        print (type(s))
-        print ('herree')
+        #print (type(s))
         f.close()
         return (disp_tweets)
 

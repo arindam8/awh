@@ -27,19 +27,19 @@ Colour Scheme
 
 @font-face {
   font-family: 'soleil';
-  src: url('../static/home/fonts/Soleil.otf') format('opentype'),
-  url('../static/home/fonts/Soleil.woff2') format('woff2'),
-  url('../static/home/fonts/Soleil.woff') format('woff'),
-  url('../static/home/fonts/Soleil.ttf') format('truetype');
+  src: url('/static/home/fonts/Soleil.otf?#') format('opentype'),
+  url('/static/home/fonts/Soleil.woff2?#') format('woff2'),
+  url('/static/home/fonts/Soleil.woff?#') format('woff'),
+  url('/static/home/fonts/Soleil.ttf?#') format('truetype');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'soleil';
-  src: url('../static/home/fonts/Soleil-Bold.otf') format('opentype'),
-  url('../static/home/fonts/Soleil-Bold.woff2') format('woff2'),
-  url('../static/home/fonts/Soleil-Bold.woff') format('woff'),
-  url('../static/home/fonts/Soleil-Bold.ttf') format('truetype');
+  src: url('/static/home/fonts/Soleil-Bold.otf?#') format('opentype'),
+  url('/static/home/fonts/Soleil-Bold.woff2?#') format('woff2'),
+  url('/static/home/fonts/Soleil-Bold.woff?#') format('woff'),
+  url('/static/home/fonts/Soleil-Bold.ttf?#') format('truetype');
   font-weight: bold;
 }
 

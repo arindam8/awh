@@ -1,4 +1,5 @@
 tweets = JSON.parse(tweets)
+//console.log(tweets)
 for (let i = 0; i < tweets.length; i++) {
    tweets[i].text = tweets[i].text.split("http")[0]
    tweets[i].created = tweets[i].created.split(" ")[0]
