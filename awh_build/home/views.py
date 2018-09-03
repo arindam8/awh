@@ -207,10 +207,6 @@ def get_tweets():
         #trim to 3 tweets
         tweets = tweets[:tweetLimit]
 
-        logging.debug("\nNew")
-        logging.debug(type(tweets))
-        logging.debug(tweets)
-
         # get old tweets from file
         with open('tweets.txt') as f:
             # parse file as list
@@ -219,24 +215,12 @@ def get_tweets():
         # parse first line as list
         tweetsFromFile = tweetsFromFile[0]
 
-        logging.debug("\nFile")
-        logging.debug(type(tweetsFromFile))
-        logging.debug(tweetsFromFile)
-
         # calculate number of tweets not loaded due to 7 day limit on API
         shiftIndex = shiftIndex - len(tweets)
-
-        logging.debug("\n\nShiftIndex:")
-        logging.debug(shiftIndex)
 
         # shift and load tweets loaded from file to fill in lost data
         tweetsFromFile = tweetsFromFile[:shiftIndex]
         tweets.extend(tweetsFromFile)
-
-        logging.debug("\n\nUpdated")
-        logging.debug(type(tweets))
-        logging.debug(len(tweets))
-        logging.debug(tweets)
 
         # write tweets to file
         f = open("tweets.txt", "w")
