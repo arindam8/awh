@@ -183,6 +183,7 @@ def get_tweets():
     # authentication
     auth = tweepy.OAuthHandler('8uY1nssYzWu0f8dF5MeREgqVr', '0V1KRinGxlEVXuvTWDHcbxpWTYLcZPta2yZ9jRHdjQSgtLvCe9')
     auth.set_access_token('1031669552541773826-G7vQXztmoyzCNIZozNGG8vq3zhLy8K', '6mAG4KAphfh7EXFbrykdI12r5lCvNb0QqYVi1OjlUjYed')
+    # number of tweets to return
     tweetLimit = 3
 
     # try for rate limit error
@@ -244,5 +245,6 @@ def get_tweets():
         with open('tweets.txt') as f:
             s = f.readline()
         f.close()
+        # return tweets (parsed as list in a list?)
         return (s)
 
