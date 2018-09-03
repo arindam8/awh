@@ -71,7 +71,7 @@
           <entry key="html" value="3705" />
           <entry key="js" value="699" />
           <entry key="json" value="47" />
-          <entry key="py" value="2376" />
+          <entry key="py" value="2380" />
           <entry key="txt" value="1239" />
         </counts>
       </usages-collector>
@@ -82,7 +82,7 @@
           <entry key="JSON" value="47" />
           <entry key="JavaScript" value="699" />
           <entry key="PLAIN_TEXT" value="1239" />
-          <entry key="Python" value="2376" />
+          <entry key="Python" value="2380" />
         </counts>
       </usages-collector>
     </session>
@@ -92,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/awh_build/home/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="769">
-              <caret line="247" column="8" selection-start-line="247" selection-start-column="8" selection-end-line="247" selection-end-column="8" />
+            <state relative-caret-position="219">
+              <caret line="199" column="29" selection-start-line="199" selection-start-column="29" selection-end-line="199" selection-end-column="29" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -371,13 +371,6 @@
       <option name="presentableId" value="Default" />
       <updated>1532460025131</updated>
       <workItem from="1534415778732" duration="1600000" />
-    </task>
-    <task id="LOCAL-00086" summary="responsive enquire on mobile display">
-      <created>1534457205775</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1534457205775</updated>
     </task>
     <task id="LOCAL-00087" summary="css &amp; js for the enquire forms">
       <created>1534494343048</created>
@@ -715,7 +708,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535987804180</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="clean code">
+      <created>1535987858273</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1535987858273</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1105,8 +1105,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="769">
-          <caret line="247" column="8" selection-start-line="247" selection-start-column="8" selection-end-line="247" selection-end-column="8" />
+        <state relative-caret-position="219">
+          <caret line="199" column="29" selection-start-line="199" selection-start-column="29" selection-end-line="199" selection-end-column="29" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>

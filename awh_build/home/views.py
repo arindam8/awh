@@ -197,7 +197,7 @@ def get_tweets():
         shiftIndex      = tweetLimit
         tweetOffset     = 0
 
-        # save tweets in array
+        # save tweets in list
         for tweet in publicTweets:
             tweetInfo            = {}
             tweetInfo['text']    = tweet.text
@@ -245,7 +245,7 @@ def get_tweets():
         with open('tweets.txt') as f:
             s = f.readline()
         f.close()
-        
+
         # return tweets (parsed as list in a list?)
         return (s)
 
