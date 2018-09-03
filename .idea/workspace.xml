@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="clean up">
+    <list default="true" id="983c60f8-f643-481f-8aa2-38f7dcb2ee2f" name="Default" comment="clean code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/awh_build/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/awh_build/tweets.txt" beforeDir="false" afterPath="$PROJECT_DIR$/awh_build/tweets.txt" afterDir="false" />
     </list>
     <list id="c1840ffc-ff9c-4437-b2a1-afe3437b1a11" name="Added form settings" comment="Added form file and email settings" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -72,8 +71,8 @@
           <entry key="html" value="3705" />
           <entry key="js" value="699" />
           <entry key="json" value="47" />
-          <entry key="py" value="2293" />
-          <entry key="txt" value="1199" />
+          <entry key="py" value="2376" />
+          <entry key="txt" value="1239" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -82,8 +81,8 @@
           <entry key="HTML" value="3705" />
           <entry key="JSON" value="47" />
           <entry key="JavaScript" value="699" />
-          <entry key="PLAIN_TEXT" value="1199" />
-          <entry key="Python" value="2293" />
+          <entry key="PLAIN_TEXT" value="1239" />
+          <entry key="Python" value="2376" />
         </counts>
       </usages-collector>
     </session>
@@ -93,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/awh_build/home/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="235" lean-forward="true" selection-start-line="235" selection-end-line="235" />
+            <state relative-caret-position="769">
+              <caret line="247" column="8" selection-start-line="247" selection-start-column="8" selection-end-line="247" selection-end-column="8" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -372,27 +371,6 @@
       <option name="presentableId" value="Default" />
       <updated>1532460025131</updated>
       <workItem from="1534415778732" duration="1600000" />
-    </task>
-    <task id="LOCAL-00083" summary="commit images">
-      <created>1534451474846</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1534451474847</updated>
-    </task>
-    <task id="LOCAL-00084" summary="some changes to the enquiery forms">
-      <created>1534453969729</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1534453969729</updated>
-    </task>
-    <task id="LOCAL-00085" summary="nav bar mobile display bugs">
-      <created>1534455490434</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1534455490434</updated>
     </task>
     <task id="LOCAL-00086" summary="responsive enquire on mobile display">
       <created>1534457205775</created>
@@ -716,7 +694,28 @@
       <option name="project" value="LOCAL" />
       <updated>1535979190630</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="fixed code for all use cases">
+      <created>1535987583630</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1535987583631</updated>
+    </task>
+    <task id="LOCAL-00133" summary="clean code">
+      <created>1535987695445</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1535987695445</updated>
+    </task>
+    <task id="LOCAL-00134" summary="clean code">
+      <created>1535987804180</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1535987804180</updated>
+    </task>
+    <option name="localTasksCounter" value="135" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -745,7 +744,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32919848" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49884126" visible="true" weight="0.32156488" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49884126" visible="true" weight="0.066793896" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32919848" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.17843512" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011588" side_tool="true" weight="0.16150235" />
@@ -824,8 +823,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="make it responsive" />
-    <MESSAGE value="remove a print" />
     <MESSAGE value="make the date format correctly for local time format" />
     <MESSAGE value="url's" />
     <MESSAGE value="url's fix" />
@@ -849,7 +846,9 @@
     <MESSAGE value="added patch for tweets older than 7 days not being loaded" />
     <MESSAGE value="removed logging" />
     <MESSAGE value="clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
+    <MESSAGE value="fixed code for all use cases" />
+    <MESSAGE value="clean code" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean code" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/awh_build/home/static/home/images/logo.png">
@@ -1106,8 +1105,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/awh_build/home/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="235" lean-forward="true" selection-start-line="235" selection-end-line="235" />
+        <state relative-caret-position="769">
+          <caret line="247" column="8" selection-start-line="247" selection-start-column="8" selection-end-line="247" selection-end-column="8" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>

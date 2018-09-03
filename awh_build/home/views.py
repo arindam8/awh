@@ -245,6 +245,7 @@ def get_tweets():
         with open('tweets.txt') as f:
             s = f.readline()
         f.close()
+        
         # return tweets (parsed as list in a list?)
         return (s)
 
