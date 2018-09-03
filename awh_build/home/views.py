@@ -6,10 +6,25 @@ from django.core.mail import EmailMessage
 import json
 from django.shortcuts import render
 from .forms import EnquiryForm, EnquiryFormPopUp
+# for twitter integration
 import tweepy
 import jsonpickle
+# to create list from file
+from ast import literal_eval
 
 
+####################
+# for dev purposes #
+####################
+
+import logging
+
+fmt = getattr(settings, 'LOG_FORMAT', None)
+lvl = getattr(settings, 'LOG_LEVEL', logging.DEBUG)
+
+logging.basicConfig(format=fmt, level=lvl)
+
+#####################
 
 def get_credentials():
     with open('awh_build/configuration/config.json') as f:
@@ -166,30 +181,74 @@ def case_studies_view(request, index=-99):
 
 
 def get_tweets():
+    # authentication
     auth = tweepy.OAuthHandler('8uY1nssYzWu0f8dF5MeREgqVr', '0V1KRinGxlEVXuvTWDHcbxpWTYLcZPta2yZ9jRHdjQSgtLvCe9')
     auth.set_access_token('1031669552541773826-G7vQXztmoyzCNIZozNGG8vq3zhLy8K', '6mAG4KAphfh7EXFbrykdI12r5lCvNb0QqYVi1OjlUjYed')
-    last_set=[]
-    try:
-        api = tweepy.API(auth)
-        public_tweets = api.home_timeline()
-        disp_tweets = []
-        for tweet in public_tweets:
-            tweet_info = {}
-            tweet_info['text'] = tweet.text
-            tweet_info['link_'] = tweet.entities['urls'][0]['expanded_url']
-            tweet_info['created'] = str(tweet.created_at)
-            print (tweet_info)
-            disp_tweets.append(tweet_info)
-        last_set=disp_tweets
-        f = open("tweets.txt", "w")
-        f.write(str(last_set))
-        f.close()
-        with open('tweets.txt') as f:
-            s = f.readline()
-        f.close()
-        return (disp_tweets)
+    tweetLimit = 3
 
+    # try for rate limit error
+    try:
+        # get tweets
+        api            = tweepy.API(auth)
+        publicTweets   = api.home_timeline()
+
+        # initiate
+        tweets          = []
+        #tweetsFromFile = []
+        shiftIndex      = tweetLimit
+
+        # save tweets in array
+        for tweet in publicTweets:
+            tweetInfo            = {}
+            tweetInfo['text']    = tweet.text
+            tweetInfo['link_']   = tweet.entities['urls'][0]['expanded_url']
+            tweetInfo['created'] = str(tweet.created_at)
+            tweets.append(tweetInfo)
+        #trim to 3 tweets
+        tweets = tweets[:tweetLimit]
+
+        logging.debug("\nNew")
+        logging.debug(type(tweets))
+        logging.debug(tweets)
+
+        # get old tweets from file
+        with open('tweets.txt') as f:
+            # parse file as list
+            tweetsFromFile = [list(literal_eval(line)) for line in f]
+        f.close()
+        # parse first line as list
+        tweetsFromFile = tweetsFromFile[0]
+
+        logging.debug("\nFile")
+        logging.debug(type(tweetsFromFile))
+        logging.debug(tweetsFromFile)
+
+        # calculate number of tweets not loaded due to 7 day limit on API
+        shiftIndex = shiftIndex - len(tweets)
+
+        logging.debug("\n\nShiftIndex:")
+        logging.debug(shiftIndex)
+
+        # shift and load tweets loaded from file to fill in lost data
+        tweetsFromFile = tweetsFromFile[:shiftIndex]
+        tweets.extend(tweetsFromFile)
+
+        logging.debug("\n\nUpdated")
+        logging.debug(type(tweets))
+        logging.debug(len(tweets))
+        logging.debug(tweets)
+
+        # write tweets to file
+        f = open("tweets.txt", "w")
+        f.write(str(tweets))
+        f.close()
+
+        # return tweets
+        return (tweets)
+
+    # handle rate limit error
     except:
+        # load and return tweets from file
         with open('tweets.txt') as f:
             s = f.readline()
         f.close()
