@@ -36,7 +36,6 @@ def get_credentials():
 def base_view(request):
     disp_tweets = get_tweets()
     disp_tweets = jsonpickle.encode(disp_tweets)
-    #disp_tweets=[]
 
     if request.method != 'POST':
 
@@ -194,7 +193,6 @@ def get_tweets():
 
         # initiate
         tweets          = []
-        #tweetsFromFile = []
         shiftIndex      = tweetLimit
 
         # save tweets in array
@@ -204,7 +202,7 @@ def get_tweets():
             tweetInfo['link_']   = tweet.entities['urls'][0]['expanded_url']
             tweetInfo['created'] = str(tweet.created_at)
             tweets.append(tweetInfo)
-        #trim to 3 tweets
+        # trim to 3 tweets
         tweets = tweets[:tweetLimit]
 
         # get old tweets from file
