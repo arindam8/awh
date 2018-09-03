@@ -217,10 +217,6 @@ def get_tweets():
         # calculate number of tweets not loaded due to 7 day limit on API
         shiftIndex = shiftIndex - len(tweets)
 
-        logging.debug(tweets)
-
-        logging.debug("\nBefore Offset:")
-
         # calculate the number of new tweets loaded that overlap with the tweets loaded from the saved file
         for tweet in tweets:
             for savedTweet in tweetsFromFile:
