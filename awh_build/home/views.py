@@ -194,6 +194,7 @@ def get_tweets():
         # initiate
         tweets          = []
         shiftIndex      = tweetLimit
+        tweetOffset     = 0
 
         # save tweets in array
         for tweet in publicTweets:
@@ -216,8 +217,21 @@ def get_tweets():
         # calculate number of tweets not loaded due to 7 day limit on API
         shiftIndex = shiftIndex - len(tweets)
 
+        logging.debug(tweets)
+
+        logging.debug("\nBefore Offset:")
+
+        # calculate the number of new tweets loaded that overlap with the tweets loaded from the saved file
+        for tweet in tweets:
+            for savedTweet in tweetsFromFile:
+                if tweet == savedTweet:
+                    tweetOffset += 1
+
+        # calculate index of last list item to append
+        eol = tweetOffset + shiftIndex
+
         # shift and load tweets loaded from file to fill in lost data
-        tweetsFromFile = tweetsFromFile[:shiftIndex]
+        tweetsFromFile = tweetsFromFile[tweetOffset:eol]
         tweets.extend(tweetsFromFile)
 
         # write tweets to file
