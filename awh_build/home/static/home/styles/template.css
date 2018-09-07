@@ -136,6 +136,13 @@ restyle footer
     color: var(--brand-col);
 }
 
+.footer-text {
+    color: var(--black);
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.5;
+}
+
 .footer_copy {
     font-size: 10px;
     padding-left: 15px;
