@@ -1,0 +1,133 @@
+.banner_jumbo {
+    z-index: 100;
+    background-color: rgba(255, 249, 251, 0.8);
+    max-width: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 30px;
+}
+
+#left_jumo {
+    margin-right: 7.5px;
+}
+
+#right_jumo {
+    margin-left: 7.5px;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: var(--snow);
+}
+
+.jumbo_h {
+    font-weight: bold;
+}
+
+.rol_box_padding {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.cont_pad {
+    padding-bottom: 3rem;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.rol_b4_case_margin {
+    margin-bottom: 2rem;
+}
+
+#services_h {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tab_title {
+    padding-bottom: 15px;
+}
+
+.tab-pane {
+    font-size: 19px;
+}
+
+.tabs_section {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.nav-tabs .nav-link {
+    color: var(--med-gray);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--black);
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link {
+    color: var(--snow) ;
+    background-color: var(--brand-col);
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.nav-tabs .nav-item {
+    text-align: center !important;
+    min-height: 60px;
+    font-size: 18px;
+    overflow-wrap: break-word;
+}
+
+.tabs_link {
+    color: var(--black);
+}
+
+.tabs_link:hover {
+    color: var(--brand-col);
+}
+
+@media (max-width: 1192px) {
+    .nav-tabs .nav-item {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-tabs .nav-item {
+        width: 32.5% !important;
+        margin-bottom: 5px;
+        height: 54px;
+    }
+
+    .mob_height {
+        min-height: 230px;
+    }
+
+    .nav-tabs .nav-item {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 464px) {
+    .nav-tabs .nav-item {
+        padding-left: 0px;
+        padding-right: 0px;
+        height: inherit;
+    }
+}

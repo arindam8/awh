@@ -1,0 +1,91 @@
+#enquire_widget {
+    visibility: visible;
+}
+
+#enquire_widget_mini {
+    visibility: visible;
+}
+
+#phone_widget_mini {
+    visibility: visible;
+}
+
+.about_bottom {
+    padding-bottom: 15px;
+}
+
+#about_story {
+    text-align: center;
+}
+
+.about_s_pad {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: justify;
+}
+
+.about_bottom {
+    text-align: center;
+}
+
+#link_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_links {
+    color: var(--black);
+}
+
+.about_links:hover {
+    color: var(--brand-col);
+}
+
+.profile_img {
+    /*border-radius: 100%;*/
+    width: 150px;
+}
+
+.box_align {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile_deets {
+    margin-left: 20px;
+}
+
+.profile_name {
+    font-weight: bold;
+}
+
+.profile_email {
+    margin-bottom: 0px;
+    color: var(--black);
+}
+
+.profile_email:hover {
+    color: var(--brand-col);
+}
+
+.profile_job {
+    font-size: 16px;
+}
+
+/*******
+correct nav styles
+*******/
+
+.nav_about {
+    background-color: var(--brand-col) !important;
+    color: var(--snow) !important;
+}
+
+.about_logo_normal {
+    display: none;
+}
+
+.about_logo_invert {
+    display: inline-block;
+}

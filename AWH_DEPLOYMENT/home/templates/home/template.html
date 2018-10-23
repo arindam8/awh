@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/styles/template.css' %}" />
+
+    <script type="text/javascript" src="{% static 'home/js/enquire.js' %}" ></script>
+
+    <!--Other CSS-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <title>AWH - Rights of Light</title>
+    <link rel="shortcut icon" href="{%  static 'home/images/favicon.ico' %}">
+</head>
+
+<body>
+    <!--Responsive Navbar-->
+    <nav class="navbar navbar-expand-md sticky-top navbar-light bg-dark">
+        <!--logo-->
+        <a class="navbar-brand" href="{% url 'base_view' %}"><img id="nav_logo_img" src="{% static 'home/images/logo.png' %}" alt="Company Logo"></a>
+        <!--Collapse Button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--Links-->
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+                <li class="nav-item">
+                    <a class="nav-link nav_about" href="{% url 'about_view' %}">About <img class="about_logo_normal" id="about_logo_img" src="{% static 'home/images/logo.png' %}" alt="Company Logo"><img class="about_logo_invert" id="about_logo_img" src="{% static 'home/images/logoInvert.png' %}" alt="Company Logo"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav_rol" href="{% url 'rol_view' index=0%}">Rights of Light</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav_dos" href="{% url 'dos_view' index=0%}">Daylight and Sunlighting</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav_pw" href="{% url 'pw_view' index=0%}">Party Wall</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav_case" href="{% url 'case_studies_view' index=-99%}">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div id="banner_container" class="stack_em">
+            <video loop="loop" muted autoplay="autoplay" id="banner_vid">
+                <source src="{% static 'home/video/awh.webm' %}" type="video/mp4">
+            </video>
+
+            {% block header %}
+            {% endblock %}
+
+        </div>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+
+    {% block enquire_button %}
+    <!--Enquire Widget-->
+    <!--Enquire Button-->
+    <div id="enquire_widget" class="shake">
+        <div class="jumbotron enq_jumbo" id="enquire_widget_jumo">
+            <h4 class="bold_text" >Enquire</h4>
+        </div>
+    </div>
+
+    <!--Mobile Buttons-->
+    <div id="enquire_widget_mini" class="shake">
+        <div class="jumbotron enq_jumbo" id="enquire_widget_jumo_mini">
+            <h4 class="bold_text"><i class="far fa-envelope-open"></i></h4>
+        </div>
+    </div>
+    <div id="phone_widget_mini" class="shake">
+        <div class="jumbotron enq_jumbo" id="phone_widget_jumo_mini">
+            <a class="white_text" href="tel:+02070611100"><h4><i class="fas fa-phone"></i></h4></a>
+        </div>
+    </div>
+    {% endblock %}
+
+    <!--Form-->
+    <div class="jumbotron vertical-center" id="popup_jumbo">
+        <h4 class="red_bar red_barL" id="jumbo_heading" >Enquire Today</h4>
+        <h4 class="red_bar red_barR close_popup"><i class="fas fa-times" id="close_popup"></i></h4>
+        {% if enquiry_form_pop_up.errors %}
+        {% for field in enquiry_form_pop_up %}
+        {% for error in field.errors %}
+        <div class="alert alert-danger">
+            <strong>{{ error|escape }}</strong>
+        </div>
+        {% endfor %}
+        {% endfor %}
+        {% endif %}
+        <div class="form_message">
+            {{message_pop_up}}
+        </div>
+        {% if enquiry_form_pop_up %}
+        {% csrf_token %}
+        <form id="contact-form" name="contact-form" method="POST" action ="{% url 'popup' %}" enctype="multipart/form-data">
+            <div class="contact-form">
+                {{enquiry_form_pop_up.description}}
+            </div>
+            <!--row-->
+            <div class="form-row">
+                <!--col-->
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        {{enquiry_form_pop_up.name}}
+                    </div>
+                </div>
+                <!--col-->
+                <div class="col-md-4">
+                    <div class="contact-form">
+                        {{enquiry_form_pop_up.postcode}}
+                    </div>
+                </div>
+            </div>
+            <!--row-->
+            <div class="form-row">
+                <!--col-->
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        {{enquiry_form_pop_up.email}}
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-form">
+
+                        {{enquiry_form_pop_up.phone}}
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <!--col-->
+                <div class="col-md-7 d-flex align-content-center">
+                    {% for choice in enquiry_form_pop_up.category.field.choices %}
+                    <input class='enquire_radio_circle' type="radio" name="category" value="{{choice.0}}" id="{{choice.0}}"
+                           {% ifequal choice.0 "Developer" %}
+                           checked="checked"
+                           {% endifequal %}/>
+                    <label class='enquire_radio' for="{{choice.0}}"> {{choice.1}} </label>
+                    {% endfor %}
+                </div>
+                <!--col-->
+                <div class="col-md-5 d-flex flex-row-reverse mobile_margin">
+                    <label for="submit_btn_pu" class="enquire_button">
+                        Submit
+                    </label>
+                    <button type="submit" class="btn btn-default enquire_button_none"><input class="clickable none" id="submit_btn_pu" type ="submit"  name = "send"/></button>
+
+                    <label for="id_attach_pop" class="attach_btn">
+                        <span class="file-selected">Attach File</span>
+                    </label>
+                    {{enquiry_form_pop_up.attach}}
+
+                </div>
+            </div>
+        </form>
+        {% endif %}
+    </div>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <!--row-->
+            <div class="row">
+                <!--col-->
+                <div class="col-3">
+                    <p class="footer_col_h" >Address</p>
+                    <p class="footer-text">12 Dorrington Street</p>
+                    <p class="footer-text">London</p>
+                    <p class="footer-text">EC1N 7TB</p>
+                </div>
+
+                <!--col-->
+                <div class="col-3">
+                    <p class="footer_col_h" >Links</p>
+                    <a class="footer-link" target="_blank" href="https://www.linkedin.com/company/anderson-wilde-&-harris">LinkedIn</a><br />
+                    <a class="footer-link" target="_blank" href="http://awh.co.uk/anderson-wilde-harris-blog/">Blog</a><br />
+                    <a class="footer-link" href="#">Q2 Update</a><br />
+                    <a class="footer-link" href="#">Contact Us</a>
+                </div>
+
+                <!--col-->
+                <!--
+                <div class="col-3">
+                    <p class="footer_col_h" >Residential</p>
+                    <a class="footer-link" href="{% url 'pw_view' 0%}">Site Menu Link 0</a><br />
+                    <a class="footer-link" href="{% url 'pw_view' 1%}">Site Menu Link 1</a><br />
+                    <a class="footer-link" href="{% url 'pw_view' 2%}">Site Menu Link 2</a><br />
+                    <a class="footer-link" href="{% url 'pw_view' 3%}">Site Menu Link 3</a><br />
+                    <a class="footer-link" href="{% url 'pw_view' 4%}">Site Menu Link 4</a><br />
+                    <a class="footer-link" href="{% url 'pw_view' 5%}">Site Menu Link 5</a><br />
+                    <a class="footer-link" href="{% url 'pw_view' 6%}">Site Menu Link 6</a>
+                </div>
+                -->
+                <!--col-->
+                <!--
+                <div class="col-3">
+                    <p class="footer_col_h" >Commercial</p>
+                    <a class="footer-link" href="{% url 'dos_view' 0%}">Site Menu Link 0</a><br />
+                    <a class="footer-link" href="{% url 'dos_view' 1%}">Site Menu Link 1</a><br />
+                    <a class="footer-link" href="{% url 'dos_view' 2%}">Site Menu Link 2</a><br />
+                    <a class="footer-link" href="{% url 'dos_view' 3%}">Site Menu Link 3</a><br />
+                    <a class="footer-link" href="{% url 'dos_view' 4%}">Site Menu Link 4</a><br />
+                    <a class="footer-link" href="{% url 'dos_view' 5%}">Site Menu Link 5</a><br />
+                    <a class="footer-link" href="{% url 'dos_view' 6%}">Site Menu Link 6</a>
+                </div>
+                -->
+                <!--col-->
+                <!--
+                <div class="col-3">
+                    <p class="footer_col_h" >Development</p>
+                    <a class="footer-link" href="{% url 'rol_view' 0%}">Site Menu Link 0</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 1%}">Site Menu Link 1</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 2%}">Site Menu Link 2</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 3%}">Site Menu Link 3</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 4%}">Site Menu Link 4</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 5%}">Site Menu Link 5</a><br />
+                    <a class="footer-link" href="{% url 'rol_view' 6%}">Site Menu Link 6</a>
+                </div>
+                -->
+            </div>
+            <!--row-->
+            <div class="row">
+                <p class="footer_copy" >Copyright © 1995 - 2018 Anderson Wilde & Harris. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Scripts for Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Other Scripts-->
+    <script type="text/javascript" src="{% static 'home/js/looks.js' %}" ></script>
+</body>
+</html>

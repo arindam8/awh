@@ -1,0 +1,361 @@
+/******************
+Load this CSS file first on initial template
+These styles persist
+Every other page must load common.css first
+Followed by sheet specific css file
+******************/
+
+/******************
+Colour Scheme
+#D3D4D9 light gray
+#38393A med gray
+#14080E black
+#FFF9FB snow
+#B50A37 reddish brand awh branding
+******************/
+
+:root {
+    --light-gray: #D3D4D9;
+    --med-gray: #B5B5B5;
+    --dark-gray: #333333;
+    --brand-col: #B50A37;
+    --black: #14080E;
+    --font-fam: "soleil", sans-serif;
+    --snow: #FFF9FB;
+    --teal: #88A2AA;
+}
+
+@font-face {
+  font-family: 'soleil';
+  src: url('/static/home/fonts/Soleil.otf?#') format('opentype'),
+  url('/static/home/fonts/Soleil.woff2?#') format('woff2'),
+  url('/static/home/fonts/Soleil.woff?#') format('woff'),
+  url('/static/home/fonts/Soleil.ttf?#') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'soleil';
+  src: url('/static/home/fonts/Soleil-Bold.otf?#') format('opentype'),
+  url('/static/home/fonts/Soleil-Bold.woff2?#') format('woff2'),
+  url('/static/home/fonts/Soleil-Bold.woff?#') format('woff'),
+  url('/static/home/fonts/Soleil-Bold.ttf?#') format('truetype');
+  font-weight: bold;
+}
+
+body {
+    background-color: var(--snow);
+    font-family: var(--font-fam);
+    line-height: 1.15;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
+}
+
+label {
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 19px;
+    line-height: 1.2;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/*****************
+restyle nav bar
+******************/
+
+#nav_logo_img {
+    height: 50px;
+}
+
+.bg-dark {
+    background-color: var(--snow) !important;
+}
+
+.navbar {
+    min-height: 70px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+#about_logo_img {
+    height: 18px;
+    position: relative;
+    bottom: 3px;
+    margin-left: 5px;
+}
+
+.about_logo_invert {
+    display: none;
+}
+
+/******************
+restyle footer
+******************/
+.footer {
+    background-color: var(--snow);
+    padding: 10px;
+    color: var(--black);
+}
+
+.footer_col_h {
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.footer-link {
+    color: var(--black);
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.footer-link:hover {
+    color: var(--brand-col);
+}
+
+.footer-text {
+    color: var(--black);
+    font-size: 12px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer_copy {
+    font-size: 10px;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+/******************
+widget
+******************/
+.enq_jumbo {
+    padding: 6px 8px 1px 8px;
+    margin: 0px;
+}
+
+#enquire_widget {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    user-select: none;
+    display: block;
+    transition: 0.5s;
+    z-index: 100;
+    visibility: hidden;
+}
+
+.enquire_widget_vis {
+    opacity: 0;
+}
+
+#enquire_widget:hover {
+    cursor: pointer
+}
+
+.enquire_widget_translate {
+    opacity: 0 !important;
+}
+
+#enquire_widget_mini {
+    position: fixed;
+    bottom: 20px;
+    right: 60px;
+    user-select: none;
+    display: none;
+    z-index: 100;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+#phone_widget_mini {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    user-select: none;
+    display: none;
+    z-index: 100;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+#enquire_widget_mini:hover {
+    cursor: pointer
+}
+
+#phone_widget_mini:hover {
+    cursor: pointer
+}
+
+#enquire_widget_jumo {
+    background-color: var(--brand-col);
+    color: var(--snow);
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#enquire_widget_jumo_mini {
+    background-color: var(--brand-col);
+    color: var(--snow);
+}
+
+#phone_widget_jumo_mini {
+    background-color: var(--brand-col);
+    color: var(--snow);
+}
+
+.bold_text {
+    font-weight: bold;
+}
+
+.white_text, .white_text:hover {
+    color: var(--snow);
+}
+
+#popup_jumbo {
+    position: fixed;
+    bottom: -392px;
+    right: 50px;
+    margin-left: 100px;
+    visibility: hidden;
+    transition: 0.7s;
+    background-color: rgba(255, 249, 251, 0.8);
+    margin: auto;
+    width: 767px;
+    padding: 0px;
+    z-index: 100;
+}
+
+.popup_jumbo_translate {
+    bottom: 50px !important;
+    visibility: visible !important;
+    transition: 1s;
+}
+
+#form_heading {
+    float: left;
+}
+
+#close_popup:hover {
+    cursor: pointer
+}
+
+@media (min-width: 768px) {
+    .navbar-light .navbar-nav .nav-link {
+        margin-right: 5px;
+        font-size: 19px;
+        background-color: var(--med-gray);
+        color: var(--snow);
+        height: 60px;
+        display: flex;
+        align-items: center;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+        text-decoration: underline;
+        color: var(--snow);
+    }
+}
+
+@media (max-width: 1192px) {
+    .navbar-light .navbar-nav .nav-link {
+        width: 150px; /*16*/
+        font-size: 17px;
+    }
+
+    #enquire_widget_jumo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 936px) {
+    .navbar-light .navbar-nav .nav-link {
+        width: 116px;
+     }
+    #popup_jumbo {
+        width: auto;
+    }
+
+
+    #enquire_widget_jumo {
+        width: 116px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-light .navbar-nav .nav-link {
+        width: 100%;
+        padding-left: 10px;
+     }
+
+    #popup_jumbo {
+        bottom: -472px; /*133px taller*/
+        right: 20px;
+        margin-left: 20px;
+    }
+
+    #enquire_widget {
+        display: none;
+    }
+
+    #enquire_widget_mini {
+        display: block;
+    }
+
+    #phone_widget_mini {
+        display: block;
+    }
+
+    .popup_jumbo_translate {
+        bottom: 20px !important;
+        visibility: visible !important;
+        transition: 1s;
+    }
+
+    .shake:hover, .shake:focus {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 480px) {
+    #popup_jumbo {
+        right: 0px;
+        margin-left: 0px;
+    }
+
+    .footer_col_h {
+        font-size: 14px;
+    }
+
+    .footer-link {
+        font-size: 10px;
+    }
+}

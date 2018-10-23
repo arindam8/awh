@@ -1,0 +1,204 @@
+{% extends 'home/template.html' %}
+
+{% block header %}
+
+{% load static %}
+<!--Page Specific JS-->
+<script type="text/javascript" src="{% static 'home/js/tab_index.js' %}" ></script>
+
+<!--Page Specific Styles-->
+<link rel="stylesheet" type="text/css" href="{% static 'home/styles/common.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'home/styles/category.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'home/styles/rol.css' %}" />
+
+        <div class="container category_container">
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center">
+                    <!--jumbo 1-->
+                    <div class="jumbotron banner_jumbo " id="left_jumo">
+                        <h2 class="jumbo_h">Right of Light</h2>
+                        <p class="jumbo_para justify" >A Right to Light is common law issue. It is an easement that an aperture can acquire either through the 1832 Prescription Act or by Express Grant. Acquiring a Right to Light through prescription requires the aperture to be in place for more than 20 years and the easement entitles the dominant owner to see a specific amount of a sky from a certain percentage of the room. When a proposed development causes an infringement, the neighbouring properties are entitled to a remedy.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <!--jumbo 2-->
+                    <div class="jumbotron banner_jumbo " id="right_jumo">
+                        <h2 class="jumbo_h">Our Experience</h2>
+                        <p class="jumbo_para justify" >A Rights of Light infringement can carry a huge liability for a Developer and have the potential to render schemes unfeasible. We have dealt with schemes on both a large and small scale and ensured that our clients best interests are met. Once we have been appointed we devise a strategy using our extensive technical, legal and practical knowledge to protect our clients’ interests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}
+
+{% block content %}
+<!--Body-->
+<main class="container-fluid">
+    <!--row-->
+    <div class="row rol_b4_case_margin">
+        <!--col-->
+        <div class="col-md-4 mob_height color-1 rol_box_padding">
+            <h3 class="snow">Developer</h3>
+            <p class="snow justify">The complications arising through Rights of Light matters can be significant. As a Developer you are a risk from time and monetary costs that are unlikely to be recovered. Considering Rights of Light at the acquisition stage can benefit you project through negotiating the purchase price or by providing a contingency if such problems arise.</p>
+        </div>
+        <!--col-->
+        <div class="col-md-4 mob_height rol_box_padding">
+            <h3>Neighbour</h3>
+            <p class="justify">As the owner of a Rights of Light easement you are entilted to see a specific amount of the sky from a certain percentage of the room. When an injury occurs you should receive a remedy. It is a very specialist subject and dealing with the Developers and their consultants can be confusing, it is best considering having your own Rights of Light specialist who can look after your best interests.</p>
+        </div>
+        <!--col-->
+        <div id="scroll_obj" class="col-md-4 mob_height color-2 rol_box_padding">
+            <h3 class="snow">Received our Letter?</h3>
+            <p class="snow justify">We may have tried to contact you to discuss a potential Rights of Light issue at your property. We would appreciate if you would take the time to talk to us so that we can explain more.</p>
+        </div>
+
+    </div>
+
+    <!--tabs-->
+    <h2 id="services_h">Services</h2>
+    <section class="tabs_section">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link" id="nav-menu0-tab" data-toggle="tab" href="#nav-menu0" role="tab" aria-controls="nav-home" aria-selected="true">Pre-Acquisition Advice</a>
+                <a class="nav-item nav-link" id="nav-menu1-tab" data-toggle="tab" href="#nav-menu1" role="tab" aria-controls="nav-profile" aria-selected="false">Initial Feasibility Report</a>
+                <a class="nav-item nav-link" id="nav-menu2-tab" data-toggle="tab" href="#nav-menu2" role="tab" aria-controls="nav-contact" aria-selected="false">Site Optimisation and Feasibility</a>
+                <a class="nav-item nav-link" id="nav-menu3-tab" data-toggle="tab" href="#nav-menu3" role="tab" aria-controls="nav-contact" aria-selected="false">Technical Analysis</a>
+                <a class="nav-item nav-link" id="nav-menu4-tab" data-toggle="tab" href="#nav-menu4" role="tab" aria-controls="nav-contact" aria-selected="false">Full Rights of Light Assessment</a>
+                <a class="nav-item nav-link" id="nav-menu5-tab" data-toggle="tab" href="#nav-menu5" role="tab" aria-controls="nav-contact" aria-selected="false">Strategic Advice and Negotiation</a>
+                <a class="nav-item nav-link" id="nav-menu6-tab" data-toggle="tab" href="#nav-menu6" role="tab" aria-controls="nav-contact" aria-selected="false">Easy Reference Chart</a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-menu0" role="tabpanel" aria-labelledby="nav-home-tab">
+                <h3 class="tab_title">Pre-Acquisition Advice</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Site inspection, identifying properties with the potential of being impacted.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>An indicative massing which could be implemented within the built environment.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>The severity of infringements based upon a proposed scheme.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Advice on how to proceed.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu1" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <h3 class="tab_title">Initial Feasibility Report</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>The establishment of any easements that are present and review of legal documentation available.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Review of a scheme with or without planning and indicative risk assessment.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>The severity of injuries.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Advice on how to proceed.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu2" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3 class="tab_title">Site Optimisation and Feasibility</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Site inspection and property measurements.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>3D modelling of the surrounding built environment.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>A maximum building envelope.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Cutbacks to an existing proposal to limit future claim arising.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu3" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3 class="tab_title">Technical Analysis</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Site inspection and property measurements.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>3D modelling of the surrounding environment.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Analysis of the scheme and full calculation.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu4" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3 class="tab_title">Full Rights of Light Assessment</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Site inspection and property measurements.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>3D modelling.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Detailed report of the technical analysis.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Indicative compensation values.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>The establishment of any easements that are present and review of legal documentation available.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Review of a scheme with or without planning and indicative risk assessment.</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Advice on proceeding with claims.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu5" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3 class="tab_title">Strategic Advice and Negotiation</h3>
+                <p>This service will provide:</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Review of technical analysis</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Bespoke case appraisal</p>
+                <p><div class="spaceb4"></div>•<div class="spacea"></div>Review of legal documentation constructed following negotiations.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-menu6" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <h3 class="tab_title">Easy Reference Chart</h3>
+                <p><div class="spaceb4"></div><a class="tabs_link" target="_blank" href="{% static 'home/documents/AWH-Easy-Reference-Chart.pdf' %}">Please click to see the Easy Reference Chart <i class="fas fa-external-link-square-alt"></i></a></p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!--case study row-->
+    <div class="row home_body_pad home_bottom_pad case_correct_padding rol_b4_case_margin">
+        <!--col-->
+        <div class="col-md-4 padding-new">
+            <div class="case_box">
+                <a href="{% url 'case_studies_view' index=6%}"><img class="case_img" src="{% static 'home/images/case/CASE_RM1.png' %}">
+                    <p class="center_over_case">RM1</p>
+                </a>
+            </div>
+        </div>
+        <!--col-->
+        <div class="col-md-4 padding-new">
+            <div class="case_box">
+                <a href="{% url 'case_studies_view' index=9%}"><img class="case_img" src="{% static 'home/images/case/CASE_N2.png' %}">
+                    <p class="center_over_case">SW12</p>
+                </a>
+            </div>
+        </div>
+        <!--col-->
+        <div class="col-md-4 padding-new">
+            <div class="case_box">
+                <a href="{% url 'case_studies_view' index=2%}"><img class="case_img" src="{% static 'home/images/case/CASE_W1.png' %}">
+                    <p class="center_over_case">W1</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script>
+    window.onload = function () {
+        var index='{{index|escapejs}}';
+        if (index==='-99') {
+            var tab = document.getElementById("nav-menu0-tab");
+            tab.classList.add("active");
+            tab.classList.add("show");
+            var info = document.getElementById("nav-menu0");
+            info.classList.add("active");
+            info.classList.add("show");
+        }
+        else {
+            var elementId = "nav-menu" + index + "-tab";
+            var tab = document.getElementById(elementId);
+            tab.classList.add("active");
+            tab.classList.add("show");
+            var elid = "nav-menu" + index;
+            var info = document.getElementById(elid);
+            info.classList.add("active");
+            info.classList.add("show");
+            var scroll = document.getElementById("scroll_obj");
+            scroll.scrollIntoView(true); //here
+        }
+        if (index!='0' && index!='-99'){
+            var tab = document.getElementById("nav-menu0-tab");
+            tab.classList.remove("active");
+            tab.classList.remove("show");
+            var info = document.getElementById("nav-menu0");
+            info.classList.remove("active");
+            info.classList.remove("show");
+        }
+        for (i = 0; i++; i <= 6) {
+            if (i != index) {
+                var elementId = "nav-menu" + index + "-tab";
+                tab = document.getElementById(elementId);
+                tab.classList.remove("active")
+                tab.classList.remove("show");
+                var elid = "nav-menu" + index;
+                var info = document.getElementById(elid);
+                info.classList.remove("active");
+                info.classList.remove("show");
+            }
+        }
+    };
+</script>
+{% endblock %}

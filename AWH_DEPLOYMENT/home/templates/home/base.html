@@ -1,0 +1,189 @@
+{% extends 'home/template.html' %}
+
+{% block header %}
+
+{% load static %}
+<!--Page Specific Styles-->
+<link rel="stylesheet" type="text/css" href="{% static 'home/styles/common.css' %}" />
+<link rel="stylesheet" type="text/css" href="{% static 'home/styles/home.css' %}" />
+
+            <div class="jumbotron vertical-center" id="enquire_jumo">
+                <h4 class="red_bar red_barL" id="jumbo_heading" >Enquire Today</h4>
+                <div class="red_bar red_barR close_popup"></div>
+                <!--Form-->
+                {% if enquiry_form.errors %}
+                {% for field in enquiry_form %}
+                {% for error in field.errors %}
+                <div class="alert alert-danger">
+                    <strong>{{ error|escape }}</strong>
+                </div>
+                {% endfor %}
+                {% endfor %}
+                {% endif %}
+                <div class="form_message">
+                    {{message}}
+                </div>
+                {% if enquiry_form %}
+                {% csrf_token %}
+                <form id="contact-form" name="contact-form" method="POST" action ="{% url 'main' %}" enctype="multipart/form-data">
+                    <div class="contact-form">
+                        {{enquiry_form.description}}
+                    </div>
+                    <!--row-->
+                    <div class="form-row">
+                        <!--col-->
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                {{enquiry_form.name}}
+                            </div>
+                        </div>
+                        <!--col-->
+                        <div class="col-md-4">
+                            <div class="contact-form">
+                                {{enquiry_form.postcode}}
+                            </div>
+                        </div>
+                    </div>
+                    <!--row-->
+                    <div class="form-row">
+                        <!--col-->
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                {{enquiry_form.email}}
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contact-form">
+
+                                {{enquiry_form.phone}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <!--col-->
+                        <div class="col-md-7 d-flex align-content-center">
+                            {% for choice in enquiry_form.category.field.choices %}
+                            <input class='enquire_radio_circle' type="radio" name="category" value="{{choice.0}}" id="{{choice.0}}"
+                                   {% ifequal choice.0 "Developer" %}
+                                   checked="checked"
+                                   {% endifequal %}/>
+                            <label class='enquire_radio' for="{{choice.0}}"> {{choice.1}} </label>
+                            {% endfor %}
+                        </div>
+                        <!--col-->
+                        <div class="col-md-5 d-flex flex-row-reverse mobile_margin">
+                            <label for="submit_btn" class="enquire_button">
+                                Submit
+                            </label>
+                            <button type="submit" class="btn btn-default enquire_button_none"><input class="clickable none" id="submit_btn" type ="submit"  name = "send"/></button>
+
+                            <label for="id_attach" class="attach_btn">
+                                <span class="file-selected">Attach File</span>
+                            </label>
+                            {{enquiry_form.attach}}
+                        </div>
+                    </div>
+                </form>
+                {% endif %}
+            </div>
+{% endblock %}
+
+{% block content %}
+<!--Body-->
+<main class="container-fluid">
+    <div>
+        <!--top row-->
+        <div class="row home_body_pad">
+            <!--col-->
+            <a class="col-md-4 fact_col color-1 boxs click_squ"  href="{% url 'about_view' %}">
+                <h5 class="facts no_hover_under facts_bold facts90 snow click_squ">£25m +</h5>
+                <h4 class="facts no_hover_under facts_bold snow click_squ">Of Compensation</h4>
+                <h4 class="facts no_hover_under snow click_squ">Negotiated. Negated. Agreed.</h4>
+                <p class="more_info snow click_squ">• On over 300 Projects.</p>
+                <p class="more_info snow click_squ">• Acting for Developers and Neighbours.</p>
+                <p class="more_info snow click_squ">• Providing bespoke and strategic advice.</p>
+            </a>
+            <!--col-->
+            <div class="col-md-4 padding-new">
+                <div class="case_box">
+                    <a href="{% url 'case_studies_view' index=2%}"><img class="case_img" src="{% static 'home/images/case/CASE_NW3.png' %}">
+                        <p class="center_over_case">NW3</p>
+                    </a>
+                </div>
+            </div>
+            <!--col-->
+            <a class="col-md-4 fact_col color-2 boxs click_squ"  href="{% url 'about_view' %}">
+                <h5 class="facts no_hover_under snow facts_bold facts80 click_squ">Over 20 Years' Experience.</h5>
+                <h4 class="facts no_hover_under snow click_squ">Experts in Property</h4>
+            </a>
+        </div>
+
+        <!--middle row-->
+        <div class="row home_body_pad case_correct_padding">
+            <!--col-->
+            <div class="col-md-4 padding-new">
+                <div class="case_box">
+                    <a href="{% url 'case_studies_view' index=1%}"><img class="case_img" src="{% static 'home/images/case/CASE_RM1.png' %}">
+                        <p class="center_over_case">RM1</p>
+                    </a>
+                </div>
+            </div>
+            <!--col-->
+            <div class="col-md-4 fact_col boxs">
+                <a href="{% url 'about_view' %}" class="bodySquLink no_hover_under"><h5 class="facts facts_bold facts90 underline">Talk to Us.</h5></a>
+                <a href="tel:+02070611100" class="bodySquLink no_hover_under"><h6 class="click_squ facts facts_bold line2">0207 061 1100</h6></a>
+                <a href="mailto:info@awh.co.uk?Subject=Enquire" target="_top" class="bodySquLink no_hover_under"><h6 class="click_squ facts facts30 line2">info@awh.co.uk</h6></a>
+                <h6 class="facts facts30">12 Dorrington Street</h6>
+                <h6 class="facts facts30">London</h6>
+                <h6 class="facts facts30">EC1N 7TB</h6>
+            </div>
+            <!--col-->
+            <div class="col-md-4 padding-new">
+                <div class="case_box">
+                    <a href="{% url 'case_studies_view' index=3%}"><img class="case_img" src="{% static 'home/images/case/CASE_NW8.png' %}">
+                        <p class="center_over_case">NW8</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--bottom row-->
+        <div class="row home_body_pad">
+            <!--col-->
+            <div class="col-md-4 mini_cont padding_top15 mobile_width">
+                <h4 class="snow what_we_do_news">What we do</h4>
+                <p class="mini_txt snow">Anderson Wilde and Harris are a multidisciplinary Chartered Surveying company with a specialist Rights of Light and Daylight and Sunlight Surveyors. The team have over 20 years’ experience in advising on both  Developer’s and the surrounding neighbours.</p>
+            </div>
+            <!--col-->
+            <div class="col-md-4 padding-new">
+                    <img class="awh3D" src="{% static 'home/images/logo3DSNOW.jpg' %}">
+            </div>
+            <!--col-->
+            <div class="col-md-4 padding_top15 padding_bottom15 color-1 mobile_width">
+                <h4 class="what_we_do_news snow">News and Resources</h4>
+                <a target="_blank" class="red news_date mini_txt snow">00.00.00.</a>
+                <span class="news_content mini_txt snow">Content</span><a href="" target="_blank" class="news_link">read more...</a>
+                <a target="_blank" class="red news_date mini_txt snow">00.00.00.</a>
+                <span class="news_content mini_txt snow">Content</span><a href="" target="_blank" class="news_link">read more...</a>
+                <a target="_blank" class="red news_date mini_txt snow">00.00.00.</a>
+                <sapn class="news_content mini_txt snow">Content</sapn><a href="" target="_blank" class="news_link">read more...</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!--pass variables from django to js files-->
+<script>
+   var tweets
+   tweets = "{{ tweets|escapejs }}"
+</script>
+
+<!--Scripts-->
+<script type="text/javascript" src="{% static 'home/js/looks.js' %}" ></script>
+<script type="text/javascript" src="{% static 'home/js/case_studies_nohov.js' %}" ></script>
+<script type="text/javascript" src="{% static 'home/js/tweet.js' %}" ></script>
+
+
+{% endblock %}
+<!--{  % block enquire_button %  }{  % endblock %  }-->

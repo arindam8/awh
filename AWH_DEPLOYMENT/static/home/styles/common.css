@@ -1,0 +1,316 @@
+/*****************
+banner css
+*****************/
+#banner_container {
+    /*position: absolute;*/
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 33vw;
+}
+
+#banner_img, #banner_vid {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    width: auto;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/****************
+body css
+*****************/
+h3 {
+    font-weight: bold;
+}
+
+.body_pad {
+    padding-top: 2rem;
+}
+
+.bottom_pad {
+    padding-bottom: 4rem;
+}
+
+/*****************
+enquiry
+*****************/
+#enquire_widget {
+    visibility: visible;
+}
+
+#enquire_widget_mini {
+    visibility: visible;
+}
+
+#phone_widget_mini {
+    visibility: visible;
+}
+
+.red_bar {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: var(--brand-col);
+    color: var(--snow);
+    display: inline-block;
+    height: 48px;
+    margin-bottom: 0px;
+}
+
+.red_barL {
+    width: 85%;
+}
+
+.red_barR {
+    width: 15%;
+}
+
+.form_message {
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+
+.close_popup {
+    float: right;
+    user-select: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.jumbotron, .form-control {
+    border-radius: 0;
+    font-size: inherit;
+}
+
+.comment {
+    resize: none;
+    height: 76px;
+}
+
+#contact-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-form {
+    padding-bottom: 10px;
+}
+
+.enquire_radio {
+    margin-right: 10px;
+}
+
+.enquire_radio_circle {
+    margin-right: 5px;
+}
+
+#submit_btn, #submit_btn_pu, .enquire_button_none, #id_attach, #id_attach_pop {
+    display: none;
+}
+
+.enquire_button {
+    background-color: var(--brand-col);
+    height: 38px;
+    width: 115px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 0px;
+    color: var(--snow);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.clickable:hover {
+    cursor: pointer;
+    color: var(--brand-col);
+    text-decoration: none;
+}
+
+.attach_btn {
+    height: 38px;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--brand-col);
+    color: var(--snow);
+    width: 115px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.file-selected {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.attach_btn:hover {
+    cursor: pointer;
+}
+
+#descript_field {
+    max-height: 152px;
+    min-height: 38px;
+}
+
+.contact-form {
+    padding-bottom: 10px;
+}
+
+.enquire_radio {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.enquire_radio_circle {
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+.enquire_button {
+    margin-left: 10px;
+}
+
+.jumbotron {
+    border-radius: 0px;
+}
+
+@media (max-width: 767px) {
+    .mobile_margin {
+        margin-top: 10px;
+    }
+}
+
+/*****************
+case study css
+*****************/
+.case_box {
+    padding: 0px;
+    position: relative;
+    color: white;
+    text-align: center;
+    overflow: hidden; /*for zoom*/
+}
+
+.case_box:hover .case_img {
+    transform: scale(1.5); /*for zoom*/
+    /*filter: blur(0px); was 3px*/
+}
+
+.case_box:hover .center_over_case {
+    mix-blend-mode: unset;
+    color: var(--brand-col)
+}
+
+.case_box_ho_hov {
+    transform: scale(1.5); /*for zoom*/
+    filter: blur(0px); /*was 3px*/
+}
+
+.case_img, .case_img_pw {
+    width: 100%;
+    transition: transform 0.5s, filter 0s; /*for zoom*/
+}
+
+.center_over_case, .center_over_case_pw {
+    position: absolute;
+    font-weight: bold;
+    font-size: 4.5vw;
+    color: white;
+    mix-blend-mode: exclusion;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center_over_case_no_hov {
+    mix-blend-mode: unset;
+    color: var(--brand-col);
+}
+
+.case_red {
+    color: var(--brand-col);
+    mix-blend-mode: unset;
+}
+
+.case_img_scale {
+    transform: scale(1.5); /*for zoom*/
+}
+
+.padding-new {
+    padding: 0px;
+}
+
+.padding-left {
+    padding-left: 0px;
+}
+
+.padding-right {
+    padding-right: 0px;
+}
+
+.color-1 {
+    background-color: var(--teal);
+}
+
+.color-2 {
+    background-color: var(--dark-gray);
+}
+
+.snow {
+    color: var(--snow);
+}
+
+.red {
+    color: var(--brand-col);
+}
+
+/***********
+Spacing for bullets
+***********/
+
+.spaceb4 {
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.spacea {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+/***********
+Media query's
+***********/
+
+@media (max-width: 767px) {
+    .center_over_case, .center_over_case_pw {
+        font-size: 13.5vw;
+    }
+
+    .jumbotron, .form-control {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 343px) {
+    .enquire_radio {
+        font-size: 12PX;
+    }
+}

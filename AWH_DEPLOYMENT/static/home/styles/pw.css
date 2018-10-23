@@ -1,0 +1,8 @@
+.nav_pw {
+    background-color: var(--brand-col) !important;
+    color: var(--snow) !important;
+}
+
+.nav-tabs .nav-item {
+    width: 19.5% !important;
+}

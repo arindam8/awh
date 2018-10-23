@@ -1,0 +1,308 @@
+.stack_em {
+    flex-direction: column;
+}
+
+#enquire_jumo {
+    background-color: rgba(255, 249, 251, 0.8);
+    margin: auto;
+    width: 767px;
+    padding: 0px;
+    z-index: 100;
+}
+
+#expert {
+    text-align: center;
+    color: var(--snow);
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--snow);
+    z-index: 100;
+    position: relative;
+    top: -30px;
+}
+
+.mini_txt {
+    font-size: 1.6vw;
+}
+
+.home_email {
+    font-size: 20px;
+    color: var(--black);
+}
+
+.home_email:hover {
+    color: var(--black);
+}
+
+.fact_col {
+    height: 33.33vw;
+}
+
+.fact_col:hover .facts {
+    line-height: 1;
+}
+
+.line2 {
+    line-height: 2;
+    transition: line-height 0.5s;
+}
+
+.fact_col:hover .line2 {
+    line-height: 1;
+}
+
+.facts{
+    font-size: 3vw;
+    line-height: 1.5;
+    transition: line-height 0.5s;
+}
+
+.no_hover {
+    line-height: 1;
+}
+
+.facts_bold {
+    font-weight: bold;
+}
+
+.facts90 {
+    font-size: 5vw;
+}
+
+.facts80 {
+    font-size: 4.5vw;
+}
+
+.facts30 {
+    font-size: 2vw;
+}
+
+.about_btn {
+    height: 4vw;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--snow);
+    color: var(--black);
+    width: 12vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw;
+    font-size: 2vw;
+}
+
+.fact_col:hover .about_btn {
+    background-color: var(--brand-col);
+    color: var(--snow);
+}
+
+.about_btn_no_hov {
+    background-color: var(--brand-col);
+    color: var(--snow);
+}
+
+.fact_col:hover .large_phone {
+    color: var(--brand-col);
+}
+
+.click_squ:hover {
+    cursor: pointer;
+}
+
+.bodySquLink {
+    color: var(--black);
+}
+
+.bodySquLink:hover {
+    color: var(--brand-col);
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
+    cursor: pointer;
+}
+
+.fact_col:hover .line2 {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
+}
+
+.fact_col:hover .underline {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
+}
+
+
+
+.fact_col:hover .clickable {
+    cursor: pointer;
+}
+
+.tel_num {
+    font-size: 22px;
+    color: var(--black);
+}
+
+.more_info {
+    font-size: 1.5vw;
+    line-height: 1;
+    position: absolute;
+    top: 60%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.fact_col:hover .more_info {
+    opacity: 1;
+    transform: translateY(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.no_hover_info {
+    opacity: 1;
+    transform: translateY(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.no_hover_underline {
+    text-decoration: underline;
+    text-decoration-color: var(--brand-col);
+}
+
+.home_bottom_pad {
+    padding-bottom: 4rem;
+}
+
+.what_we_do_news {
+    font-size: 3vw;
+}
+
+.news_link:hover {
+    text-decoration: underline !important;
+}
+
+.news_date {
+    padding-top: 2vw;
+    line-height: 0;
+    display: block;
+    margin-bottom: 1vw;
+    font-size: 2vw;
+}
+
+.news_date:hover {
+    color: var(--brand-col);
+}
+
+.news_link {
+    font-size: 1.6vw;
+    color: var(--snow);
+    text-decoration: underline;
+}
+
+.news_link:hover {
+    color: var(--brand-col);
+}
+
+.news_content {
+    font-size: 1.6vw;
+}
+
+.padding_top15 {
+    padding-top: 15px;
+}
+
+.padding_bottom15 {
+    padding-bottom: 15px;
+}
+
+.mini_cont {
+    background-color: var(--dark-gray);
+}
+
+.awh3D {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    #expert {
+        top: 0px;
+    }
+
+    #enquire_jumo {
+        width: auto;
+    }
+
+    .what_we_do_news {
+        font-size: 9vw;
+    }
+
+    .news_date {
+        padding-top: 6vw;
+        margin-bottom: 3vw;
+        font-size: 6vw;
+    }
+
+    .news_link {
+        font-size: 4.8vw;
+    }
+
+    .news_content {
+        font-size: 4.8vw;
+    }
+
+    .mini_txt {
+        font-size: 4.8vw;
+    }
+
+    .mobile_width {
+        height: 100vw;
+    }
+
+    .fact_col {
+        height: 100vw;
+    }
+
+    .facts{
+        font-size: 9vw;
+    }
+
+    .facts90 {
+        font-size: 15vw;
+    }
+
+    .facts80 {
+        font-size: 13.5vw;
+    }
+
+    .facts30 {
+        font-size: 6vw;
+    }
+
+    .about_btn {
+        height: 12vw;
+        padding: 0px;
+        margin: 0px;
+        width: 36vw;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        right: 3vw;
+        bottom: 3vw;
+        font-size: 6vw;
+    }
+
+    .large_phone {
+        font-size: 30vw;
+        right: 15vw;
+        bottom: 15vw;
+    }
+
+    .more_info {
+        font-size: 4.5vw;
+    }
+
+}
